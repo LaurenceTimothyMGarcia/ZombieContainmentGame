@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1904
     height: 1021
   m_ShowMode: 4
-  m_Title: 
+  m_Title: Project
   m_RootView: {fileID: 6}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -48,7 +48,7 @@ MonoBehaviour:
   m_MinSize: {x: 679, y: 492}
   m_MaxSize: {x: 14002, y: 14042}
   vertical: 0
-  controlID: 53
+  controlID: 124
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -152,6 +152,10 @@ MonoBehaviour:
     height: 1021
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
+  m_UseTopView: 1
+  m_TopViewHeight: 30
+  m_UseBottomView: 1
+  m_BottomViewHeight: 20
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,6 +177,8 @@ MonoBehaviour:
     height: 30
   m_MinSize: {x: 0, y: 0}
   m_MaxSize: {x: 0, y: 0}
+  m_LoadedToolbars: []
+  m_MainToolbar: {fileID: 19}
   m_LastLoadedLayoutName: 
 --- !u!114 &8
 MonoBehaviour:
@@ -219,7 +225,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 54
+  controlID: 36
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -244,7 +250,7 @@ MonoBehaviour:
   m_MinSize: {x: 403, y: 221}
   m_MaxSize: {x: 8003, y: 4021}
   vertical: 0
-  controlID: 55
+  controlID: 37
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -338,11 +344,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets
+    - Assets/Models
+    m_Globs: []
+    m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets
+  - Assets/Models
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Program Files\Unity Projects\ZombieContainmentGame\Zombie
     Containment Game (Name in works)
@@ -350,9 +358,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 02340000
-    m_LastClickedID: 13314
-    m_ExpandedIDs: 0000000002340000043400000634000000ca9a3b
+    m_SelectedIDs: e0470000
+    m_LastClickedID: 18400
+    m_ExpandedIDs: 00000000de47000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -380,7 +388,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000023400000434000006340000
+    m_ExpandedIDs: 00000000de470000e0470000e2470000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -462,18 +470,18 @@ MonoBehaviour:
     width: 385
     height: 950
   m_ViewDataDictionary: {fileID: 0}
-  m_OpenAddComponentMenu: 0
   m_ObjectsLockedBeforeSerialization: []
   m_InstanceIDsLockedBeforeSerialization: 
-  m_LockTracker:
-    m_IsLocked: 0
   m_PreviewResizer:
     m_CachedPref: 160
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_PreviewWindow: {fileID: 0}
   m_LastInspectedObjectInstanceID: -1
   m_LastVerticalScrollValue: 0
+  m_GlobalObjectId: 
+  m_LockTracker:
+    m_IsLocked: 0
+  m_PreviewWindow: {fileID: 0}
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -503,9 +511,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 
+      m_SelectedIDs: 0a470000
       m_LastClickedID: 0
-      m_ExpandedIDs: 6afbffff
+      m_ExpandedIDs: b2ecffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -558,6 +566,7 @@ MonoBehaviour:
   m_ShowContextualTools: 0
   m_WindowGUID: 05ebb7f28ba82104fa84bf814c01ff34
   m_Gizmos: 1
+  m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
   m_2DMode: 0
@@ -576,14 +585,15 @@ MonoBehaviour:
   m_ValidateTrueMetals: 0
   m_DoValidateTrueMetals: 0
   m_ExposureSliderValue: 0
-  m_ExposureSliderMax: 10
   m_SceneViewState:
+    m_AlwaysRefresh: 0
     showFog: 1
-    showMaterialUpdate: 0
     showSkybox: 1
     showFlares: 1
     showImageEffects: 1
     showParticleSystems: 1
+    showVisualEffectGraphs: 1
+    m_FxEnabled: 1
   m_Grid:
     xGrid:
       m_Fade:
@@ -615,11 +625,11 @@ MonoBehaviour:
   m_Rotation:
     m_Target: {x: -0.051639285, y: 0.93584394, z: -0.15468636, w: -0.31241435}
     speed: 2
-    m_Value: {x: -0.052812446, y: 0.93490577, z: -0.15741406, w: -0.3136606}
+    m_Value: {x: -0.05163926, y: 0.9358435, z: -0.15468629, w: -0.3124142}
   m_Size:
     m_Target: 12.241261
     speed: 2
-    m_Value: 11.714125
+    m_Value: 12.241261
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -672,8 +682,6 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_SerializedViewNames: []
   m_SerializedViewValues: []
-  m_SerializedCustomFieldsNames: []
-  m_SerializedCustomFieldsValues: []
   m_PlayModeViewName: GameView
   m_ShowGizmos: 0
   m_TargetDisplay: 0
@@ -762,3 +770,16 @@ MonoBehaviour:
     width: 1366
     height: 308
   m_ViewDataDictionary: {fileID: 0}
+--- !u!114 &19
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 13963, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_DontSaveToLayout: 0
