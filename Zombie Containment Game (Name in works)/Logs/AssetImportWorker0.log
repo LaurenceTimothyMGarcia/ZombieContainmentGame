@@ -15,11 +15,11 @@ D:/Program Files/Unity Projects/ZombieContainmentGame/Zombie Containment Game (N
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55562
+50996
 Successfully changed project path to: D:/Program Files/Unity Projects/ZombieContainmentGame/Zombie Containment Game (Name in works)
 D:/Program Files/Unity Projects/ZombieContainmentGame/Zombie Containment Game (Name in works)
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 19.08 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 19.53 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.2f1 (068178b99f32)
 [Subsystems] Discovering subsystems at path D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
@@ -35,40 +35,40 @@ Initialize mono
 Mono path[0] = 'D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56920
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56164
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.001419 seconds.
+Registered in 0.001450 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 19.18 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 19.40 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.188 seconds
+- Completed reload, in  1.234 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000406 seconds.
+Registered in 0.000429 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 0.20 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 0.22 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.605 seconds
+- Completed reload, in  0.612 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
@@ -80,21 +80,37 @@ System memory in use before: 56.2 MB.
 System memory in use after: 56.3 MB.
 
 Unloading 9 unused Assets to reduce memory usage. Loaded Objects now: 1518.
-Total: 1.380500 ms (FindLiveObjects: 0.120600 ms CreateObjectMapping: 0.028800 ms MarkObjects: 1.185400 ms  DeleteObjects: 0.044400 ms)
+Total: 1.386800 ms (FindLiveObjects: 0.127600 ms CreateObjectMapping: 0.028200 ms MarkObjects: 1.185300 ms  DeleteObjects: 0.044800 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Models/Room1TextureImproved.png
-  artifactKey: Guid(2b3826abb9161c54c8ee57732b054486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Room1TextureImproved.png using Guid(2b3826abb9161c54c8ee57732b054486) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '743b9a9376ecbbd85ab05520882711df') in 0.081718 seconds
-  Import took 0.083490 seconds .
+  path: Assets/Models/Room1NormalMapImproved.png
+  artifactKey: Guid(909c5dd6f055bfd45805409b64cd2321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Room1NormalMapImproved.png using Guid(909c5dd6f055bfd45805409b64cd2321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bf88f57f25211adb1b05a0f7cb81b627') in 0.100463 seconds
+  Import took 0.120081 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 13.224961 seconds.
+  Time since last request: 39.440296 seconds.
+  path: Assets/Models/Room1NormalMapImproved.png
+  artifactKey: Guid(909c5dd6f055bfd45805409b64cd2321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Room1NormalMapImproved.png using Guid(909c5dd6f055bfd45805409b64cd2321) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b1ea18629cf7fcc88f3dc323ff19c3c6') in 0.028192 seconds
+  Import took 0.029948 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 42.034044 seconds.
   path: Assets/Models/Room1.mat
   artifactKey: Guid(b4b5e86340e68a8418e6d81a805ae884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Room1.mat using Guid(b4b5e86340e68a8418e6d81a805ae884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '65cd739579360efe28b82877ef9c10c6') in 0.054095 seconds
-  Import took 0.055923 seconds .
+Start importing Assets/Models/Room1.mat using Guid(b4b5e86340e68a8418e6d81a805ae884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '35ad078400c3b6f45f36ae8c33889cfd') in 0.046300 seconds
+  Import took 0.048205 seconds .
+
+========================================================================
+Received Import Request.
+  Time since last request: 136.880365 seconds.
+  path: Assets/Models/Room1.mat
+  artifactKey: Guid(b4b5e86340e68a8418e6d81a805ae884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Room1.mat using Guid(b4b5e86340e68a8418e6d81a805ae884) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9951004d8b49677ffecf326e18ed8675') in 0.015068 seconds
+  Import took 0.016973 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
