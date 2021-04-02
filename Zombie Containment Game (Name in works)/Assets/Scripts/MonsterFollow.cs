@@ -12,6 +12,13 @@ public class MonsterFollow : MonoBehaviour
     public int AttackTrigger;
     public RaycastHit Shot;
 
+    public int IsAttacking;
+    public GameObject ScreenFlash;
+    public AudioSource Hurt01;
+    public AudioSource Hurt02;
+    public AudioSource Hurt03;
+    public int HurtSound;
+
     void Update()
     {
         transform.LookAt(ThePlayer.transform);
@@ -36,7 +43,47 @@ public class MonsterFollow : MonoBehaviour
 
         if (AttackTrigger == 1)
         {
+            if (IsAttacking == 0)
+            {
+                StartCoroutine(EnemyDamage());
+            }
+            EnemySpeed = 0;
             TheEnemy.GetComponent<Animation>().Play("rig_Attack");
         }
+    }
+
+    void OnTriggerEnter()
+    {
+        AttackTrigger = 1;
+    }
+
+    void OnTriggerExit()
+    {
+        AttackTrigger = 0;
+    }
+
+    IEnumerator EnemyDamage()
+    {
+        IsAttacking = 1;
+        HurtSound = Random.Range(1, 4);
+        yield return new WaitForSeconds(0.5f);
+        ScreenFlash.SetActive(true);
+        GlobalHealth.PlayerHealth -= 1;
+        /*if (HurtSound == 1)
+         * {
+         *    Hurt01.Play();
+         * }
+         * if (HurtSound == 2)
+         * {
+         *    Hurt02.Play();
+         * }
+         * if (HurtSound == 3)
+         * {
+         *    Hurt03.Play();
+         * }*/
+        yield return new WaitForSeconds(0.05f);
+        ScreenFlash.SetActive(false);
+        yield return new WaitForSeconds(1);
+        IsAttacking = 0;
     }
 }
