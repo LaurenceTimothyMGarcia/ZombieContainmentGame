@@ -23,7 +23,7 @@ public class MonsterFollow : MonoBehaviour
                 EnemySpeed = 0.01f;
                 if (AttackTrigger == 0)
                 {
-                    TheEnemy.GetComponent<Animation>().Play("rig_Walking");
+                    TheEnemy.GetComponent<Animation>().Play("rig_Run");
                     transform.position = Vector3.MoveTowards(transform.position, ThePlayer.transform.position, EnemySpeed);
                 }
             }
