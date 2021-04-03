@@ -1,0 +1,13 @@
+# Blender MTL File: 'ZombieContainmentGameAssets.blend'
+# Material Count: 1
+
+newmtl PICKUPS
+Ns 0.000000
+Ka 0.750000 0.750000 0.750000
+Kd 0.800000 0.800000 0.800000
+Ks 0.000000 0.000000 0.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.450000
+d 1.000000
+illum 1
+map_Kd C:\\Users\\Raymond\\Pictures\\Zombie_Containment_Power-Ups_2.png

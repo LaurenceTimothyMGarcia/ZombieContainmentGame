@@ -12,6 +12,8 @@ public class MonsterFollow : MonoBehaviour
     public int AttackTrigger;
     public RaycastHit Shot;
 
+    public float health = 50f;
+
     public int IsAttacking;
     public GameObject ScreenFlash;
     public AudioSource Hurt01;
@@ -56,10 +58,34 @@ public class MonsterFollow : MonoBehaviour
     {
         AttackTrigger = 1;
     }
-
     void OnTriggerExit()
     {
         AttackTrigger = 0;
+    }
+
+    public void TakeDamage(float amount)
+    {
+        health -= amount;
+        TheEnemy.GetComponent<Animation>().Play("rig_ShotAt");
+        StartCoroutine(Stagger());
+        if (health <= 0f)
+        {
+            this.GetComponent<MonsterFollow>().enabled = false;
+            TheEnemy.GetComponent<Animation>().Play("rig_DeathAnimation");
+            StartCoroutine(Die());
+        }
+    }
+    IEnumerator Die()
+    {
+        yield return new WaitForSeconds(1);
+        Destroy(gameObject);
+    }
+
+    IEnumerator Stagger()
+    {
+        this.GetComponent<MonsterFollow>().enabled = false;
+        yield return new WaitForSeconds(1.5f);
+        this.GetComponent<MonsterFollow>().enabled = true;
     }
 
     IEnumerator EnemyDamage()
@@ -86,4 +112,5 @@ public class MonsterFollow : MonoBehaviour
         yield return new WaitForSeconds(1);
         IsAttacking = 0;
     }
+
 }
