@@ -12,6 +12,7 @@ public class playerController : MonoBehaviour
     [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = 0.1f;
     [SerializeField] [Range(0.0f, 0.5f)] float mouseSmoothTime = 0.03f;
     [SerializeField] float jumpHeight = 2.0f;
+
     bool doubleJump = true;
 
     float cameraPitch = 0.0f;
