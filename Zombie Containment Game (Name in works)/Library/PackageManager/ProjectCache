@@ -15,8 +15,13 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
+<<<<<<< HEAD
+      ticks: 637529127681077790
+    m_Hash: 3982900652
+=======
       ticks: 637540106836527075
     m_Hash: 354439638
+>>>>>>> Raymond
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
@@ -740,7 +745,11 @@ m_PackageAssets:
         - 1.5.4
         - 1.6.0-pre.1
         - 1.6.0-pre.3
+<<<<<<< HEAD
+        verified: 1.4.6
+=======
         verified: 1.4.7
+>>>>>>> Raymond
       dependencies: []
       resolvedDependencies: []
       keywords:

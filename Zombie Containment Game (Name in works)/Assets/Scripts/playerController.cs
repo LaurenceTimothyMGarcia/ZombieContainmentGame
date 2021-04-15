@@ -13,15 +13,19 @@ public class playerController : MonoBehaviour
     [SerializeField] [Range(0.0f, 0.5f)] float mouseSmoothTime = 0.03f;
     [SerializeField] float jumpHeight = 2.0f;
 
+    bool doubleJump = true;
+
     float cameraPitch = 0.0f;
     float velocityY = 0.0f;
-    CharacterController controller = null;
+    public CharacterController controller = null;
 
-    Vector2 currentDir = Vector2.zero;
+    public Vector2 currentDir = Vector2.zero;
     Vector2 currentDirVelocity = Vector2.zero;
 
-    Vector2 currentMouseDelta = Vector2.zero;
+    public Vector2 currentMouseDelta = Vector2.zero;
     Vector2 currentMouseDeltaVelocity = Vector2.zero;
+
+    public Vector3 dashDir;
 
     // Start is called before the first frame update
     void Start()
@@ -57,21 +61,28 @@ public class playerController : MonoBehaviour
     void updateMovement()
     {
         Vector2 targetDir = new Vector2(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"));
-        targetDir.Normalize();   //Inhibits diagonal vectors from adding to higher values, removing could help implament strafe jumping
+        targetDir.Normalize();   //Inhibits diagonal vectors from adding to higher values, removing could help implement strafe jumping
         currentDir = Vector2.SmoothDamp(currentDir, targetDir, ref currentDirVelocity, moveSmoothTime);
 
         if(controller.isGrounded)
         {
             velocityY = 0.0f;
+            doubleJump = true;
         }
         velocityY += gravity * Time.deltaTime;
 
-        if (Input.GetButtonDown("Jump") && controller.isGrounded)
+        if (Input.GetButtonDown("Jump") && controller.isGrounded)   //Implements jump
         {
             velocityY = Mathf.Sqrt(jumpHeight * -2f * gravity);
         }
+        else if (Input.GetButtonDown("Jump") && !controller.isGrounded && doubleJump)   //Implements double jump
+        {
+            velocityY = Mathf.Sqrt(jumpHeight * -2f * gravity);
+            doubleJump = false;
+        }
 
         Vector3 velocity = (transform.forward * currentDir.y + transform.right * currentDir.x) * walkSpeed + Vector3.up * velocityY;
+        dashDir = (transform.forward * currentDir.y + transform.right * currentDir.x) * walkSpeed + Vector3.up * velocityY;
         controller.Move(velocity * Time.deltaTime);
     }
 }
