@@ -12,6 +12,7 @@ public class playerController : MonoBehaviour
     [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = 0.1f;
     [SerializeField] [Range(0.0f, 0.5f)] float mouseSmoothTime = 0.03f;
     [SerializeField] float jumpHeight = 2.0f;
+    [SerializeField] float fallMultiplier = 2.5f;
     bool doubleJump = true;
 
     float cameraPitch = 0.0f;
@@ -69,6 +70,11 @@ public class playerController : MonoBehaviour
             doubleJump = true;
         }
         velocityY += gravity * Time.deltaTime;
+
+        if(velocityY < 0)   //code for faster falling, so less floaty
+        {
+            velocityY += (fallMultiplier - 1) * Time.deltaTime * gravity;
+        }
 
         if (Input.GetButtonDown("Jump") && controller.isGrounded)   //Implements jump
         {
