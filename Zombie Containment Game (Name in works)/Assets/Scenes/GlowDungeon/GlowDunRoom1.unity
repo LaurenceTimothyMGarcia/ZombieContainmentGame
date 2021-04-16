@@ -548,6 +548,21 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1236521783340581583}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1068740546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068740545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6de75e10ed53e2048a5256438b5201b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dashSpeed: 3
+  dashTime: 0.25
+  dashCount: 2
 --- !u!1 &1092746472
 GameObject:
   m_ObjectHideFlags: 0
@@ -917,6 +932,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1236521782630935821, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: jumpHeight
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1236521782630935822, guid: c49cc0cd6519c4348a5862309f8c8129,
         type: 3}
