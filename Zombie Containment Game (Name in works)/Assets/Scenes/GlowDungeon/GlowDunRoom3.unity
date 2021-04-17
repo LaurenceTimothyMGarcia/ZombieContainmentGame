@@ -244,7 +244,7 @@ PrefabInstance:
     - target: {fileID: 8729808836684947367, guid: 4217246e15212f648bc7752fa34835b1,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 8729808836684947367, guid: 4217246e15212f648bc7752fa34835b1,
         type: 3}
@@ -508,6 +508,11 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3253186625081588000, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: HealthDisplay
+      value: 
+      objectReference: {fileID: 299330924}
+    - target: {fileID: 7313325770288485158, guid: c49cc0cd6519c4348a5862309f8c8129,
         type: 3}
       propertyPath: HealthDisplay
       value: 
@@ -1095,7 +1100,7 @@ Transform:
   - {fileID: 1319158698}
   - {fileID: 112639028}
   m_Father: {fileID: 0}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &919132149096227789
 GameObject:
