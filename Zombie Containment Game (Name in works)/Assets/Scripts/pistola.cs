@@ -8,7 +8,7 @@ public class pistola : MonoBehaviour
     public float impactForce = 30f;
 
     public Camera fpsCam;
-    public ParticleSystem muzzleFlash;
+    //public ParticleSystem muzzleFlash;
 
     private float nextTimeToFire = 0f;
 
@@ -23,7 +23,7 @@ public class pistola : MonoBehaviour
 
     void Shoot()
     {
-       muzzleFlash.Play();
+       //muzzleFlash.Play();
 
        RaycastHit hit;
        if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))

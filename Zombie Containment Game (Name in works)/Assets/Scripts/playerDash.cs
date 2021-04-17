@@ -6,19 +6,18 @@ public class playerDash : MonoBehaviour
 {
     public float dashSpeed;
     public float dashTime;
+    public float dashBreak = 1;
     public static int dashAmount = 1;
     public int dashCount = dashAmount;
     
 
     playerController moveScript;
 
-    // Start is called before the first frame update
     void Start()
     {
         moveScript = GetComponent<playerController>();
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (moveScript.controller.isGrounded)
@@ -32,6 +31,7 @@ public class playerDash : MonoBehaviour
             {
                 StartCoroutine(Dash());
                 dashCount--;
+                StartCoroutine(DashTimer());
             }
         }
         
@@ -47,5 +47,12 @@ public class playerDash : MonoBehaviour
 
             yield return null;
         }
+    }
+
+    IEnumerator DashTimer()
+    {
+        this.GetComponent<playerDash>().enabled = false;
+        yield return new WaitForSeconds(dashBreak);
+        this.GetComponent<playerDash>().enabled = true;
     }
 }

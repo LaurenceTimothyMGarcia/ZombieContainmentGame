@@ -43,6 +43,7 @@
      <Compile Include="Assets\Scripts\GlobalHealth.cs" />
      <Compile Include="Assets\Scripts\pistola.cs" />
      <Compile Include="Assets\Scripts\playerDash.cs" />
+     <Compile Include="Assets\Scripts\WeaponSway.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
