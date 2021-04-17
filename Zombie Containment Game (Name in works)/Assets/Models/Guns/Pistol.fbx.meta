@@ -2,7 +2,13 @@ fileFormatVersion: 2
 guid: 0eac0eefe4a72ba4a8203f2be2156a4a
 ModelImporter:
   serializedVersion: 20200
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      74: -4972722631459885437
+    second: Pistol|PistolIdle
+  - first:
+      74: -7011205740887480959
+    second: Pistol|PistolShoot
   externalObjects: {}
   materials:
     materialImportMode: 2
