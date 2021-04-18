@@ -12,7 +12,7 @@ public class ListOfRooms
         for(int i = 0; i < 6; i++)
         {
             listOfScenes.Add(i);
-            Debug.Log("Setting Array Scene Track: " + listOfScenes[i]);
+            //Debug.Log("Setting Array Scene Track: " + listOfScenes[i]);
         }
     }
 

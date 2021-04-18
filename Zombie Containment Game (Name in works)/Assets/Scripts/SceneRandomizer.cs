@@ -9,6 +9,7 @@ public class SceneRandomizer : MonoBehaviour
     public int selectedScene;
     public int arrayNumber;
     public int listSize;
+    int currentScene;
 
     string result;
 
@@ -34,9 +35,10 @@ public class SceneRandomizer : MonoBehaviour
         if(listOfScenes.Count == 0)
         {
             ListOfRooms.setArray();
+            Debug.Log("Build Index: " + SceneManager.GetActiveScene().buildIndex);
         }
         listOfScenes = ListOfRooms.GetArray();
-        Debug.Log("moveing to next Room");
+        //Debug.Log("moveing to next Room");
 
         listSize = listOfScenes.Count;
         arrayNumber = Random.Range(0, listSize);
@@ -54,7 +56,7 @@ public class SceneRandomizer : MonoBehaviour
 
         for(int i = 0; i < listOfScenes.Count; i++)
         {
-            Debug.Log("Scene Track: " + listOfScenes[i]);
+            //Debug.Log("Scene Track: " + listOfScenes[i]);
             result += listOfScenes[i].ToString() + ", ";
         }
 
