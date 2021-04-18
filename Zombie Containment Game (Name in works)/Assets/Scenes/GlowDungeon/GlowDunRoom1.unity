@@ -699,6 +699,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5245270055236466985, guid: 3e10eb42874514f499364796f23fa922,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318687878297273417, guid: 3e10eb42874514f499364796f23fa922,
+        type: 3}
+      propertyPath: health
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318687878297273417, guid: 3e10eb42874514f499364796f23fa922,
+        type: 3}
+      propertyPath: ThePlayer
+      value: 
+      objectReference: {fileID: 326164542}
+    - target: {fileID: 6318687878297273417, guid: 3e10eb42874514f499364796f23fa922,
+        type: 3}
+      propertyPath: ScreenFlash
+      value: 
+      objectReference: {fileID: 1166663575}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e10eb42874514f499364796f23fa922, type: 3}
 --- !u!33 &4876933052638464471

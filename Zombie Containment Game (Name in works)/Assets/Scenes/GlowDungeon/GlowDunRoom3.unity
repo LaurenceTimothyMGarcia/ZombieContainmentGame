@@ -512,6 +512,11 @@ PrefabInstance:
       propertyPath: HealthDisplay
       value: 
       objectReference: {fileID: 299330924}
+    - target: {fileID: 6278943443919133683, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: HealthDisplay
+      value: 
+      objectReference: {fileID: 299330924}
     - target: {fileID: 7313325770288485158, guid: c49cc0cd6519c4348a5862309f8c8129,
         type: 3}
       propertyPath: HealthDisplay
@@ -1194,7 +1199,7 @@ Transform:
   - {fileID: 1319158698}
   - {fileID: 112639028}
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &919132149096227789
 GameObject:

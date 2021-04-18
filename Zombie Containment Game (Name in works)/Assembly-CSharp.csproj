@@ -36,6 +36,7 @@
     <ImplicitlyExpandDesignTimeFacades>false</ImplicitlyExpandDesignTimeFacades>
   </PropertyGroup>
   <ItemGroup>
+     <Compile Include="Assets\Scripts\SceneRandomizer.cs" />
      <Compile Include="Assets\Scripts\playerController.cs" />
      <Compile Include="Assets\Scripts\EnemyAI.cs" />
      <Compile Include="Assets\Scripts\Target.cs" />
@@ -44,7 +45,7 @@
      <Compile Include="Assets\Scripts\WeaponSway.cs" />
      <Compile Include="Assets\Scripts\pistola.cs" />
      <Compile Include="Assets\Scripts\playerDash.cs" />
-     <Compile Include="Assets\Scripts\SceneRandomizer.cs" />
+     <Compile Include="Assets\Scripts\ListOfRooms.cs" />
     <Reference Include="UnityEngine">
         <HintPath>D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
     </Reference>
