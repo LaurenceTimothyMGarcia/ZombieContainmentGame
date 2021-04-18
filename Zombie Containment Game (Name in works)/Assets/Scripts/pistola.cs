@@ -2,7 +2,7 @@
 
 public class pistola : MonoBehaviour
 {
-    private Animator anim;
+    public Animator anim;
 
     public float damage = 10f;
     public float range = 100f;
@@ -13,7 +13,7 @@ public class pistola : MonoBehaviour
     public int ammoCurrent;
 
     public Camera fpsCam;
-    //public ParticleSystem muzzleFlash;
+    public ParticleSystem muzzleFlash;
 
     private float nextTimeToFire;
 
@@ -25,9 +25,8 @@ public class pistola : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetButtonDown("Fire1") && ammoCurrent != 0) //&& Time.time >= nextTimeToFire)
+        if(Input.GetButtonDown("Fire1") && ammoCurrent != 0)
         {
-            //nextTimeToFire = Time.time + 1f / fireRate;
             anim.SetBool("Fire", true);
             Shoot();
         }
@@ -49,11 +48,10 @@ public class pistola : MonoBehaviour
 
     void Shoot()
     {
-        //muzzleFlash.Play();
-
         if(nextTimeToFire < fireRate)
             return;
 
+        muzzleFlash.Play();
         RaycastHit hit;
         if(Physics.Raycast(fpsCam.transform.position, fpsCam.transform.forward, out hit, range))
         {
