@@ -10,6 +10,8 @@ public class SceneRandomizer : MonoBehaviour
     public int arrayNumber;
     public int listSize;
 
+    string result;
+
     public ListOfRooms roomList;
 
     /*void Start()
@@ -23,6 +25,12 @@ public class SceneRandomizer : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         //Debug.Log("Starting Size of ArrayList " + listOfScenes.Count);
+        if(listOfScenes.Count == 1)
+        {
+            SceneManager.LoadScene(6);
+            return;
+        }
+
         if(listOfScenes.Count == 0)
         {
             ListOfRooms.setArray();
@@ -30,24 +38,26 @@ public class SceneRandomizer : MonoBehaviour
         listOfScenes = ListOfRooms.GetArray();
         Debug.Log("moveing to next Room");
 
-        /*if(listSize < 1)
-        {
-            Debug.Log("Thanks for playing");
-            return;
-        }*/
         listSize = listOfScenes.Count;
         arrayNumber = Random.Range(0, listSize);
         selectedScene = listOfScenes[arrayNumber];
 
-        SceneManager.LoadScene(selectedScene);
-        listOfScenes.Remove(arrayNumber);
-        
         Debug.Log("This is the scene that was loaded " + selectedScene);
+        SceneManager.LoadScene(selectedScene);
+        
+        Debug.Log("Removed Array: " + arrayNumber);
+        Debug.Log("Removed Scene: " + selectedScene);
+        listOfScenes.Remove(selectedScene);
+        
+        
         Debug.Log("How many scenes left in array " + listOfScenes.Count);
 
         for(int i = 0; i < listOfScenes.Count; i++)
         {
             Debug.Log("Scene Track: " + listOfScenes[i]);
+            result += listOfScenes[i].ToString() + ", ";
         }
+
+        Debug.Log(result);
     }
 }
