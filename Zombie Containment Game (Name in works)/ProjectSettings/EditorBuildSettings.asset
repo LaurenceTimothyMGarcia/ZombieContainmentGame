@@ -4,5 +4,23 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/GlowDungeon/GlowDunRoom1.unity
+    guid: 63fb428ce5ff7324889aa7ef3f8527aa
+  - enabled: 1
+    path: Assets/Scenes/GlowDungeon/GlowDunRoom2.unity
+    guid: e05ed1646a5e8f1438cf08ff7d43e4c3
+  - enabled: 1
+    path: Assets/Scenes/GlowDungeon/GlowDunRoom3.unity
+    guid: 53b1e4529cddb4648b9a8829106dcd37
+  - enabled: 1
+    path: Assets/Scenes/GlowDungeon/GlowDunRoom4.unity
+    guid: 6a30d1180aa2c204ca52f085090696d4
+  - enabled: 1
+    path: Assets/Scenes/GlowDungeon/GlowDunRoom5.unity
+    guid: f7b524bb6bec0b24e86e07d2d2513845
+  - enabled: 1
+    path: Assets/Scenes/GlowDungeon/GlowDunRoom6.unity
+    guid: 2c4f73313d667114db40d8674091aa3f
   m_configObjects: {}
