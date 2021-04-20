@@ -7,11 +7,11 @@ public class ListOfRooms
 {
     public static List<int> listOfScenes = new List<int>();
 
-    public static void setArray()
+    public static void setArray(int roomFront, int roomEnd)
     {
-        for(int i = 2; i < 7; i++)
+        for(roomFront = 2; roomFront < roomEnd; roomFront++)
         {
-            listOfScenes.Add(i);
+            listOfScenes.Add(roomFront);
             //Debug.Log("Setting Array Scene Track: " + listOfScenes[i]);
         }
     }

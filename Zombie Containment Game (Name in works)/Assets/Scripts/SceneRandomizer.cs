@@ -25,14 +25,13 @@ public class SceneRandomizer : MonoBehaviour
     
     void OnTriggerEnter(Collider other)
     {
+        listOfScenes = ListOfRooms.GetArray();
         //Debug.Log("Starting Size of ArrayList " + listOfScenes.Count);
         if(listOfScenes.Count == 0)
         {
             SceneManager.LoadScene(7);
             return;
         }
-
-        listOfScenes = ListOfRooms.GetArray();
         //Debug.Log("moveing to next Room");
 
         listSize = listOfScenes.Count;

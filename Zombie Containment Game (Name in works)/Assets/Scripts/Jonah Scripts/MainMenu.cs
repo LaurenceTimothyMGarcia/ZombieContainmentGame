@@ -9,7 +9,7 @@ public class MainMenu : MonoBehaviour
     public void PlayGame ()
     {
         SceneManager.LoadScene(1);
-        ListOfRooms.setArray();
+        ListOfRooms.setArray(2, 7);
     }
 
     public void QuitGame ()
