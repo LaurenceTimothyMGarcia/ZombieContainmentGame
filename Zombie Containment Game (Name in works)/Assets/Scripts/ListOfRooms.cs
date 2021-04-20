@@ -9,7 +9,7 @@ public class ListOfRooms
 
     public static void setArray()
     {
-        for(int i = 0; i < 6; i++)
+        for(int i = 2; i < 7; i++)
         {
             listOfScenes.Add(i);
             //Debug.Log("Setting Array Scene Track: " + listOfScenes[i]);

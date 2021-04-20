@@ -28,14 +28,14 @@ public class SceneRandomizer : MonoBehaviour
         //Debug.Log("Starting Size of ArrayList " + listOfScenes.Count);
         if(listOfScenes.Count == 1)
         {
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(7);
             return;
         }
 
         if(listOfScenes.Count == 0)
         {
-            ListOfRooms.setArray();
-            Debug.Log("Build Index: " + SceneManager.GetActiveScene().buildIndex);
+            //ListOfRooms.setArray();
+            //Debug.Log("Build Index: " + SceneManager.GetActiveScene().buildIndex);
         }
         listOfScenes = ListOfRooms.GetArray();
         //Debug.Log("moveing to next Room");

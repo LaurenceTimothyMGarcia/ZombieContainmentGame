@@ -716,6 +716,11 @@ PrefabInstance:
       objectReference: {fileID: 326164542}
     - target: {fileID: 6318687878297273417, guid: 3e10eb42874514f499364796f23fa922,
         type: 3}
+      propertyPath: EnemySpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6318687878297273417, guid: 3e10eb42874514f499364796f23fa922,
+        type: 3}
       propertyPath: ScreenFlash
       value: 
       objectReference: {fileID: 1166663575}
