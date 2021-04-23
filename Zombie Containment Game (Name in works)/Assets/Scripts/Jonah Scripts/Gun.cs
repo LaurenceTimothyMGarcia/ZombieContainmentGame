@@ -32,7 +32,6 @@ public class Gun : MonoBehaviour
     public Vector3 upRecoil;
     Vector3 originalRotation;
 
-    public GameObject bulletHole;
     public LayerMask canBeShot;
 
 
@@ -112,10 +111,6 @@ public class Gun : MonoBehaviour
         {
             Debug.Log(hit.transform.name);
             
-            //BulletHole script
-            GameObject newHole = Instantiate(bulletHole, hit.point + hit.normal * 0.001f, Quaternion.identity) as GameObject;
-            newHole.transform.LookAt(hit.point + hit.normal);
-            Destroy(newHole, 5f);
 
             Target target = hit.transform.GetComponent<Target>();
             if(target != null)

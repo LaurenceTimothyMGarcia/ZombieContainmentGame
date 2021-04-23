@@ -19,10 +19,10 @@ public class PowerUp_Collect : MonoBehaviour
     public bool isDexterity;
     public bool isPrecision;
     public bool isArmor;
+    public bool isJackpot;
+
 
     public bool isNegative;
-
-
     
 
     // Update is called once per frame
@@ -61,11 +61,12 @@ public class PowerUp_Collect : MonoBehaviour
             {
                 health.maxHealth -= 50;
                 health.currentHealth -= 50;
+
             }
 
             if (isCaliber == true)
             {
-
+                weapon.range -= 8;
             }
 
             if (isPiercing == true) //float value
@@ -101,9 +102,9 @@ public class PowerUp_Collect : MonoBehaviour
 
             if (isPrecision == true) //float value
             {
-                weapon.range -= 8;
-
+                weapon.spread += 0.002f;
             }
+
 
             if (isArmor == true)
             {
@@ -117,11 +118,12 @@ public class PowerUp_Collect : MonoBehaviour
             health.maxHealth += 25;
             health.currentHealth += 25;
 
+
         }
 
         if (isCaliber == true)
         {
-
+            weapon.range += 4;
         }
 
         if (isPiercing == true)
@@ -157,7 +159,21 @@ public class PowerUp_Collect : MonoBehaviour
 
         if (isPrecision == true)
         {
+            weapon.spread -= 0.001f;
+        }
+
+        if (isJackpot == true)
+        {
+            health.maxHealth += 25;
+            health.currentHealth += 25;
+            weapon.damage += 2;
+            weapon.maxAmmo += 2;
+            weapon.currentAmmo += 2;
+            weapon.fireRate += 2;
+            movement.speed += 1;
+            weapon.reloadTime -= 0.5f;
             weapon.range += 4;
+            weapon.spread -= 0.001f;
 
         }
 

@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 
 public class pistola : MonoBehaviour
 {
@@ -14,6 +15,8 @@ public class pistola : MonoBehaviour
 
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
+    public Text ammoDisplay;
+    public Text totalAmmo;
 
     private float nextTimeToFire;
 
@@ -25,6 +28,8 @@ public class pistola : MonoBehaviour
 
     void Update()
     {
+        ammoDisplay.text = ammoCurrent.ToString();
+        totalAmmo.text = ammoMax.ToString();
         if(Input.GetButtonDown("Fire1") && ammoCurrent != 0)
         {
             anim.SetBool("Fire", true);

@@ -14,9 +14,5 @@ public class GlobalHealth : MonoBehaviour
     {
         InternalHealth = PlayerHealth;
         HealthDisplay.GetComponent<Text>().text = "Health: " + PlayerHealth;
-        if (PlayerHealth == 0)
-        {
-            SceneManager.LoadScene(0);
-        }
     }
 }
