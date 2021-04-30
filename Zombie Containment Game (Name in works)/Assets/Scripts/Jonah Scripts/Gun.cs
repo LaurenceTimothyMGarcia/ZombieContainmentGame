@@ -5,8 +5,9 @@ using UnityEngine.UI;
 
 public class Gun : MonoBehaviour
 {
-
+    public Animator anim;
     public Camera fpsCam;
+    public ParticleSystem muzzleFlash;
 
     //Ammo Display UI
     public Text ammoDisplay;
@@ -39,6 +40,7 @@ public class Gun : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        anim = GetComponent<Animator>();
         originalRotation = transform.localEulerAngles;
         currentAmmo = maxAmmo;
     }
@@ -46,7 +48,6 @@ public class Gun : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (isReloading)
             return;
 
@@ -56,17 +57,23 @@ public class Gun : MonoBehaviour
             return;
         }
         
+        damage += TotalPowerUps.PiercingTotal;
         //Fire weapon
         if(Input.GetButtonDown("Fire1") && Time.time >= nextTimeToFire) //Remove && statement if gun is semi-automatic
         {
             nextTimeToFire = Time.time + 1f / fireRate;
+            anim.SetBool("Fire", true);
             AddRecoil();
             Shoot();
             StopRecoil();
         }
+        else
+        {
+            anim.SetBool("Fire", false);
+        }
 
         //R input required     
-        if(Input.GetButtonDown("Fire2"))
+        if(Input.GetKey("r"))
         {
             StartCoroutine(Reload());
             return;
@@ -97,22 +104,21 @@ public class Gun : MonoBehaviour
     {
         RaycastHit hit;
 
+        muzzleFlash.Play();
         //Spread
         float x = Random.Range(-spread, spread);
         float y = Random.Range(-spread, spread);
 
         //Calculate Direction with Spread
         Vector3 direction = fpsCam.transform.forward + new Vector3(x, y, 0);
-
-
         
         //Raycast
         if (Physics.Raycast(fpsCam.transform.position, direction, out hit, range))
         {
             Debug.Log(hit.transform.name);
             
-
-            Target target = hit.transform.GetComponent<Target>();
+            MonsterFollow target = hit.transform.GetComponent<MonsterFollow>();
+            //Target target = hit.transform.GetComponent<Target>();
             if(target != null)
             {
                 target.TakeDamage(damage);
