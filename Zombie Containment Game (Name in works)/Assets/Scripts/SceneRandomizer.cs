@@ -14,25 +14,15 @@ public class SceneRandomizer : MonoBehaviour
     string result;
 
     public ListOfRooms roomList;
-
-    /*void Start()
-    {
-        for(int i = 0; i < 6; i++)
-        {
-            listOfScenes.Add(i);
-        }        
-    }*/
     
     void OnTriggerEnter(Collider other)
     {
         listOfScenes = ListOfRooms.GetArray();
-        //Debug.Log("Starting Size of ArrayList " + listOfScenes.Count);
         if(listOfScenes.Count == 0)
         {
             SceneManager.LoadScene(7);
             return;
         }
-        //Debug.Log("moveing to next Room");
 
         listSize = listOfScenes.Count;
         arrayNumber = Random.Range(0, listSize);
@@ -50,7 +40,6 @@ public class SceneRandomizer : MonoBehaviour
 
         for(int i = 0; i < listOfScenes.Count; i++)
         {
-            //Debug.Log("Scene Track: " + listOfScenes[i]);
             result += listOfScenes[i].ToString() + ", ";
         }
 

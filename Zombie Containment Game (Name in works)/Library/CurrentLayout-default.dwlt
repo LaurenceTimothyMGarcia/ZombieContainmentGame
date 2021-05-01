@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
@@ -119,10 +119,10 @@ MonoBehaviour:
     y: 30
     width: 1920
     height: 987
-  m_MinSize: {x: 679, y: 492}
-  m_MaxSize: {x: 14002, y: 14042}
+  m_MinSize: {x: 677, y: 492}
+  m_MaxSize: {x: 14001, y: 14042}
   vertical: 0
-  controlID: 14979
+  controlID: 21689
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -144,10 +144,10 @@ MonoBehaviour:
     y: 0
     width: 1529
     height: 987
-  m_MinSize: {x: 403, y: 492}
+  m_MinSize: {x: 402, y: 492}
   m_MaxSize: {x: 10001, y: 14042}
   vertical: 1
-  controlID: 14860
+  controlID: 21663
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -169,10 +169,10 @@ MonoBehaviour:
     y: 0
     width: 1529
     height: 655
-  m_MinSize: {x: 403, y: 221}
-  m_MaxSize: {x: 8003, y: 4021}
+  m_MinSize: {x: 402, y: 221}
+  m_MaxSize: {x: 8002, y: 4021}
   vertical: 0
-  controlID: 14861
+  controlID: 21664
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -402,9 +402,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 78bfffff
-      m_LastClickedID: -16520
-      m_ExpandedIDs: 5ebfffffa8bfffffb2bfffffb6bfffff3ac0ffffb2caffffe4caffffeecaffff00cbffff5cccffff8cccffff96ccffff9accffff2acdffffdad0ffff54d3ffff5ed3ffff62d3ffff32d4ffff3ad4ffff44d4ffffdcd4ffffbee5ffffcce5ffffd2e5ffffdce5ffff02e7ffff0ce7ffff1ee7ffff02eaffff56efffff60efffff64efffff10f0ffff18f0ffff22f0ffffa4f4ffff44fbffff4cfbffff56fbffff7645000050590000165f000094900000b8900000
+      m_SelectedIDs: c4ed0000
+      m_LastClickedID: 60868
+      m_ExpandedIDs: 8c15ffffc218ffffcc18ffffd018ffff6019ffff161dffffa623ffffa843ffff8048ffffec49ffff204affff2a4affff2e4afffffe4cffff0a4dffffaa4fffff205affff8c5bffffc05bffffca5bffffce5bffffbc61ffffc861ffff4c62ffff5268ffffbe69fffff269fffffc69ffff006affff3c6cffff486cffffe46dffffba74ffff2676ffff5a76ffff6476ffff6876ffff347affff407affff4a7afffff47effff007fffff127fffffb280ffffbc80ffffc080ffff5281ffff868affffba90ffff0295ffff7ae3ffff88e3ffffb8e3ffffc2e3ffffc6e3ffffd2e3ffff70e7ffff00e8ffffbafaffffc4faffffc8faffff56fbffff80450000525d0000d2d10000ecd2000054eb000064eb00007aec000094ed0000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -460,14 +460,14 @@ MonoBehaviour:
   m_OverrideSceneCullingMask: 6917529027641081856
   m_SceneIsLit: 1
   m_SceneLighting: 1
-  m_2DMode: 0
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: -4.2459617, y: 11.993597, z: -1.463417}
+    m_Target: {x: 608.26013, y: 258.88025, z: -25.554117}
     speed: 2
-    m_Value: {x: -4.245961, y: 11.993597, z: -1.4634167}
+    m_Value: {x: 608.26013, y: 258.88025, z: -25.554117}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -496,7 +496,7 @@ MonoBehaviour:
       m_Size: {x: 0, y: 0}
     yGrid:
       m_Fade:
-        m_Target: 1
+        m_Target: 0
         speed: 2
         m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
@@ -504,9 +504,9 @@ MonoBehaviour:
       m_Size: {x: 1, y: 1}
     zGrid:
       m_Fade:
-        m_Target: 0
+        m_Target: 1
         speed: 2
-        m_Value: 0
+        m_Value: 1
       m_Color: {r: 0.5, g: 0.5, b: 0.5, a: 0.4}
       m_Pivot: {x: 0, y: 0, z: 0}
       m_Size: {x: 1, y: 1}
@@ -514,17 +514,17 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.08452037, y: -0.26914826, z: 0.023719033, w: -0.9590892}
+    m_Target: {x: 0, y: 0, z: 0, w: 1}
     speed: 2
-    m_Value: {x: -0.08452037, y: -0.26914826, z: 0.023719033, w: -0.95908916}
+    m_Value: {x: -0.000000007144532, y: 0.0000000610572, z: -0.0000000121742385, w: -1}
   m_Size:
-    m_Target: 4.5837283
+    m_Target: 313.4157
     speed: 2
-    m_Value: 4.583729
+    m_Value: 313.4157
   m_Ortho:
-    m_Target: 0
+    m_Target: 1
     speed: 2
-    m_Value: 0
+    m_Value: 1
   m_CameraSettings:
     m_Speed: 1
     m_SpeedNormalized: 0.5
@@ -538,7 +538,7 @@ MonoBehaviour:
     m_FarClip: 10000
     m_DynamicClip: 1
     m_OcclusionCulling: 0
-  m_LastSceneViewRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LastSceneViewRotation: {x: -0.09897072, y: 0.84580415, z: -0.1686455, w: -0.49636567}
   m_LastSceneViewOrtho: 0
   m_ReplacementShader: {fileID: 0}
   m_ReplacementString: 
@@ -674,13 +674,13 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Models/PowerUps
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Models/PowerUps
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Program Files\Unity Projects\ZombieContainmentGame\Zombie
     Containment Game (Name in works)
@@ -688,9 +688,9 @@ MonoBehaviour:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 33}
-    m_SelectedIDs: 7c4a0000
-    m_LastClickedID: 19068
-    m_ExpandedIDs: 00000000684a00006a4a000000ca9a3b
+    m_SelectedIDs: c84a0000
+    m_LastClickedID: 19144
+    m_ExpandedIDs: 00000000904a0000924a0000c84a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -718,7 +718,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000684a00006a4a000000ca9a3b
+    m_ExpandedIDs: 00000000904a0000924a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -745,7 +745,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000263a00002e0e0000e0450000ba46000000000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -828,7 +828,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 37056
+  m_LastSelectedObjectID: -40504
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
