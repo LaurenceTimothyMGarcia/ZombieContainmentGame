@@ -15,11 +15,11 @@ D:/Program Files/Unity Projects/ZombieContainmentGame/Zombie Containment Game (N
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-58851
+64964
 Successfully changed project path to: D:/Program Files/Unity Projects/ZombieContainmentGame/Zombie Containment Game (Name in works)
 D:/Program Files/Unity Projects/ZombieContainmentGame/Zombie Containment Game (Name in works)
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 37.16 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 53.43 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.2f1 (068178b99f32)
 [Subsystems] Discovering subsystems at path D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
@@ -35,44 +35,44 @@ Initialize mono
 Mono path[0] = 'D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56500
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56528
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.001590 seconds.
+Registered in 0.001491 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 38.79 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 38.57 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  1.233 seconds
+- Completed reload, in  1.292 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.001196 seconds.
+Registered in 0.000831 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 37.70 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 39.90 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.759 seconds
+- Completed reload, in  0.799 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
-Launched and connected shader compiler UnityShaderCompiler.exe after 0.04 seconds
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.05 seconds
 Refreshing native plugins compatible for Editor in 0.46 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Unloading 2463 Unused Serialized files (Serialized files now loaded: 0)
@@ -80,269 +80,147 @@ System memory in use before: 112.2 MB.
 System memory in use after: 112.4 MB.
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2921.
-Total: 1.955600 ms (FindLiveObjects: 0.277500 ms CreateObjectMapping: 0.062400 ms MarkObjects: 1.547100 ms  DeleteObjects: 0.067700 ms)
+Total: 2.307000 ms (FindLiveObjects: 0.294200 ms CreateObjectMapping: 0.069400 ms MarkObjects: 1.867400 ms  DeleteObjects: 0.074900 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Models/Guns/Gun Textures/SemiAutoShotgunRoughness.png
-  artifactKey: Guid(d90e8279a84ecf0409e5d30b994bdcab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/SemiAutoShotgunRoughness.png using Guid(d90e8279a84ecf0409e5d30b994bdcab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '53e80408a3a8137f0d2576b1abd40fc3') in 0.065276 seconds
-  Import took 0.069114 seconds .
+  path: Assets/Models/Guns/PumpShotgun.fbx
+  artifactKey: Guid(a76e35ae5f5a37f4488f1124bc0577ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Guns/PumpShotgun.fbx using Guid(a76e35ae5f5a37f4488f1124bc0577ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '151b758e85f0285d9412a5a8e23ca02e') in 0.513899 seconds
+  Import took 0.557085 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000333 seconds.
-  path: Assets/Models/Guns/Gun Textures/SemiAutoShotgunTexture.png
-  artifactKey: Guid(ca0a847945fb23c49b6643e243e3b934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/SemiAutoShotgunTexture.png using Guid(ca0a847945fb23c49b6643e243e3b934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2353ab366c78612c7a8696e2bc61f07f') in 0.009763 seconds
-  Import took 0.013176 seconds .
+  Time since last request: 108.219731 seconds.
+  path: Assets/Models/Guns/PumpShotgun.fbx
+  artifactKey: Guid(a76e35ae5f5a37f4488f1124bc0577ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Guns/PumpShotgun.fbx using Guid(a76e35ae5f5a37f4488f1124bc0577ba) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1cc936b2578cb34bb7ef45d60d3220fb') in 0.016729 seconds
+  Import took 0.052770 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000318 seconds.
-  path: Assets/Models/Guns/Gun Textures/SemiAutoShotgunNormal.png
-  artifactKey: Guid(63d9aaaed14046143a85c0d5eda70cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/SemiAutoShotgunNormal.png using Guid(63d9aaaed14046143a85c0d5eda70cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd4c031c54843ced8d0cc317f47f9782e') in 0.007329 seconds
-  Import took 0.010309 seconds .
+  Time since last request: 67.143838 seconds.
+  path: Assets/Scenes/GlowDungeon/GlowDunRoom1.unity
+  artifactKey: Guid(63fb428ce5ff7324889aa7ef3f8527aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GlowDungeon/GlowDunRoom1.unity using Guid(63fb428ce5ff7324889aa7ef3f8527aa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '287491cc7a16c82bcee37d999738ffd7') in 0.002526 seconds
+  Import took 0.027913 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 68.707383 seconds.
-  path: Assets/Models/Guns/Gun Textures/SemiAutoShotgun.mat
-  artifactKey: Guid(0363352cab18fec4496eb38a3dda8dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/SemiAutoShotgun.mat using Guid(0363352cab18fec4496eb38a3dda8dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'faaab683444383f16cf18fc5045d0ac1') in 0.047247 seconds
-  Import took 0.051001 seconds .
+  Time since last request: 55.230213 seconds.
+  path: Assets/Prefabs/PlayerCharacter.prefab
+  artifactKey: Guid(c49cc0cd6519c4348a5862309f8c8129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PlayerCharacter.prefab using Guid(c49cc0cd6519c4348a5862309f8c8129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2788b2afc7bf6f6cd26a0d2a58f334cc') in 0.168263 seconds
+  Import took 0.183198 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 15.865975 seconds.
-  path: Assets/Models/Guns/Gun Textures/SemiAutoShotgunNormal.png
-  artifactKey: Guid(63d9aaaed14046143a85c0d5eda70cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/SemiAutoShotgunNormal.png using Guid(63d9aaaed14046143a85c0d5eda70cc5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd44d6ea8ee45f97e7b11af6c806eedcc') in 0.031969 seconds
-  Import took 0.036996 seconds .
+  Time since last request: 8.352977 seconds.
+  path: Assets/Prefabs/PlayerCharacter.prefab
+  artifactKey: Guid(c49cc0cd6519c4348a5862309f8c8129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PlayerCharacter.prefab using Guid(c49cc0cd6519c4348a5862309f8c8129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c704295f58d9f388a0b3434f6bad1695') in 0.060305 seconds
+  Import took 0.078417 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.063608 seconds.
-  path: Assets/Models/Guns/Gun Textures/SemiAutoShotgunRoughness.png
-  artifactKey: Guid(d90e8279a84ecf0409e5d30b994bdcab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/SemiAutoShotgunRoughness.png using Guid(d90e8279a84ecf0409e5d30b994bdcab) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'aa63eb7041e61217f85e2e8b0a7a75a5') in 0.021424 seconds
-  Import took 0.026280 seconds .
+  Time since last request: 2.547759 seconds.
+  path: Assets/Prefabs/PlayerCharacter.prefab
+  artifactKey: Guid(c49cc0cd6519c4348a5862309f8c8129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Prefabs/PlayerCharacter.prefab using Guid(c49cc0cd6519c4348a5862309f8c8129) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fb35adde23eaf28ab15a86c88846e988') in 0.057560 seconds
+  Import took 0.086728 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001593 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.54 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.753 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2433 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 113.8 MB.
+System memory in use after: 114.0 MB.
+
+Unloading 8 unused Assets to reduce memory usage. Loaded Objects now: 2967.
+Total: 2.079500 ms (FindLiveObjects: 0.253700 ms CreateObjectMapping: 0.065200 ms MarkObjects: 1.711700 ms  DeleteObjects: 0.047700 ms)
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.001095 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.716 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.48 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2433 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 114.8 MB.
+System memory in use after: 115.0 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2969.
+Total: 2.683200 ms (FindLiveObjects: 0.353800 ms CreateObjectMapping: 0.073900 ms MarkObjects: 2.236300 ms  DeleteObjects: 0.018100 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.902605 seconds.
-  path: Assets/Models/Guns/Gun Textures/SemiAutoShotgunTexture.png
-  artifactKey: Guid(ca0a847945fb23c49b6643e243e3b934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/SemiAutoShotgunTexture.png using Guid(ca0a847945fb23c49b6643e243e3b934) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '34587694d66a5a82bcab9572621e3b4c') in 0.020288 seconds
-  Import took 0.025097 seconds .
+  Time since last request: 38.406808 seconds.
+  path: Assets/Scenes/Main Menu.unity
+  artifactKey: Guid(15cd8d7b38519a8428495955ae1a0388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/Main Menu.unity using Guid(15cd8d7b38519a8428495955ae1a0388) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c027a866ff7cb4bc846451b294ea4371') in 0.013768 seconds
+  Import took 0.039890 seconds .
+
+========================================================================
+Received Prepare
+Registering precompiled user dll's ...
+Registered in 0.000983 seconds.
+Begin MonoManager ReloadAssembly
+Native extension for LinuxStandalone target not found
+Native extension for WindowsStandalone target not found
+Native extension for OSXStandalone target not found
+Native extension for WebGL target not found
+Refreshing native plugins compatible for Editor in 0.47 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Invoked RoslynAnalysisRunner static constructor.
+RoslynAnalysisRunner will not be running.
+RoslynAnalysisRunner has terminated.
+Mono: successfully reloaded assembly
+- Completed reload, in  0.728 seconds
+Platform modules already initialized, skipping
+Refreshing native plugins compatible for Editor in 0.44 ms, found 0 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 2433 Unused Serialized files (Serialized files now loaded: 0)
+System memory in use before: 114.9 MB.
+System memory in use after: 115.1 MB.
+
+Unloading 5 unused Assets to reduce memory usage. Loaded Objects now: 2971.
+Total: 1.838700 ms (FindLiveObjects: 0.278500 ms CreateObjectMapping: 0.061700 ms MarkObjects: 1.485400 ms  DeleteObjects: 0.012400 ms)
 
 ========================================================================
 Received Import Request.
-  Time since last request: 24.837871 seconds.
-  path: Assets/Models/Guns/Gun Textures/SemiAutoShotgun.mat
-  artifactKey: Guid(0363352cab18fec4496eb38a3dda8dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/SemiAutoShotgun.mat using Guid(0363352cab18fec4496eb38a3dda8dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe54e3cbaefb099f0a1dbf30fc8b0a7d') in 0.049041 seconds
-  Import took 0.056379 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 1.459090 seconds.
-  path: Assets/Models/Guns/SemiAutoShotgun.fbx
-  artifactKey: Guid(9f23141c7fa46c64d8597b755e77faa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/SemiAutoShotgun.fbx using Guid(9f23141c7fa46c64d8597b755e77faa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ef61f40a092ab6a470d2ce15a5c95764') in 0.168534 seconds
-  Import took 0.172737 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 72.501580 seconds.
-  path: Assets/Models/Guns/SemiAutoShotgun.fbx
-  artifactKey: Guid(9f23141c7fa46c64d8597b755e77faa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/SemiAutoShotgun.fbx using Guid(9f23141c7fa46c64d8597b755e77faa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd81fcb0abad8d62f54c836ef9766fa5f') in 0.037462 seconds
-  Import took 0.041548 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 44.767865 seconds.
-  path: Assets/Models/Guns/SemiAutoShotgun.fbx
-  artifactKey: Guid(9f23141c7fa46c64d8597b755e77faa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/SemiAutoShotgun.fbx using Guid(9f23141c7fa46c64d8597b755e77faa4) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '356d7b41cdcdc995c54de35a3ab11c4e') in 0.013443 seconds
-  Import took 0.017283 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 51.648793 seconds.
-  path: Assets/Models/Guns/Gun Textures/SemiAutoShotgun.mat
-  artifactKey: Guid(0363352cab18fec4496eb38a3dda8dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/SemiAutoShotgun.mat using Guid(0363352cab18fec4496eb38a3dda8dc6) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'd812a9f434a735f35cf65714a3a445f2') in 0.056183 seconds
-  Import took 0.063689 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.743791 seconds.
-  path: Assets/Models/Guns/Gun Textures/Shotgun.mat
-  artifactKey: Guid(076b8ba5b092bbc4a8d3efab6dc99f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/Shotgun.mat using Guid(076b8ba5b092bbc4a8d3efab6dc99f74) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '79e73eaff1b4c77da4a8a5244730cdf5') in 0.012225 seconds
-  Import took 0.016356 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2434.088757 seconds.
-  path: Assets/Models/Guns/Gun Textures/CarbineRifleNormal.png
-  artifactKey: Guid(96b491bc5c51deb49938ddd6b642ee71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/CarbineRifleNormal.png using Guid(96b491bc5c51deb49938ddd6b642ee71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f7afb8f4c43d837ce00009bcff6d3591') in 0.008873 seconds
-  Import took 0.013135 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000275 seconds.
-  path: Assets/Models/Guns/Gun Textures/CarbineRifleRoughness.png
-  artifactKey: Guid(3cecb2f634e4f624a8867aa2b8f14a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/CarbineRifleRoughness.png using Guid(3cecb2f634e4f624a8867aa2b8f14a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9682b174c4aa47db0e61fd90e61dd8d1') in 0.008618 seconds
-  Import took 0.011908 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000339 seconds.
-  path: Assets/Models/Guns/Gun Textures/CarbineRifleTexture.png
-  artifactKey: Guid(ebb7162fd8502714f89a928bea954cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/CarbineRifleTexture.png using Guid(ebb7162fd8502714f89a928bea954cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '85aea7a67a1976898b6f9e4ce68ef4e7') in 0.007650 seconds
-  Import took 0.011591 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.779007 seconds.
-  path: Assets/Models/Guns/CarbineRifle.fbx
-  artifactKey: Guid(4ccb8a7f371315f4ab29b2e9a323fedf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/CarbineRifle.fbx using Guid(4ccb8a7f371315f4ab29b2e9a323fedf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2e9f59a8622be64c69402da5af751163') in 0.024332 seconds
-  Import took 0.027978 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 45.891391 seconds.
-  path: Assets/Models/Guns/CarbineRifle.fbx
-  artifactKey: Guid(4ccb8a7f371315f4ab29b2e9a323fedf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/CarbineRifle.fbx using Guid(4ccb8a7f371315f4ab29b2e9a323fedf) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'fe9748b6d2c52016e37f68a148c3ab3b') in 0.029123 seconds
-  Import took 0.033127 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 37.893500 seconds.
-  path: Assets/Models/Guns/Gun Textures/CarbineRifle.mat
-  artifactKey: Guid(afaac52597c0b2747a533a2e90e3f0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/CarbineRifle.mat using Guid(afaac52597c0b2747a533a2e90e3f0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '89311c794b50fa2cfbec094d53475dfb') in 0.006553 seconds
-  Import took 0.010363 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.350735 seconds.
-  path: Assets/Models/Guns/Gun Textures/CarbineRifleNormal.png
-  artifactKey: Guid(96b491bc5c51deb49938ddd6b642ee71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/CarbineRifleNormal.png using Guid(96b491bc5c51deb49938ddd6b642ee71) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2dfe73cda255b09e9f01fc87856bfa8e') in 0.017142 seconds
-  Import took 0.022285 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.545613 seconds.
-  path: Assets/Models/Guns/Gun Textures/CarbineRifleRoughness.png
-  artifactKey: Guid(3cecb2f634e4f624a8867aa2b8f14a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/CarbineRifleRoughness.png using Guid(3cecb2f634e4f624a8867aa2b8f14a21) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ae86fd25f85239fc8ce344d1e59b9d27') in 0.019089 seconds
-  Import took 0.023965 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.552237 seconds.
-  path: Assets/Models/Guns/Gun Textures/CarbineRifleTexture.png
-  artifactKey: Guid(ebb7162fd8502714f89a928bea954cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/CarbineRifleTexture.png using Guid(ebb7162fd8502714f89a928bea954cdd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '752256ea4a3fabcbadfdfd99f35f483f') in 0.026964 seconds
-  Import took 0.031802 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 15.764104 seconds.
-  path: Assets/Models/Guns/Gun Textures/CarbineRifle.mat
-  artifactKey: Guid(afaac52597c0b2747a533a2e90e3f0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/CarbineRifle.mat using Guid(afaac52597c0b2747a533a2e90e3f0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '43ea0cd0d4f505b80f76ee68091427ba') in 0.044793 seconds
-  Import took 0.052179 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 14.184859 seconds.
-  path: Assets/Models/Guns/Gun Textures/CarbineRifle.mat
-  artifactKey: Guid(afaac52597c0b2747a533a2e90e3f0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/CarbineRifle.mat using Guid(afaac52597c0b2747a533a2e90e3f0bc) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'be51ef1672ca09f7b828cc12f589fadf') in 0.051770 seconds
-  Import took 0.059096 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 2716.563224 seconds.
-  path: Assets/Models/Guns/Gun Textures/SMGNormal.png
-  artifactKey: Guid(4331de24a6320464f886bafac2a97838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/SMGNormal.png using Guid(4331de24a6320464f886bafac2a97838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '69a57bdc5d13959186e90bbb7dacc3fa') in 0.010633 seconds
-  Import took 0.014656 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000292 seconds.
-  path: Assets/Models/Guns/Gun Textures/SMGTexture.png
-  artifactKey: Guid(a05dda5218e77374bbd7616e8b4143c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/SMGTexture.png using Guid(a05dda5218e77374bbd7616e8b4143c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '55799ee5a34db4bd58b53d2dc405d3f1') in 0.012440 seconds
-  Import took 0.016138 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 0.000323 seconds.
-  path: Assets/Models/Guns/Gun Textures/SMGRoughness.png
-  artifactKey: Guid(c89b69b20ebce6641923ef0e8d6b1c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/SMGRoughness.png using Guid(c89b69b20ebce6641923ef0e8d6b1c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '82b2a5ed58183d962a941ae6a4445104') in 0.007995 seconds
-  Import took 0.011781 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 36.853641 seconds.
-  path: Assets/Models/Guns/SMG.fbx
-  artifactKey: Guid(be4ed938b2a092e4389703e469c3a5de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/SMG.fbx using Guid(be4ed938b2a092e4389703e469c3a5de) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'bc42c0e9a0c4c93e52d9bf04cc914612') in 0.016406 seconds
-  Import took 0.020193 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 19.407124 seconds.
-  path: Assets/Models/Guns/Gun Textures/SMG.mat
-  artifactKey: Guid(536ec469bd0ffd945b2b16dc58927971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/SMG.mat using Guid(536ec469bd0ffd945b2b16dc58927971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c7232ec9438d7d6ef80001b7db5abeb0') in 0.011207 seconds
-  Import took 0.015084 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 7.860718 seconds.
-  path: Assets/Models/Guns/Gun Textures/SMGNormal.png
-  artifactKey: Guid(4331de24a6320464f886bafac2a97838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/SMGNormal.png using Guid(4331de24a6320464f886bafac2a97838) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'c644695d7981b11f1a48baa7d6f1bd85') in 0.018647 seconds
-  Import took 0.023570 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.179979 seconds.
-  path: Assets/Models/Guns/Gun Textures/SMGRoughness.png
-  artifactKey: Guid(c89b69b20ebce6641923ef0e8d6b1c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/SMGRoughness.png using Guid(c89b69b20ebce6641923ef0e8d6b1c0f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '00e29d60adeb1751272ad65f997ac434') in 0.019411 seconds
-  Import took 0.024261 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 5.104784 seconds.
-  path: Assets/Models/Guns/Gun Textures/SMGTexture.png
-  artifactKey: Guid(a05dda5218e77374bbd7616e8b4143c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/SMGTexture.png using Guid(a05dda5218e77374bbd7616e8b4143c1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'ba8feb425daede4559acad1c193f0fbf') in 0.018892 seconds
-  Import took 0.024242 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 16.593748 seconds.
-  path: Assets/Models/Guns/Gun Textures/SMG.mat
-  artifactKey: Guid(536ec469bd0ffd945b2b16dc58927971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Guns/Gun Textures/SMG.mat using Guid(536ec469bd0ffd945b2b16dc58927971) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0882335c9560ce2774b3042ee735cf9a') in 0.045006 seconds
-  Import took 0.052704 seconds .
+  Time since last request: 22.672967 seconds.
+  path: Assets/Scenes/GlowDungeon/GlowDunRoom2.unity
+  artifactKey: Guid(e05ed1646a5e8f1438cf08ff7d43e4c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GlowDungeon/GlowDunRoom2.unity using Guid(e05ed1646a5e8f1438cf08ff7d43e4c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '8a6bc59a611f4b98f9528a3a32aff18e') in 0.010463 seconds
+  Import took 0.014384 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
