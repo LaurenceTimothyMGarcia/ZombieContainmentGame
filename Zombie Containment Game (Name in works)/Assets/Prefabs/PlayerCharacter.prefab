@@ -5502,7 +5502,7 @@ MonoBehaviour:
   maxAmmo: 12
   currentAmmo: 12
   spread: 0.04
-  reloadTime: 2
+  reloadTime: 1
   upRecoil: {x: 0, y: 0, z: 0}
   canBeShot:
     serializedVersion: 2

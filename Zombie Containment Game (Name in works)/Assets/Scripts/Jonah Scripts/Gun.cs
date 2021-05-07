@@ -76,6 +76,7 @@ public class Gun : MonoBehaviour
         //R input required     
         if(Input.GetKey("r"))
         {
+            anim.SetBool("Reload", true);
             StartCoroutine(Reload());
             return;
         }
@@ -96,6 +97,7 @@ public class Gun : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Reload");
 
         yield return new WaitForSeconds(reloadTime);
+        anim.SetBool("Reload", false);
 
         currentAmmo = maxAmmo;
         isReloading = false;

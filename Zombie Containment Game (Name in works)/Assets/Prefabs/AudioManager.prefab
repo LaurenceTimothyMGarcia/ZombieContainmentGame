@@ -68,3 +68,9 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: Headbutt
+    clip: {fileID: 8300000, guid: a8e7ff159d756e24e929a80d91efe99a, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

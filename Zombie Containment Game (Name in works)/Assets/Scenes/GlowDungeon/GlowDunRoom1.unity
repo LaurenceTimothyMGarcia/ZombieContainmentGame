@@ -710,6 +710,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: PlayerCharacter
       objectReference: {fileID: 0}
+    - target: {fileID: 1762836433052273232, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.54
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762836433052273232, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.27999997
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762836433052273232, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762836433052273232, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0.7071068
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762836433052273232, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762836433052273232, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1762836433052273232, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -90
+      objectReference: {fileID: 0}
     - target: {fileID: 1762836433052273234, guid: c49cc0cd6519c4348a5862309f8c8129,
         type: 3}
       propertyPath: totalAmmo
