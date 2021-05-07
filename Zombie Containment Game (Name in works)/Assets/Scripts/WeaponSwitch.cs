@@ -17,7 +17,7 @@ public class WeaponSwitch : MonoBehaviour
     {
         int previousSelectedWeapon = selectedWeapon;
 
-        if (Input.GetKeyDown(KeyCode.E))// && (previousSelectedWeapon != selectedWeapon))
+        if (Input.GetKeyDown(KeyCode.E))
         {
             Pickup();
             if (previousSelectedWeapon != selectedWeapon)
@@ -26,11 +26,6 @@ public class WeaponSwitch : MonoBehaviour
             }
             Drop();
         }
-
-        /*if (previousSelectedWeapon != selectedWeapon)
-        {
-            SelectWeapon();
-        }*/
     }
 
     void SelectWeapon()
@@ -68,6 +63,7 @@ public class WeaponSwitch : MonoBehaviour
                 if (weaponCheck)
                 {
                     selectedWeapon = weaponCheck.GetSiblingIndex();
+                    FindObjectOfType<AudioManager>().Play("GunPickup");
                     Debug.Log("Weapon name picked up is " + weaponName + selectedWeapon);
                 }
                 else

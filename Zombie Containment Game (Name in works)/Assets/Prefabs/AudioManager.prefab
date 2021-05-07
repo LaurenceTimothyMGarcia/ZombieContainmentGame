@@ -74,3 +74,9 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: GunPickup
+    clip: {fileID: 8300000, guid: 81fba9f4087a39244a4a0bedf377bc03, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

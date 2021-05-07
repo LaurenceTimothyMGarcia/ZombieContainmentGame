@@ -9827,13 +9827,13 @@ MonoBehaviour:
   ammoDisplay: {fileID: 0}
   totalAmmo: {fileID: 0}
   isFiring: 0
-  damage: 0
-  range: 0
-  fireRate: 0
-  maxAmmo: 0
-  currentAmmo: 0
-  spread: 0
-  reloadTime: 0
+  damage: 5
+  range: 50
+  fireRate: 5
+  maxAmmo: 30
+  currentAmmo: 30
+  spread: 0.05
+  reloadTime: 0.75
   upRecoil: {x: 0, y: 0, z: 0}
   canBeShot:
     serializedVersion: 2
@@ -15415,7 +15415,7 @@ MonoBehaviour:
   ammoDisplay: {fileID: 0}
   totalAmmo: {fileID: 0}
   isFiring: 0
-  damage: 10
+  damage: 1
   range: 30
   fireRate: 1
   maxAmmo: 12
@@ -15639,13 +15639,13 @@ MonoBehaviour:
   ammoDisplay: {fileID: 0}
   totalAmmo: {fileID: 0}
   isFiring: 0
-  damage: 0
-  range: 0
-  fireRate: 0
-  maxAmmo: 0
-  currentAmmo: 0
-  spread: 0
-  reloadTime: 0
+  damage: 3
+  range: 50
+  fireRate: 10
+  maxAmmo: 45
+  currentAmmo: 45
+  spread: 0.01
+  reloadTime: 0.5
   upRecoil: {x: 0, y: 0, z: 0}
   canBeShot:
     serializedVersion: 2
