@@ -65,6 +65,7 @@ public class MonsterFollow : MonoBehaviour
 
     public void TakeDamage(float amount)
     {
+        FindObjectOfType<AudioManager>().Play("MonsterHit");
         health -= amount;
         TheEnemy.GetComponent<Animation>().Play("rig_ShotAt");
         StartCoroutine(Stagger());

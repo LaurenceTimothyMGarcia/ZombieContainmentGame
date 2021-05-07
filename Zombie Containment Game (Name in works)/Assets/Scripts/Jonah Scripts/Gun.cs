@@ -62,6 +62,7 @@ public class Gun : MonoBehaviour
         if(Input.GetButtonDown("Fire1") && Time.time >= nextTimeToFire) //Remove && statement if gun is semi-automatic
         {
             nextTimeToFire = Time.time + 1f / fireRate;
+            FindObjectOfType<AudioManager>().Play("GunShot");
             anim.SetBool("Fire", true);
             AddRecoil();
             Shoot();
@@ -92,6 +93,7 @@ public class Gun : MonoBehaviour
     {
         isReloading = true;
         Debug.Log("Reloading...");
+        FindObjectOfType<AudioManager>().Play("Reload");
 
         yield return new WaitForSeconds(reloadTime);
 
