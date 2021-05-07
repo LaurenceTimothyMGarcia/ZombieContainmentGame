@@ -771,6 +771,16 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 2139500020265803168}
+    - target: {fileID: 2584651087247927715, guid: 1e74dfcd12e6edc468dd8bb5e489428b,
+        type: 3}
+      propertyPath: m_FontData.m_MaxSize
+      value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584651087247927715, guid: 1e74dfcd12e6edc468dd8bb5e489428b,
+        type: 3}
+      propertyPath: m_FontData.m_FontSize
+      value: 45
+      objectReference: {fileID: 0}
     - target: {fileID: 2584651087345344024, guid: 1e74dfcd12e6edc468dd8bb5e489428b,
         type: 3}
       propertyPath: m_RootOrder
@@ -830,6 +840,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: UI
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584651087514297850, guid: 1e74dfcd12e6edc468dd8bb5e489428b,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 292.417
+      objectReference: {fileID: 0}
+    - target: {fileID: 2584651087514297850, guid: 1e74dfcd12e6edc468dd8bb5e489428b,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 55.84
       objectReference: {fileID: 0}
     - target: {fileID: 2584651087961683963, guid: 1e74dfcd12e6edc468dd8bb5e489428b,
         type: 3}
