@@ -4,7 +4,7 @@ public class WeaponSwitch : MonoBehaviour
 {
     public Camera fpsCam;
 
-    public int selectedWeapon = 0;
+    public static int selectedWeapon;
     public int range = 10;
     string weaponName;
 

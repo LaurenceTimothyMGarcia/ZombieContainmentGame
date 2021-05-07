@@ -92,9 +92,9 @@ public class MonsterFollow : MonoBehaviour
     IEnumerator EnemyDamage()
     {
         IsAttacking = 1;
+        FindObjectOfType<AudioManager>().Play("Headbutt");
         yield return new WaitForSeconds(0.5f);
         ScreenFlash.SetActive(true);
-        FindObjectOfType<AudioManager>().Play("Headbutt");
         GlobalHealth.PlayerHealth -= 1;
         yield return new WaitForSeconds(0.05f);
         ScreenFlash.SetActive(false);
