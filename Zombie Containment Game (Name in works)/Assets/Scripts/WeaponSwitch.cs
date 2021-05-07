@@ -6,6 +6,7 @@ public class WeaponSwitch : MonoBehaviour
 
     public int selectedWeapon = 0;
     public int range = 10;
+    string weaponName;
 
     void Start()
     {
@@ -16,10 +17,13 @@ public class WeaponSwitch : MonoBehaviour
     {
         int previousSelectedWeapon = selectedWeapon;
 
-        if (Input.GetKeyDown(KeyCode.E) && (previousSelectedWeapon != selectedWeapon))
+        if (Input.GetKeyDown(KeyCode.E))// && (previousSelectedWeapon != selectedWeapon))
         {
             Pickup();
-            SelectWeapon();
+            if (previousSelectedWeapon != selectedWeapon)
+            {
+                SelectWeapon();
+            }
             Drop();
         }
 
@@ -50,7 +54,7 @@ public class WeaponSwitch : MonoBehaviour
     {
         RaycastHit hit;
         Vector3 direction = fpsCam.transform.forward;
-        Transform weapon;
+        Transform weaponCheck;
 
         if (Physics.Raycast(fpsCam.transform.position, direction, out hit, range))
         {
@@ -58,10 +62,19 @@ public class WeaponSwitch : MonoBehaviour
 
             if(hit.transform.CompareTag("CanGrab"))
             {
-                if (GameObject.ReferenceEquals(hit.transform, weapon))
-                {
+                weaponName = hit.transform.name;
+                weaponCheck = transform.Find(weaponName);
 
+                if (weaponCheck)
+                {
+                    selectedWeapon = weaponCheck.GetSiblingIndex();
+                    Debug.Log("Weapon name picked up is " + weaponName + selectedWeapon);
                 }
+                else
+                {
+                    Debug.Log("Did not pick up weapon");
+                }
+
                 Destroy(hit.transform.gameObject);
             }
         }
