@@ -119,7 +119,7 @@ public class Gun : MonoBehaviour
         //Raycast
         if (Physics.Raycast(fpsCam.transform.position, direction, out hit, range))
         {
-            Debug.Log(hit.transform.name);
+            Debug.Log(hit.transform.name + " hit him");
             
             MonsterFollow target = hit.transform.GetComponent<MonsterFollow>();
             //Target target = hit.transform.GetComponent<Target>();
