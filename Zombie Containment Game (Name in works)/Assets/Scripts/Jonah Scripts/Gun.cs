@@ -59,7 +59,7 @@ public class Gun : MonoBehaviour
         
         damage += TotalPowerUps.PiercingTotal;
         //Fire weapon
-        if(Input.GetButtonDown("Fire1") && Time.time >= nextTimeToFire) //Remove && statement if gun is semi-automatic
+        if(Input.GetButton("Fire1") && Time.time >= nextTimeToFire) //Remove down to spray and praystatement if gun is semi-automatic
         {
             nextTimeToFire = Time.time + 1f / fireRate;
             FindObjectOfType<AudioManager>().Play("GunShot");
