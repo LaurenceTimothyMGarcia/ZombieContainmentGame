@@ -28,14 +28,11 @@ public class Gun : MonoBehaviour
 
     private float nextTimeToFire = 0f;
 
-
     //Recoil Statistics
     public Vector3 upRecoil;
     Vector3 originalRotation;
 
     public LayerMask canBeShot;
-
-
 
     // Start is called before the first frame update
     void Start()
@@ -128,7 +125,9 @@ public class Gun : MonoBehaviour
                 target.TakeDamage(damage);
             }
 
-            Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+            GameObject clone = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+
+            Destroy(clone, 1f);
         }
 
         currentAmmo--;

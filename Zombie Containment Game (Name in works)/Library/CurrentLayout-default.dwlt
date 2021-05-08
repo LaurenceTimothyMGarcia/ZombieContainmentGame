@@ -21,7 +21,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: Project
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_Maximized: 1
 --- !u!114 &2
@@ -46,7 +46,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 1037
-  m_MinSize: {x: 875, y: 542}
+  m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
   m_UseTopView: 1
   m_TopViewHeight: 30
@@ -122,7 +122,7 @@ MonoBehaviour:
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 9515
+  controlID: 6812
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 9558
+  controlID: 6813
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 9559
+  controlID: 6814
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -344,7 +344,7 @@ MonoBehaviour:
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
-  m_MaximizeOnPlay: 1
+  m_MaximizeOnPlay: 0
   m_UseMipMap: 0
   m_VSyncEnabled: 0
   m_Gizmos: 0
@@ -427,9 +427,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 68990000
+      m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 74f9ffff7af9ffff82f9ffff9af9ffff52fbffff7a4b0000
+      m_ExpandedIDs: 54fbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -490,9 +490,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 7.780634, y: 4.086252, z: -8.508123}
+    m_Target: {x: 2.7099638, y: 4.4081764, z: -1.7250948}
     speed: 2
-    m_Value: {x: 7.780634, y: 4.086252, z: -8.508123}
+    m_Value: {x: 2.7099638, y: 4.4081764, z: -1.7250948}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -539,13 +539,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.028939337, y: -0.58464766, z: -0.020875378, w: -0.8105047}
+    m_Target: {x: 0.04028921, y: -0.25579888, z: -0.010670803, w: -0.9658331}
     speed: 2
-    m_Value: {x: -0.028939337, y: 0.58464766, z: 0.02087538, w: 0.81050473}
+    m_Value: {x: 0.04028913, y: -0.2557984, z: -0.010670782, w: -0.9658313}
   m_Size:
-    m_Target: 7.8288217
+    m_Target: 7.476525
     speed: 2
-    m_Value: 7.8288217
+    m_Value: 7.476525
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -668,10 +668,10 @@ MonoBehaviour:
       e32: 0
       e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 10c7ff11e5f9a5141b10384da8bc9753,
+  m_AnimatorController: {fileID: 9100000, guid: 2300c5bdc8fde3d449cce04853503824,
     type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: -1152660940631969687, guid: 10c7ff11e5f9a5141b10384da8bc9753,
+  - m_Target: {fileID: 7069755630474440799, guid: 2300c5bdc8fde3d449cce04853503824,
       type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
@@ -724,23 +724,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Imported Objects
+    - Assets/Particles
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Imported Objects
+  - Assets/Particles
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Program Files\Unity Projects\ZombieContainmentGame\Zombie
     Containment Game (Name in works)
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 77}
-    m_SelectedIDs: 744a0000
-    m_LastClickedID: 19060
-    m_ExpandedIDs: 00000000684a00006a4a00006c4a0000744a0000824a0000e44a0000184b000000ca9a3b
+    scrollPos: {x: 0, y: 17}
+    m_SelectedIDs: b84a0000
+    m_LastClickedID: 19128
+    m_ExpandedIDs: 00000000804a0000824a0000844a0000864a00008a4a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -768,7 +768,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000684a00006a4a00006c4a0000824a0000e44a0000184b000000ca9a3b
+    m_ExpandedIDs: 00000000804a0000824a0000844a0000864a0000884a00008a4a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -878,7 +878,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: -3122
+  m_LastSelectedObjectID: 19562
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
