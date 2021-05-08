@@ -40,7 +40,7 @@ public class PowerUp_Collect : MonoBehaviour
         GlobalHealth health = player.GetComponent<GlobalHealth>();
         Gun weapon = player.GetComponentInChildren<Gun>();
         playerController movement = player.GetComponentInChildren<playerController>();
-
+        ShotgunR shotgun = player.GetComponentInChildren<ShotgunR>();
 
         if (isNegative == true)
         {
@@ -54,31 +54,32 @@ public class PowerUp_Collect : MonoBehaviour
             if (isCaliber == true)
             {
                 weapon.range -= 8;
+                shotgun.distance -= 1;
             }
 
             if (isPiercing == true) //float value
             {
                 weapon.damage -= 4;
-
+                shotgun.damage -= 1;
             }
 
             if (isBandolier == true) //int value
             {
                 weapon.maxAmmo -= 4;
                 weapon.currentAmmo -= 4;
-
+                shotgun.currentAmmo -= 1;
+                shotgun.maxAmmo -= 1;
             }
 
             if (isFireSpeed == true) //float value
             {
                 weapon.fireRate -= 4;
-
+                shotgun.fireRate -= 0.5f;
             }
 
             if (isStamina == true)
             {
                 movement.walkSpeed -= 2;
-
             }
 
             if (isDexterity == true) //float value
@@ -109,25 +110,27 @@ public class PowerUp_Collect : MonoBehaviour
         if (isCaliber == true)
         {
             weapon.range += 4;
+            shotgun.distance += 1;
         }
 
         if (isPiercing == true)
         {
             weapon.damage += 2;
-
+            shotgun.damage += 1;
         }
 
         if (isBandolier == true)
         {
             weapon.maxAmmo += 2;
             weapon.currentAmmo += 2;
-
+            shotgun.currentAmmo += 1;
+            shotgun.maxAmmo += 1;
         }
 
         if (isFireSpeed == true)
         {
             weapon.fireRate += 2;
-
+            shotgun.fireRate += 0.5f;
         }
 
         if (isStamina == true)
@@ -139,7 +142,7 @@ public class PowerUp_Collect : MonoBehaviour
         if (isDexterity == true)
         {
             weapon.reloadTime -= 0.5f;
-
+            shotgun.reloadTime -= 0.5f;
         }
 
         if (isPrecision == true)
@@ -159,7 +162,12 @@ public class PowerUp_Collect : MonoBehaviour
             weapon.reloadTime -= 0.5f;
             weapon.range += 4;
             weapon.spread -= 0.001f;
-
+            shotgun.reloadTime -= 0.5f;
+            shotgun.fireRate += 0.5f;
+            shotgun.currentAmmo += 1;
+            shotgun.maxAmmo += 1;
+            shotgun.damage += 1;
+            shotgun.distance += 1;
         }
 
         if (isHealthPickup == true)

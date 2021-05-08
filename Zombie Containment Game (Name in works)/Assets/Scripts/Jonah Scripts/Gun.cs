@@ -8,6 +8,8 @@ public class Gun : MonoBehaviour
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
     public GameObject impactEffect;
+    public GameObject bulletOrigin;
+    public LineRenderer bulletTrail;
 
     //Ammo Display UI
     public Text ammoDisplay;
@@ -54,7 +56,6 @@ public class Gun : MonoBehaviour
             return;
         }
         
-        damage += TotalPowerUps.PiercingTotal;
         //Fire weapon
         if(Input.GetButton("Fire1") && Time.time >= nextTimeToFire) //Remove down to spray and praystatement if gun is semi-automatic
         {
@@ -136,6 +137,8 @@ public class Gun : MonoBehaviour
             Destroy(clone, 1f);
         }
 
+        SpawnBulletTrail(hit);
+
         currentAmmo--;
     }
 
@@ -147,5 +150,17 @@ public class Gun : MonoBehaviour
     private void StopRecoil()
     {
         transform.localEulerAngles = originalRotation;
+    }
+
+    private void SpawnBulletTrail(RaycastHit hit)
+    {
+        GameObject bulletTrailEffect = Instantiate(bulletTrail.gameObject, bulletOrigin.transform.position, Quaternion.identity);
+
+        LineRenderer bulletShot = bulletTrailEffect.GetComponent<LineRenderer>();
+
+        bulletShot.SetPosition(0, bulletOrigin.transform.position);
+        bulletShot.SetPosition(1, hit.point);
+
+        Destroy(bulletTrailEffect, 1f);
     }
 }
