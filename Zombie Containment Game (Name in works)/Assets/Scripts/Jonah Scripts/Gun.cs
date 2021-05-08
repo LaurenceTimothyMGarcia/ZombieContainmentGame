@@ -7,6 +7,7 @@ public class Gun : MonoBehaviour
     public Animator anim;
     public Camera fpsCam;
     public ParticleSystem muzzleFlash;
+    public GameObject impactEffect;
 
     //Ammo Display UI
     public Text ammoDisplay;
@@ -126,6 +127,8 @@ public class Gun : MonoBehaviour
             {
                 target.TakeDamage(damage);
             }
+
+            Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
         }
 
         currentAmmo--;

@@ -935,6 +935,11 @@ PrefabInstance:
       propertyPath: ammoDisplay
       value: 
       objectReference: {fileID: 977271999}
+    - target: {fileID: 2600791325529960870, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: playOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2766902953106435703, guid: c49cc0cd6519c4348a5862309f8c8129,
         type: 3}
       propertyPath: m_IsActive
