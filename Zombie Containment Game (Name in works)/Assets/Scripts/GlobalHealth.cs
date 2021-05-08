@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 
 public class GlobalHealth : MonoBehaviour
 {
-    public static int PlayerHealth = 10;
+    public static int PlayerHealth = 25;
     public int InternalHealth;
     public GameObject HealthDisplay;
 

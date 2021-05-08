@@ -24,7 +24,7 @@ MonoBehaviour:
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 5858
+  controlID: 4992
 --- !u!114 &2
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -139,7 +139,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 5828
+  controlID: 4993
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -165,7 +165,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 5829
+  controlID: 4994
 --- !u!114 &5
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -223,7 +223,7 @@ MonoBehaviour:
       scrollPos: {x: 0, y: 0}
       m_SelectedIDs: 
       m_LastClickedID: 0
-      m_ExpandedIDs: 54fbffff
+      m_ExpandedIDs: 56d4ffff06d5ffffa2f4ffff42fbffffe84500000c460000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -311,9 +311,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 4.6107764, y: 4.746092, z: -2.8401175}
+    m_Target: {x: 5.121705, y: 1.6697731, z: -11.220991}
     speed: 2
-    m_Value: {x: 4.6107764, y: 4.746092, z: -2.8401175}
+    m_Value: {x: 5.121705, y: 1.6697731, z: -11.220991}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -360,13 +360,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: 0.04028921, y: -0.25579888, z: -0.010670803, w: -0.9658331}
+    m_Target: {x: -0.029566225, y: -0.85507184, z: 0.04905773, w: -0.5153408}
     speed: 2
-    m_Value: {x: 0.04028913, y: -0.2557984, z: -0.010670782, w: -0.9658313}
+    m_Value: {x: -0.029566154, y: -0.8550698, z: 0.049057614, w: -0.51533955}
   m_Size:
-    m_Target: 7.8288217
+    m_Target: 7.702688
     speed: 2
-    m_Value: 7.8288217
+    m_Value: 7.702688
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -599,23 +599,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/EffectExamples/Fire & Explosion Effects/Prefabs
+    - Assets
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/EffectExamples/Fire & Explosion Effects/Prefabs
+  - Assets
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Program Files\Unity Projects\ZombieContainmentGame\Zombie
     Containment Game (Name in works)
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: aa4a0000
-    m_LastClickedID: 19114
-    m_ExpandedIDs: 00000000804a0000824a0000844a0000864a0000884a00008a4a000000ca9a3b
+    scrollPos: {x: 0, y: 61}
+    m_SelectedIDs: 924a0000
+    m_LastClickedID: 19090
+    m_ExpandedIDs: 00000000924a0000944a0000964a0000984a00009a4a0000be4a0000124b000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -643,7 +643,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000804a0000824a0000844a0000864a0000884a00008a4a000000ca9a3b
+    m_ExpandedIDs: 00000000924a0000944a0000964a0000984a00009a4a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -668,8 +668,8 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_ListAreaState:
-    m_SelectedInstanceIDs: 08470000
-    m_LastClickedInstanceID: 18184
+    m_SelectedInstanceIDs: 4ed4ffff
+    m_LastClickedInstanceID: -11186
     m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000263a00002e0e0000e0450000ba460000f04a0000000000003a490000
     m_RenameOverlay:
@@ -753,7 +753,7 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
   m_LockTracker:
     m_IsLocked: 0
-  m_LastSelectedObjectID: 19562
+  m_LastSelectedObjectID: -11186
 --- !u!114 &15
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -813,8 +813,8 @@ MonoBehaviour:
     m_CachedPref: -209
     m_ControlHash: -371814159
     m_PrefName: Preview_InspectorPreview
-  m_LastInspectedObjectInstanceID: 18184
-  m_LastVerticalScrollValue: 329
+  m_LastInspectedObjectInstanceID: -11186
+  m_LastVerticalScrollValue: 218
   m_GlobalObjectId: 
   m_LockTracker:
     m_IsLocked: 0

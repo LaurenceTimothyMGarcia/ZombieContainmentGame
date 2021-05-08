@@ -7,18 +7,6 @@ public class Spawner : MonoBehaviour
 
     public List<GameObject> items = new List<GameObject>();
     public bool isRandomized;
-    
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 
     public void SpawnObject()
     {

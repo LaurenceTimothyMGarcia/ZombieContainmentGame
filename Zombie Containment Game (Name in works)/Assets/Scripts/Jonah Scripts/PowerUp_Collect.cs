@@ -6,8 +6,8 @@ using UnityEngine.UI;
 public class PowerUp_Collect : MonoBehaviour
 {
 
-    public Camera m_Camera;
-    private float timeLeft = 20f;
+    //public Camera m_Camera;
+    //private float timeLeft = 20f;
 
     //Select power-up type
     public bool isVitality;
@@ -20,47 +20,34 @@ public class PowerUp_Collect : MonoBehaviour
     public bool isPrecision;
     public bool isArmor;
     public bool isJackpot;
+    public bool isHealthPickup;
 
 
     public bool isNegative;
-    
-
-    // Update is called once per frame
-    void Update()
-    {
-        timeLeft -= Time.deltaTime;
-        
-        Vector3 targetVector = this.transform.position - m_Camera.transform.position;
-        transform.rotation = Quaternion.LookRotation(targetVector, m_Camera.transform.rotation * Vector3.up);
-
-        /*
-        if (timeLeft <= 0)
-        {
-            Destroy(gameObject);
-        }
-        */
-    }
 
     void OnTriggerEnter(Collider other)
     {
-        Pickup(other);
-        Destroy(gameObject);
+        if (other.CompareTag("Player"))
+        {
+            Pickup(other);
+            Destroy(gameObject);
+        }
     }
     
     //Power-up effects go here
     void Pickup(Collider player)
     {
-        PlayerHealth health = player.GetComponent<PlayerHealth>();
+        GlobalHealth health = player.GetComponent<GlobalHealth>();
         Gun weapon = player.GetComponentInChildren<Gun>();
-        PlayerMovement movement = player.GetComponentInChildren<PlayerMovement>();
+        playerController movement = player.GetComponentInChildren<playerController>();
 
 
         if (isNegative == true)
         {
             if (isVitality == true)
             {
-                health.maxHealth -= 50;
-                health.currentHealth -= 50;
+                GlobalHealth.PlayerHealth -= 50;
+                health.InternalHealth -= 50;
 
             }
 
@@ -90,7 +77,7 @@ public class PowerUp_Collect : MonoBehaviour
 
             if (isStamina == true)
             {
-                movement.speed -= 2;
+                movement.walkSpeed -= 2;
 
             }
 
@@ -115,10 +102,8 @@ public class PowerUp_Collect : MonoBehaviour
 
         if (isVitality == true)
         {
-            health.maxHealth += 25;
-            health.currentHealth += 25;
-
-
+            GlobalHealth.PlayerHealth += 25;
+            health.InternalHealth += 25;
         }
 
         if (isCaliber == true)
@@ -147,7 +132,7 @@ public class PowerUp_Collect : MonoBehaviour
 
         if (isStamina == true)
         {
-            movement.speed += 1;
+            movement.walkSpeed += 1;
 
         }
 
@@ -164,17 +149,29 @@ public class PowerUp_Collect : MonoBehaviour
 
         if (isJackpot == true)
         {
-            health.maxHealth += 25;
-            health.currentHealth += 25;
+            GlobalHealth.PlayerHealth += 25;
+            health.InternalHealth += 25;
             weapon.damage += 2;
             weapon.maxAmmo += 2;
             weapon.currentAmmo += 2;
             weapon.fireRate += 2;
-            movement.speed += 1;
+            movement.walkSpeed += 1;
             weapon.reloadTime -= 0.5f;
             weapon.range += 4;
             weapon.spread -= 0.001f;
 
+        }
+
+        if (isHealthPickup == true)
+        {
+            if (health.InternalHealth > GlobalHealth.PlayerHealth)
+            {
+                GlobalHealth.PlayerHealth += 10;
+                if (health.InternalHealth < GlobalHealth.PlayerHealth)
+                {
+                    GlobalHealth.PlayerHealth = health.InternalHealth;
+                }
+            }
         }
 
         if (isArmor == true)
