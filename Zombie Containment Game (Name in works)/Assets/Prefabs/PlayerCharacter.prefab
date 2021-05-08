@@ -1236,7 +1236,7 @@ MonoBehaviour:
   fireRate: 12
   maxAmmo: 20
   currentAmmo: 20
-  spread: 1
+  spread: 0.25
   reloadTime: 0.5
   upRecoil: {x: 0, y: 0, z: 0}
   canBeShot:

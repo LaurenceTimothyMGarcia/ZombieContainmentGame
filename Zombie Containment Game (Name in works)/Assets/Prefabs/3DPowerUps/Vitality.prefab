@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 7822140363213825925}
   - component: {fileID: 7822140363213825924}
   - component: {fileID: 7822140363213825922}
+  - component: {fileID: 8180853675486287493}
   m_Layer: 0
   m_Name: Vitality
   m_TagString: Untagged
@@ -136,3 +137,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.5416666, y: 0.16000001, z: 0.5416667}
   m_Center: {x: -0.00000013411045, y: -0.0000000372529, z: -0.0016220061}
+--- !u!114 &8180853675486287493
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7822140363213825927}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b122547f5bf45144cbda5d599b87a9fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 4538822407496303390, guid: 8b056edb4a7c5244aa9be8ff34b9039a,
+    type: 3}
+  item: {fileID: 7822140363213825922}
+  isVitality: 1
+  isCaliber: 0
+  isPiercing: 0
+  isBandolier: 0
+  isFireSpeed: 0
+  isStamina: 0
+  isDexterity: 0
+  isPrecision: 0
+  isArmor: 0
+  isJackpot: 0
+  isNegative: 0

@@ -14,6 +14,8 @@ public class MonsterFollow : MonoBehaviour
 
     public float health = 50f;
 
+    public Spawner itemSpawn;
+
     public int IsAttacking;
     public GameObject ScreenFlash;
     public AudioSource Hurt01;
@@ -80,6 +82,7 @@ public class MonsterFollow : MonoBehaviour
     {
         yield return new WaitForSeconds(1);
         Destroy(gameObject);
+        itemSpawn.SpawnObject();
     }
 
     IEnumerator Stagger()

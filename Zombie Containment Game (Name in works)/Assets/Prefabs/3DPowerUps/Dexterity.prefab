@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 1127407884739039743}
   - component: {fileID: 1127407884739039740}
   - component: {fileID: 1127407884739039741}
+  - component: {fileID: 6932100467589438502}
   m_Layer: 0
   m_Name: Dexterity
   m_TagString: Untagged
@@ -135,4 +136,30 @@ MonoBehaviour:
   isArmor: 0
   isJackpot: 0
   isHealthPickup: 0
+  isNegative: 0
+--- !u!114 &6932100467589438502
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1127407884739039730}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b122547f5bf45144cbda5d599b87a9fa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreText: {fileID: 3475934347545385728, guid: eef7d7797fcaf6e469f29dfa9c29674d,
+    type: 3}
+  item: {fileID: 1127407884739039743}
+  isVitality: 0
+  isCaliber: 0
+  isPiercing: 0
+  isBandolier: 0
+  isFireSpeed: 0
+  isStamina: 0
+  isDexterity: 1
+  isPrecision: 0
+  isArmor: 0
+  isJackpot: 0
   isNegative: 0

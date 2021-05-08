@@ -772,6 +772,7 @@ GameObject:
   - component: {fileID: 5365167106070496743}
   - component: {fileID: 3211945886893580798}
   - component: {fileID: 6318687878297273417}
+  - component: {fileID: 4983541056593548648}
   m_Layer: 0
   m_Name: FrogMonster
   m_TagString: Enemy
@@ -891,12 +892,42 @@ MonoBehaviour:
   EnemySpeed: 0
   AttackTrigger: 0
   health: 50
+  itemSpawn: {fileID: 4983541056593548648}
   IsAttacking: 0
   ScreenFlash: {fileID: 0}
   Hurt01: {fileID: 0}
   Hurt02: {fileID: 0}
   Hurt03: {fileID: 0}
   HurtSound: 0
+--- !u!114 &4983541056593548648
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6272523406623930008}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63adc6b290428964c88a6e6b4ccda5ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  items:
+  - {fileID: 5982066822893957437, guid: 1f79cf300ddf2064b89ce32408a32a19, type: 3}
+  - {fileID: 9150710990795286255, guid: a8648588526372a4d97c7166cee9c804, type: 3}
+  - {fileID: 1127407884739039730, guid: 116c1c7480e41824bb18d3487e4a3bff, type: 3}
+  - {fileID: 8166738720332331657, guid: a429ddeeffa2003499ff43a67ee6cffa, type: 3}
+  - {fileID: 2549510817921840322, guid: 935c197f6c0511e4780c31fe3e961235, type: 3}
+  - {fileID: 438709439499609787, guid: c5ca176b4b7278446a2b8333198399f1, type: 3}
+  - {fileID: 7768938771249038526, guid: 1d3fb2aab343cfe4ca9f937a7673df24, type: 3}
+  - {fileID: 4677917965036466539, guid: eb1ffc1b648a94d45ae7de682f625ae6, type: 3}
+  - {fileID: 7822140363213825927, guid: f82a9438adaa92f46ab826c4682749ad, type: 3}
+  - {fileID: 6449360516366945318, guid: a9e6f7e9bab0f0040bcb2305c42d12f8, type: 3}
+  - {fileID: 2706583445142128787, guid: 82b503021c4587f489864264c40e434a, type: 3}
+  - {fileID: 8066582686588393255, guid: 47f744f09aa03204690c3478f11b87b5, type: 3}
+  - {fileID: 8080683552493329848, guid: 065b39dd6022d2942be7559c922c9e0f, type: 3}
+  - {fileID: 5796700798704073317, guid: 074ff30643e1acb42b075af03eb1fed3, type: 3}
+  - {fileID: 6109852979455621438, guid: 2ab5cafcda1d6c04c949984a32fbb58f, type: 3}
+  isRandomized: 0
 --- !u!1 &6539821431222420720
 GameObject:
   m_ObjectHideFlags: 0

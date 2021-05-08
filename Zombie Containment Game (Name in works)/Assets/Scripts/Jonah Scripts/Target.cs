@@ -31,9 +31,12 @@ public class Target : MonoBehaviour
             int index = isRandomized ? Random.Range(0, items.Count) : 0;
             if (items.Count > 0)
             {
-
-                Instantiate(items[index], transform.position, transform.rotation);
-
+                GameObject objectName;
+                objectName = Instantiate(items[index], transform.position, transform.rotation);
+                if (objectName.name.Contains("(Clone)"))
+                {
+                    objectName.name = objectName.name.Replace("(Clone)", "");
+                }
             }
         }
     }

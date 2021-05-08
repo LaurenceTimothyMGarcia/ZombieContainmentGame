@@ -119,10 +119,16 @@ public class Gun : MonoBehaviour
             Debug.Log(hit.transform.name + " hit him");
             
             MonsterFollow target = hit.transform.GetComponent<MonsterFollow>();
+            Target box = hit.transform.GetComponent<Target>();
             //Target target = hit.transform.GetComponent<Target>();
             if(target != null)
             {
                 target.TakeDamage(damage);
+            }
+
+            if (box != null)
+            {
+                box.TakeDamage(damage);
             }
 
             GameObject clone = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
