@@ -3,6 +3,7 @@ using UnityEngine;
 public class WeaponSwitch : MonoBehaviour
 {
     public Camera fpsCam;
+    public GameObject[] guns;
 
     public static int selectedWeapon;
     public int range = 10;
@@ -23,8 +24,8 @@ public class WeaponSwitch : MonoBehaviour
             if (previousSelectedWeapon != selectedWeapon)
             {
                 SelectWeapon();
+                Drop(previousSelectedWeapon);
             }
-            Drop();
         }
     }
 
@@ -76,8 +77,10 @@ public class WeaponSwitch : MonoBehaviour
         }
     }
 
-    void Drop()
+    public void Drop(int previousSelectedWeapon)
     {
-
+        GameObject gunName;
+        gunName = Instantiate(guns[previousSelectedWeapon], this.transform.position, Quaternion.Euler(0,0,0));
+        gunName.name = gunName.name.Replace("(Clone)", "");
     }
 }

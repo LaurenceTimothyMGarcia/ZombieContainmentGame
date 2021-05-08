@@ -819,7 +819,7 @@ MonoBehaviour:
   anim: {fileID: 0}
   fpsCam: {fileID: 416545083815812973}
   muzzleFlash: {fileID: 2600507970732683520}
-  impactEffect: {fileID: 1337198075554910, guid: 25c7aa9ad705fe143a4d71c1c8deb7d4,
+  impactEffect: {fileID: 7294558679822146620, guid: 189fd881c426a4c45a8071850d715994,
     type: 3}
   ammoDisplay: {fileID: 0}
   totalAmmo: {fileID: 0}
@@ -1038,6 +1038,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fpsCam: {fileID: 416545083815812973}
+  guns:
+  - {fileID: 8066582686588393255, guid: 47f744f09aa03204690c3478f11b87b5, type: 3}
+  - {fileID: 6449360516366945318, guid: a9e6f7e9bab0f0040bcb2305c42d12f8, type: 3}
+  - {fileID: 2706583445142128787, guid: 82b503021c4587f489864264c40e434a, type: 3}
+  - {fileID: 6109852979455621438, guid: 2ab5cafcda1d6c04c949984a32fbb58f, type: 3}
+  - {fileID: 8080683552493329848, guid: 065b39dd6022d2942be7559c922c9e0f, type: 3}
+  - {fileID: 5796700798704073317, guid: 074ff30643e1acb42b075af03eb1fed3, type: 3}
   range: 5
 --- !u!1 &5669957433118926732
 GameObject:
