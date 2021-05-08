@@ -4,18 +4,37 @@ using UnityEngine;
 
 public class RandomSpawner : MonoBehaviour
 {
-    public GameObject ItemPrefab;
-    public float radius = 20;
+    public GameObject itemPrefab;
+    public float raycastDistance = 40f;
+    public float overlapTestBoxSize = 1f;
+    public LayerMask spawnedObjectLayer;
 
     void Start()
     {
-        SpawnObjectAtRandom();
+        PositionRaycast();
     }
 
-    void SpawnObjectAtRandom()
+    void PositionRaycast()
     {
-        //Vector3 randomPos = RandomSpawner.insideUnitCircle * radius;
+        RaycastHit hit;
 
-        //Instantiate(ItemPrefab, randomPos, Quaternion.identity);
+        if(Physics.Raycast(transform.position, Vector3.down, out hit, raycastDistance))
+        {
+            Quaternion spawnRotation = Quaternion.FromToRotation(Vector3.up, hit.normal);
+
+            Vector3 overlapTestBoxScale = new Vector3(overlapTestBoxSize, overlapTestBoxSize, overlapTestBoxSize);
+            Collider[] collidersInisdeOverlapBox = new Collider[1];
+            int numberOfCollidersFound = Physics.OverlapBoxNonAlloc(hit.point, overlapTestBoxScale, collidersInisdeOverlapBox, spawnRotation, spawnedObjectLayer);
+
+            if(numberOfCollidersFound == 0)
+            {
+                Pick(hit.point, spawnRotation);
+            }
+        }
+    }
+
+    void Pick(Vector3 positionToSpawn, Quaternion rotationToSpawn)
+    {
+        Instantiate(itemPrefab, positionToSpawn, rotationToSpawn);
     }
 }
