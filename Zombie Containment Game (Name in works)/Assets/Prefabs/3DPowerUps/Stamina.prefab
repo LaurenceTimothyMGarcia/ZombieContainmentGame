@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 4677917965036466548}
   - component: {fileID: 4677917965036466550}
   - component: {fileID: 4677917965036466549}
-  - component: {fileID: 1753874032274128477}
   m_Layer: 0
   m_Name: Stamina
   m_TagString: Untagged
@@ -136,30 +135,4 @@ MonoBehaviour:
   isArmor: 0
   isJackpot: 0
   isHealthPickup: 0
-  isNegative: 0
---- !u!114 &1753874032274128477
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4677917965036466539}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b122547f5bf45144cbda5d599b87a9fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 5601242785443400113, guid: 74645d5989ece4c46b2a343a1ec3b670,
-    type: 3}
-  item: {fileID: 4677917965036466548}
-  isVitality: 0
-  isCaliber: 0
-  isPiercing: 0
-  isBandolier: 0
-  isFireSpeed: 0
-  isStamina: 1
-  isDexterity: 0
-  isPrecision: 0
-  isArmor: 0
-  isJackpot: 0
   isNegative: 0

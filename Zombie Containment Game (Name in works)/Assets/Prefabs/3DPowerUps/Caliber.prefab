@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 9150710990795286252}
   - component: {fileID: 9150710990795286253}
   - component: {fileID: 9150710990795286254}
-  - component: {fileID: 1680772158540355705}
   m_Layer: 0
   m_Name: Caliber
   m_TagString: Untagged
@@ -137,29 +136,3 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.66666687, y: 0.08000006, z: 0.64583343}
   m_Center: {x: 0.00000013411045, y: -0.0000000037252899, z: -0.007079824}
---- !u!114 &1680772158540355705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9150710990795286255}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b122547f5bf45144cbda5d599b87a9fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 8160786567969442985, guid: eeedd0c0ac4dbf743afca834e948577c,
-    type: 3}
-  item: {fileID: 9150710990795286254}
-  isVitality: 0
-  isCaliber: 1
-  isPiercing: 0
-  isBandolier: 0
-  isFireSpeed: 0
-  isStamina: 0
-  isDexterity: 0
-  isPrecision: 0
-  isArmor: 0
-  isJackpot: 0
-  isNegative: 0

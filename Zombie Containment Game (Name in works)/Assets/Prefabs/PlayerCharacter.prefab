@@ -245,7 +245,6 @@ MonoBehaviour:
   damage: 4
   reloadTime: 1
   muzzle: {fileID: 6970585757844237873}
-  impact: {fileID: 1337198075554910, guid: 25c7aa9ad705fe143a4d71c1c8deb7d4, type: 3}
   bulletTrail: {fileID: 120648884187509030, guid: d2ec70c814159504cb3e12e99b00b151,
     type: 3}
 --- !u!95 &3414912443336795611
@@ -326,7 +325,7 @@ GameObject:
   - component: {fileID: 1762836432467288716}
   m_Layer: 0
   m_Name: PlayerCharacter
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1242,7 +1241,6 @@ MonoBehaviour:
   damage: 2
   reloadTime: 0.5
   muzzle: {fileID: 5222421531588810843}
-  impact: {fileID: 1337198075554910, guid: 25c7aa9ad705fe143a4d71c1c8deb7d4, type: 3}
   bulletTrail: {fileID: 120648884187509030, guid: d2ec70c814159504cb3e12e99b00b151,
     type: 3}
 --- !u!95 &2010600109786885839

@@ -14,7 +14,6 @@ GameObject:
   - component: {fileID: 438709439499609786}
   - component: {fileID: 438709439499609785}
   - component: {fileID: 438709439499609784}
-  - component: {fileID: 8867587325712995710}
   m_Layer: 0
   m_Name: Piercing
   m_TagString: Untagged
@@ -137,29 +136,3 @@ MonoBehaviour:
   degreesPerSecond: 90
   amplitude: 0.5
   frequency: 1
---- !u!114 &8867587325712995710
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 438709439499609787}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b122547f5bf45144cbda5d599b87a9fa, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  scoreText: {fileID: 5464442343085648173, guid: 9171c0c9c76f2f74dab89455a6a9ab79,
-    type: 3}
-  item: {fileID: 438709439499609786}
-  isVitality: 0
-  isCaliber: 0
-  isPiercing: 1
-  isBandolier: 0
-  isFireSpeed: 0
-  isStamina: 0
-  isDexterity: 0
-  isPrecision: 0
-  isArmor: 0
-  isJackpot: 0
-  isNegative: 0
