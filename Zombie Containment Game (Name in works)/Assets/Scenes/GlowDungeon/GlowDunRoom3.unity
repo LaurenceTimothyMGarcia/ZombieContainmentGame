@@ -333,6 +333,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 171752475488540839, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: totalAmmo
+      value: 
+      objectReference: {fileID: 1137197817}
+    - target: {fileID: 171752475488540839, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: ammoDisplay
+      value: 
+      objectReference: {fileID: 1137197816}
     - target: {fileID: 416545083815812946, guid: c49cc0cd6519c4348a5862309f8c8129,
         type: 3}
       propertyPath: HealthDisplay
@@ -444,6 +454,16 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1137197817}
     - target: {fileID: 3725569672603062161, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: ammoDisplay
+      value: 
+      objectReference: {fileID: 1137197816}
+    - target: {fileID: 5450842529575643670, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: totalAmmo
+      value: 
+      objectReference: {fileID: 1137197817}
+    - target: {fileID: 5450842529575643670, guid: c49cc0cd6519c4348a5862309f8c8129,
         type: 3}
       propertyPath: ammoDisplay
       value: 

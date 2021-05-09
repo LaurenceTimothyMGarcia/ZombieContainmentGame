@@ -21,7 +21,7 @@ public class ShotgunR : MonoBehaviour
     private bool isReloading = false;
 
     public GameObject muzzle;
-    public GameObject impact;
+    //public GameObject impact;
     public LineRenderer bulletTrail;
 
     Camera cam;
@@ -83,7 +83,7 @@ public class ShotgunR : MonoBehaviour
         //Bullet that goes forward
         if(Physics.Raycast(cam.transform.position, cam.transform.forward, out hit, distance))
         {
-            Instantiate(impact, hit.point, Quaternion.LookRotation(hit.normal));
+            //Instantiate(impact, hit.point, Quaternion.LookRotation(hit.normal));
 
             Hit(hit, damage);
             SpawnBulletTrail(hit);
@@ -92,7 +92,7 @@ public class ShotgunR : MonoBehaviour
         //Bullet that goes forward
         if (Physics.Raycast(cam.transform.position, cam.transform.forward + new Vector3(-.2f, 0f, 0f), out hit1, distance))
         {
-            Instantiate(impact, hit1.point, Quaternion.LookRotation(hit1.normal));
+            //Instantiate(impact, hit1.point, Quaternion.LookRotation(hit1.normal));
 
             Hit(hit1, damage);
             SpawnBulletTrail(hit1);
@@ -101,7 +101,7 @@ public class ShotgunR : MonoBehaviour
         //Bullet that goes up
         if (Physics.Raycast(cam.transform.position, cam.transform.forward + new Vector3(0f, .1f, 0f), out hit2, distance))
         {
-            Instantiate(impact, hit2.point, Quaternion.LookRotation(hit2.normal));
+            //Instantiate(impact, hit2.point, Quaternion.LookRotation(hit2.normal));
 
             Hit(hit2, damage);
             SpawnBulletTrail(hit2);
@@ -110,7 +110,7 @@ public class ShotgunR : MonoBehaviour
         //Bullet that goes down
         if (Physics.Raycast(cam.transform.position, cam.transform.forward + new Vector3(0f, -.1f, 0f), out hit3, distance))
         {
-            Instantiate(impact, hit3.point, Quaternion.LookRotation(hit3.normal));
+            //Instantiate(impact, hit3.point, Quaternion.LookRotation(hit3.normal));
 
             Hit(hit3, damage);
             SpawnBulletTrail(hit3);
@@ -133,9 +133,9 @@ public class ShotgunR : MonoBehaviour
         {
             box.TakeDamage(damage);
         }
-        GameObject clone = Instantiate(impact, hit.point, Quaternion.LookRotation(hit.normal));
+        //GameObject clone = Instantiate(impact, hit.point, Quaternion.LookRotation(hit.normal));
 
-        Destroy(clone, 1f);
+        //Destroy(clone, 1f);
     }
 
     private void SpawnBulletTrail(RaycastHit hit)
