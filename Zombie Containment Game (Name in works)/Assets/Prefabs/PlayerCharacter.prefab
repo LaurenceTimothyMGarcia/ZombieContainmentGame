@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 348929005196377005}
   - component: {fileID: 3574114251303228565}
   - component: {fileID: 2797295529022109714}
-  - component: {fileID: 8948471634402728742}
   - component: {fileID: 2946975541982811387}
+  - component: {fileID: 8653754043728364048}
   m_Layer: 0
   m_Name: BullpopRifle
   m_TagString: Untagged
@@ -84,40 +84,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &8948471634402728742
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1233947614829444896}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaa303927c4977247bec1a358e9ea072, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 0}
-  fpsCam: {fileID: 416545083815812973}
-  muzzleFlash: {fileID: 2533456421535762286}
-  impactEffect: {fileID: 1337198075554910, guid: 25c7aa9ad705fe143a4d71c1c8deb7d4,
-    type: 3}
-  bulletOrigin: {fileID: 2799018117420721942}
-  bulletTrail: {fileID: 120648884187509030, guid: d2ec70c814159504cb3e12e99b00b151,
-    type: 3}
-  ammoDisplay: {fileID: 0}
-  totalAmmo: {fileID: 0}
-  isFiring: 0
-  damage: 5
-  range: 50
-  fireRate: 5
-  maxAmmo: 30
-  currentAmmo: 30
-  spread: 0.05
-  reloadTime: 0.75
-  upRecoil: {x: 0, y: 0, z: 0}
-  canBeShot:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!95 &2946975541982811387
 Animator:
   serializedVersion: 3
@@ -137,6 +103,43 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &8653754043728364048
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1233947614829444896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9547830f1ed860b4bb1a8d3d16fc1bb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 2946975541982811387}
+  fpsCam: {fileID: 416545083815812973}
+  muzzleFlash: {fileID: 2533456421535762286}
+  impactEffect: {fileID: 1337198075554910, guid: 25c7aa9ad705fe143a4d71c1c8deb7d4,
+    type: 3}
+  bulletOrigin: {fileID: 2799018117420721942}
+  bulletTrail: {fileID: 120648884187509030, guid: d2ec70c814159504cb3e12e99b00b151,
+    type: 3}
+  ammoDisplay: {fileID: 0}
+  totalAmmo: {fileID: 0}
+  isFiring: 0
+  damage: 5
+  range: 50
+  fireRate: 5
+  maxAmmo: 30
+  currentAmmo: 30
+  spread: 0.05
+  isReloading: 0
+  reloadTime: 0.75
+  nextTimeToFire: 0
+  upRecoil: {x: 0, y: 0, z: 0}
+  originalRotation: {x: 0, y: 0, z: 0}
+  canBeShot:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &1429712688611549818
 GameObject:
   m_ObjectHideFlags: 0
@@ -235,18 +238,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 3414912443336795611}
-  spawnPoint: {fileID: 8417106035305772957}
-  ammoDisplay: {fileID: 0}
-  totalAmmo: {fileID: 0}
-  currentAmmo: 6
-  maxAmmo: 6
-  fireRate: 1
-  distance: 15
-  damage: 4
-  reloadTime: 1
-  muzzle: {fileID: 6970585757844237873}
+  fpsCam: {fileID: 416545083815812973}
+  muzzleFlash: {fileID: 7095995449467064997}
+  impactEffect: {fileID: 1337198075554910, guid: 25c7aa9ad705fe143a4d71c1c8deb7d4,
+    type: 3}
+  bulletOrigin: {fileID: 8294333078511672813}
   bulletTrail: {fileID: 120648884187509030, guid: d2ec70c814159504cb3e12e99b00b151,
     type: 3}
+  ammoDisplay: {fileID: 0}
+  totalAmmo: {fileID: 0}
+  isFiring: 0
+  damage: 4
+  range: 30
+  fireRate: 1
+  maxAmmo: 6
+  currentAmmo: 6
+  spread: 1
+  isReloading: 0
+  reloadTime: 1
+  nextTimeToFire: 0
+  upRecoil: {x: 0, y: 0, z: 0}
+  originalRotation: {x: 0, y: 0, z: 0}
+  canBeShot:
+    serializedVersion: 2
+    m_Bits: 0
+  spawnPoint: {fileID: 8417106035305772957}
 --- !u!95 &3414912443336795611
 Animator:
   serializedVersion: 3
@@ -782,8 +798,8 @@ GameObject:
   - component: {fileID: 1762836433052273232}
   - component: {fileID: 1762836433052273260}
   - component: {fileID: 1762836433052273261}
-  - component: {fileID: 1762836433052273234}
   - component: {fileID: 1762836433052273235}
+  - component: {fileID: 3448582767909790622}
   m_Layer: 0
   m_Name: Pistol
   m_TagString: Untagged
@@ -855,40 +871,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &1762836433052273234
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762836433052273233}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaa303927c4977247bec1a358e9ea072, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 0}
-  fpsCam: {fileID: 416545083815812973}
-  muzzleFlash: {fileID: 2600507970732683520}
-  impactEffect: {fileID: 7294558679822146620, guid: 189fd881c426a4c45a8071850d715994,
-    type: 3}
-  bulletOrigin: {fileID: 2442751087753236856}
-  bulletTrail: {fileID: 120648884187509030, guid: d2ec70c814159504cb3e12e99b00b151,
-    type: 3}
-  ammoDisplay: {fileID: 0}
-  totalAmmo: {fileID: 0}
-  isFiring: 0
-  damage: 3
-  range: 30
-  fireRate: 1
-  maxAmmo: 12
-  currentAmmo: 12
-  spread: 0.04
-  reloadTime: 0.5
-  upRecoil: {x: 0, y: 0, z: 0}
-  canBeShot:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!95 &1762836433052273235
 Animator:
   serializedVersion: 3
@@ -908,6 +890,43 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &3448582767909790622
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762836433052273233}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9547830f1ed860b4bb1a8d3d16fc1bb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1762836433052273235}
+  fpsCam: {fileID: 416545083815812973}
+  muzzleFlash: {fileID: 2600507970732683520}
+  impactEffect: {fileID: 7294558679822146620, guid: 189fd881c426a4c45a8071850d715994,
+    type: 3}
+  bulletOrigin: {fileID: 2442751087753236856}
+  bulletTrail: {fileID: 120648884187509030, guid: d2ec70c814159504cb3e12e99b00b151,
+    type: 3}
+  ammoDisplay: {fileID: 0}
+  totalAmmo: {fileID: 0}
+  isFiring: 0
+  damage: 3
+  range: 30
+  fireRate: 1
+  maxAmmo: 12
+  currentAmmo: 12
+  spread: 0.04
+  isReloading: 0
+  reloadTime: 1
+  nextTimeToFire: 0
+  upRecoil: {x: 0, y: 0, z: 0}
+  originalRotation: {x: 0, y: 0, z: 0}
+  canBeShot:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &2766902953106435703
 GameObject:
   m_ObjectHideFlags: 0
@@ -919,7 +938,7 @@ GameObject:
   - component: {fileID: 430598314265789256}
   - component: {fileID: 4349693384226076220}
   - component: {fileID: 1390496354505270195}
-  - component: {fileID: 7130121640745686318}
+  - component: {fileID: 5344566116718425420}
   - component: {fileID: 3594232804240364282}
   m_Layer: 0
   m_Name: CarbineRifle
@@ -992,7 +1011,7 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &7130121640745686318
+--- !u!114 &5344566116718425420
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1001,10 +1020,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 2766902953106435703}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaa303927c4977247bec1a358e9ea072, type: 3}
+  m_Script: {fileID: 11500000, guid: 9547830f1ed860b4bb1a8d3d16fc1bb0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  anim: {fileID: 0}
+  anim: {fileID: 3594232804240364282}
   fpsCam: {fileID: 416545083815812973}
   muzzleFlash: {fileID: 2800334854781858025}
   impactEffect: {fileID: 1337198075554910, guid: 25c7aa9ad705fe143a4d71c1c8deb7d4,
@@ -1020,9 +1039,12 @@ MonoBehaviour:
   fireRate: 10
   maxAmmo: 45
   currentAmmo: 45
-  spread: 0.01
+  spread: 0.015
+  isReloading: 0
   reloadTime: 0.5
+  nextTimeToFire: 0
   upRecoil: {x: 0, y: 0, z: 0}
+  originalRotation: {x: 0, y: 0, z: 0}
   canBeShot:
     serializedVersion: 2
     m_Bits: 0
@@ -1231,18 +1253,31 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   anim: {fileID: 2010600109786885839}
-  spawnPoint: {fileID: 278636579656529781}
-  ammoDisplay: {fileID: 0}
-  totalAmmo: {fileID: 0}
-  currentAmmo: 5
-  maxAmmo: 5
-  fireRate: 2
-  distance: 15
-  damage: 2
-  reloadTime: 0.5
-  muzzle: {fileID: 5222421531588810843}
+  fpsCam: {fileID: 416545083815812973}
+  muzzleFlash: {fileID: 5386217355947140303}
+  impactEffect: {fileID: 1337198075554910, guid: 25c7aa9ad705fe143a4d71c1c8deb7d4,
+    type: 3}
+  bulletOrigin: {fileID: 5454277243635349099}
   bulletTrail: {fileID: 120648884187509030, guid: d2ec70c814159504cb3e12e99b00b151,
     type: 3}
+  ammoDisplay: {fileID: 0}
+  totalAmmo: {fileID: 0}
+  isFiring: 0
+  damage: 2
+  range: 30
+  fireRate: 2
+  maxAmmo: 5
+  currentAmmo: 5
+  spread: 0
+  isReloading: 0
+  reloadTime: 0.5
+  nextTimeToFire: 0
+  upRecoil: {x: 0, y: 0, z: 0}
+  originalRotation: {x: 0, y: 0, z: 0}
+  canBeShot:
+    serializedVersion: 2
+    m_Bits: 0
+  spawnPoint: {fileID: 278636579656529781}
 --- !u!95 &2010600109786885839
 Animator:
   serializedVersion: 3
@@ -1273,8 +1308,8 @@ GameObject:
   - component: {fileID: 9116022569375725044}
   - component: {fileID: 3880374117641281567}
   - component: {fileID: 556705688522112777}
-  - component: {fileID: 3725569672603062161}
   - component: {fileID: 1853965777624946219}
+  - component: {fileID: 2754014541782060207}
   m_Layer: 0
   m_Name: SMG
   m_TagString: Untagged
@@ -1346,40 +1381,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!114 &3725569672603062161
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7090477237178553499}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: aaa303927c4977247bec1a358e9ea072, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  anim: {fileID: 0}
-  fpsCam: {fileID: 416545083815812973}
-  muzzleFlash: {fileID: 3593269701977194605}
-  impactEffect: {fileID: 1337198075554910, guid: 25c7aa9ad705fe143a4d71c1c8deb7d4,
-    type: 3}
-  bulletOrigin: {fileID: 3759769931490172949}
-  bulletTrail: {fileID: 120648884187509030, guid: d2ec70c814159504cb3e12e99b00b151,
-    type: 3}
-  ammoDisplay: {fileID: 0}
-  totalAmmo: {fileID: 0}
-  isFiring: 0
-  damage: 3
-  range: 40
-  fireRate: 12
-  maxAmmo: 20
-  currentAmmo: 20
-  spread: 0.25
-  reloadTime: 0.5
-  upRecoil: {x: 0, y: 0, z: 0}
-  canBeShot:
-    serializedVersion: 2
-    m_Bits: 0
 --- !u!95 &1853965777624946219
 Animator:
   serializedVersion: 3
@@ -1399,6 +1400,43 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &2754014541782060207
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7090477237178553499}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9547830f1ed860b4bb1a8d3d16fc1bb0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anim: {fileID: 1853965777624946219}
+  fpsCam: {fileID: 416545083815812973}
+  muzzleFlash: {fileID: 3593269701977194605}
+  impactEffect: {fileID: 1337198075554910, guid: 25c7aa9ad705fe143a4d71c1c8deb7d4,
+    type: 3}
+  bulletOrigin: {fileID: 3759769931490172949}
+  bulletTrail: {fileID: 120648884187509030, guid: d2ec70c814159504cb3e12e99b00b151,
+    type: 3}
+  ammoDisplay: {fileID: 0}
+  totalAmmo: {fileID: 0}
+  isFiring: 0
+  damage: 3
+  range: 40
+  fireRate: 12
+  maxAmmo: 20
+  currentAmmo: 20
+  spread: 0.25
+  isReloading: 0
+  reloadTime: 0.5
+  nextTimeToFire: 0
+  upRecoil: {x: 0, y: 0, z: 0}
+  originalRotation: {x: 0, y: 0, z: 0}
+  canBeShot:
+    serializedVersion: 2
+    m_Bits: 0
 --- !u!1 &8294333078511672813
 GameObject:
   m_ObjectHideFlags: 0
@@ -1943,15 +1981,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
---- !u!4 &5219868216087106945 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
+--- !u!198 &5386217355947140303 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
     type: 3}
   m_PrefabInstance: {fileID: 5224163693582776725}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &5222421531588810843 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1743301284569550, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
+--- !u!4 &5219868216087106945 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
     type: 3}
   m_PrefabInstance: {fileID: 5224163693582776725}
   m_PrefabAsset: {fileID: 0}
@@ -2052,15 +2090,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ad2ab49d0a2a17148bd51c93d977bdbc, type: 3}
---- !u!4 &6968484908590785515 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
+--- !u!198 &7095995449467064997 stripped
+ParticleSystem:
+  m_CorrespondingSourceObject: {fileID: 198234346748616026, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
     type: 3}
   m_PrefabInstance: {fileID: 6969970601167310847}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &6970585757844237873 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1743301284569550, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
+--- !u!4 &6968484908590785515 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 4300533007854612, guid: ad2ab49d0a2a17148bd51c93d977bdbc,
     type: 3}
   m_PrefabInstance: {fileID: 6969970601167310847}
   m_PrefabAsset: {fileID: 0}

@@ -25,19 +25,19 @@ public class Gun : MonoBehaviour
     public float spread;
    
     //Reload Statistics
-    private bool isReloading = false;
+    public bool isReloading = false;
     public float reloadTime;
 
-    private float nextTimeToFire = 0f;
+    public float nextTimeToFire = 0f;
 
     //Recoil Statistics
     public Vector3 upRecoil;
-    Vector3 originalRotation;
+    public Vector3 originalRotation;
 
     public LayerMask canBeShot;
 
     // Start is called before the first frame update
-    void Start()
+    /*void Start()
     {
         anim = GetComponent<Animator>();
         originalRotation = transform.localEulerAngles;
@@ -162,5 +162,5 @@ public class Gun : MonoBehaviour
         bulletShot.SetPosition(1, hit.point);
 
         Destroy(bulletTrailEffect, 1f);
-    }
+    }*/
 }

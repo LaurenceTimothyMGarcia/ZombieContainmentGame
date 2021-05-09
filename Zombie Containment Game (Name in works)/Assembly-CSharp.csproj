@@ -61,6 +61,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
      <Compile Include="Assets\Scripts\Jonah Scripts\PlayerHealth.cs" />
      <Compile Include="Assets\Scripts\Jonah Scripts\AmmoDisplay.cs" />
+     <Compile Include="Assets\Scripts\BoxSpawner.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_FrameRateCounter.cs" />
      <Compile Include="Assets\Scripts\Jonah Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\ListOfRooms.cs" />
@@ -102,7 +103,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TMP_TextEventCheck.cs" />
      <Compile Include="Assets\Scripts\Jonah Scripts\TotalPowerUps.cs" />
      <Compile Include="Assets\Scripts\Floater.cs" />
-     <Compile Include="Assets\Scripts\BoxSpawner.cs" />
+     <Compile Include="Assets\Scripts\StandardGun.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />

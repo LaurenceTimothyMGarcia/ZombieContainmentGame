@@ -683,12 +683,6 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 2584651088150041884}
   m_PrefabAsset: {fileID: 0}
---- !u!95 &2009915070 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 1853965777624946219, guid: c49cc0cd6519c4348a5862309f8c8129,
-    type: 3}
-  m_PrefabInstance: {fileID: 1762836432178938573}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &543450652375101451
 Transform:
   m_ObjectHideFlags: 0
@@ -997,22 +991,37 @@ PrefabInstance:
       propertyPath: playOnAwake
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2754014541782060207, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: totalAmmo
+      value: 
+      objectReference: {fileID: 371678453}
+    - target: {fileID: 2754014541782060207, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: ammoDisplay
+      value: 
+      objectReference: {fileID: 977271999}
     - target: {fileID: 2766902953106435703, guid: c49cc0cd6519c4348a5862309f8c8129,
         type: 3}
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 3725569672603062161, guid: c49cc0cd6519c4348a5862309f8c8129,
-        type: 3}
-      propertyPath: anim
-      value: 
-      objectReference: {fileID: 2009915070}
-    - target: {fileID: 3725569672603062161, guid: c49cc0cd6519c4348a5862309f8c8129,
+    - target: {fileID: 3448582767909790622, guid: c49cc0cd6519c4348a5862309f8c8129,
         type: 3}
       propertyPath: totalAmmo
       value: 
       objectReference: {fileID: 371678453}
-    - target: {fileID: 3725569672603062161, guid: c49cc0cd6519c4348a5862309f8c8129,
+    - target: {fileID: 3448582767909790622, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: ammoDisplay
+      value: 
+      objectReference: {fileID: 977271999}
+    - target: {fileID: 5344566116718425420, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: totalAmmo
+      value: 
+      objectReference: {fileID: 371678453}
+    - target: {fileID: 5344566116718425420, guid: c49cc0cd6519c4348a5862309f8c8129,
         type: 3}
       propertyPath: ammoDisplay
       value: 
@@ -1132,6 +1141,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 90
       objectReference: {fileID: 0}
+    - target: {fileID: 8653754043728364048, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: totalAmmo
+      value: 
+      objectReference: {fileID: 371678453}
+    - target: {fileID: 8653754043728364048, guid: c49cc0cd6519c4348a5862309f8c8129,
+        type: 3}
+      propertyPath: ammoDisplay
+      value: 
+      objectReference: {fileID: 977271999}
     - target: {fileID: 8948471634402728742, guid: c49cc0cd6519c4348a5862309f8c8129,
         type: 3}
       propertyPath: totalAmmo
