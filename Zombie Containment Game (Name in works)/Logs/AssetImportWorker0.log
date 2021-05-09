@@ -15,11 +15,11 @@ D:/Program Files/Unity Projects/ZombieContainmentGame/Zombie Containment Game (N
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
-55098
+51847
 Successfully changed project path to: D:/Program Files/Unity Projects/ZombieContainmentGame/Zombie Containment Game (Name in works)
 D:/Program Files/Unity Projects/ZombieContainmentGame/Zombie Containment Game (Name in works)
 Using Asset Import Pipeline V2.
-Refreshing native plugins compatible for Editor in 36.04 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 36.62 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2020.2.2f1 (068178b99f32)
 [Subsystems] Discovering subsystems at path D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/Resources/UnitySubsystems
@@ -35,19 +35,19 @@ Initialize mono
 Mono path[0] = 'D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/Managed'
 Mono path[1] = 'D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit'
 Mono config path = 'D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/MonoBleedingEdge/etc'
-Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56616
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56764
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/PlaybackEngines/WebGLSupport/UnityEditor.WebGL.Extensions.dll
 Register platform support module: D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/PlaybackEngines/MacStandaloneSupport/UnityEditor.OSXStandalone.Extensions.dll
 Register platform support module: D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
 Register platform support module: D:/Program Files/Unity Projects/2020.2.2f1/Editor/Data/PlaybackEngines/LinuxStandaloneSupport/UnityEditor.LinuxStandalone.Extensions.dll
-Registered in 0.001454 seconds.
+Registered in 0.001442 seconds.
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 37.59 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 38.25 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
@@ -56,19 +56,19 @@ Mono: successfully reloaded assembly
 - Completed reload, in  1.193 seconds
 Platform modules already initialized, skipping
 Registering precompiled user dll's ...
-Registered in 0.000810 seconds.
+Registered in 0.000807 seconds.
 Begin MonoManager ReloadAssembly
 Native extension for LinuxStandalone target not found
 Native extension for WindowsStandalone target not found
 Native extension for OSXStandalone target not found
 Native extension for WebGL target not found
-Refreshing native plugins compatible for Editor in 37.83 ms, found 0 plugins.
+Refreshing native plugins compatible for Editor in 38.60 ms, found 0 plugins.
 Preloading 0 native plugins for Editor in 0.00 ms.
 Invoked RoslynAnalysisRunner static constructor.
 RoslynAnalysisRunner will not be running.
 RoslynAnalysisRunner has terminated.
 Mono: successfully reloaded assembly
-- Completed reload, in  0.738 seconds
+- Completed reload, in  0.750 seconds
 Platform modules already initialized, skipping
 ========================================================================
 Worker process is ready to serve import requests
@@ -80,133 +80,117 @@ System memory in use before: 183.9 MB.
 System memory in use after: 184.1 MB.
 
 Unloading 10 unused Assets to reduce memory usage. Loaded Objects now: 2932.
-Total: 1.973900 ms (FindLiveObjects: 0.262900 ms CreateObjectMapping: 0.062100 ms MarkObjects: 1.576600 ms  DeleteObjects: 0.071100 ms)
+Total: 1.916400 ms (FindLiveObjects: 0.301400 ms CreateObjectMapping: 0.074800 ms MarkObjects: 1.479400 ms  DeleteObjects: 0.059900 ms)
 
 ========================================================================
 Received Import Request.
-  path: Assets/Scenes/GlowDungeon/GlowDunRoom6.unity
-  artifactKey: Guid(2c4f73313d667114db40d8674091aa3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GlowDungeon/GlowDunRoom6.unity using Guid(2c4f73313d667114db40d8674091aa3f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7ce912b2f423f01c66cbfc955dd4ffeb') in 0.010833 seconds
-  Import took 0.014365 seconds .
+  path: Assets/Models/Rooms/PrisonRoomEmission.png
+  artifactKey: Guid(200d466d995b0804d8f7690dc48f0bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Rooms/PrisonRoomEmission.png using Guid(200d466d995b0804d8f7690dc48f0bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '2c84e06cf2669630525f5b94b8509a90') in 0.138360 seconds
+  Import took 0.141853 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.735068 seconds.
-  path: Assets/Scenes/GlowDungeon/GlowDunRoom7.unity
-  artifactKey: Guid(6f7c1c1652dcabe4a9d86b9d7b2cff83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GlowDungeon/GlowDunRoom7.unity using Guid(6f7c1c1652dcabe4a9d86b9d7b2cff83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ac04d5b433419aaad00dda057b9e04d') in 0.002097 seconds
-  Import took 0.005412 seconds .
+  Time since last request: 0.000346 seconds.
+  path: Assets/Models/Rooms/PrisonRoomRoughness.png
+  artifactKey: Guid(643e01563e654fa44aefaebd97e1c8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Rooms/PrisonRoomRoughness.png using Guid(643e01563e654fa44aefaebd97e1c8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0e1c9a7bdc8f700d9e28064c606ead73') in 0.009514 seconds
+  Import took 0.012556 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.002115 seconds.
-  path: Assets/Scenes/GlowDungeon/GlowDunRoom7.unity
-  artifactKey: Guid(6f7c1c1652dcabe4a9d86b9d7b2cff83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Scenes/GlowDungeon/GlowDunRoom7.unity using Guid(6f7c1c1652dcabe4a9d86b9d7b2cff83) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '1ac04d5b433419aaad00dda057b9e04d') in 0.001710 seconds
-  Import took 0.004424 seconds .
+  Time since last request: 0.000282 seconds.
+  path: Assets/Models/Rooms/PrisonRoomTexture.png
+  artifactKey: Guid(ea9b320a522b0584196ac575dbf5e0d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Rooms/PrisonRoomTexture.png using Guid(ea9b320a522b0584196ac575dbf5e0d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '4642bb2bb7b4237a235e98e2b56858b3') in 0.008999 seconds
+  Import took 0.023429 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 22.413986 seconds.
-  path: Assets/Models/Rooms/GlowDungeonRoom7.fbx
-  artifactKey: Guid(7a04b891a9a93c44fa1f60ad9a1bfbc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Rooms/GlowDungeonRoom7.fbx using Guid(7a04b891a9a93c44fa1f60ad9a1bfbc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41c723ac2ae532c23730c55b86477227') in 0.390240 seconds
-  Import took 0.393868 seconds .
+  Time since last request: 0.000296 seconds.
+  path: Assets/Models/Rooms/PrisonRoomNormal.png
+  artifactKey: Guid(e221bdb6c0e6e5d4db977eca2d9328fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Rooms/PrisonRoomNormal.png using Guid(e221bdb6c0e6e5d4db977eca2d9328fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6a30bc83f13101a2ffd73a2e6de54436') in 0.007845 seconds
+  Import took 0.011382 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000301 seconds.
-  path: Assets/Models/Rooms/GlowDungeonRoom7Texture.png
-  artifactKey: Guid(cd75c332644648641aa09b400052d33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Rooms/GlowDungeonRoom7Texture.png using Guid(cd75c332644648641aa09b400052d33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e80cf4dc8054c689b39d7136357641f2') in 0.140578 seconds
-  Import took 0.143657 seconds .
+  Time since last request: 662.235309 seconds.
+  path: Assets/Scenes/GlowDungeon/BeginningPrision.unity
+  artifactKey: Guid(89231f0137ce0204ebb3016ec4e48a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GlowDungeon/BeginningPrision.unity using Guid(89231f0137ce0204ebb3016ec4e48a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d1b97b8d3d43b696047daacdf704557') in 0.002387 seconds
+  Import took 0.006171 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000328 seconds.
-  path: Assets/Models/Rooms/GlowDungeonRoom7.fbx
-  artifactKey: Guid(7a04b891a9a93c44fa1f60ad9a1bfbc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Rooms/GlowDungeonRoom7.fbx using Guid(7a04b891a9a93c44fa1f60ad9a1bfbc0) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '41c723ac2ae532c23730c55b86477227') in 0.011194 seconds
-  Import took 0.014507 seconds .
+  Time since last request: 6.481022 seconds.
+  path: Assets/Scenes/GlowDungeon/BeginningPrision.unity
+  artifactKey: Guid(89231f0137ce0204ebb3016ec4e48a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Scenes/GlowDungeon/BeginningPrision.unity using Guid(89231f0137ce0204ebb3016ec4e48a4f) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '7a0bb6257511597bb08c2c19fbae3ae4') in 0.002195 seconds
+  Import took 0.005863 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000325 seconds.
-  path: Assets/Models/Rooms/GlowDungeonRoom7Roughness.png
-  artifactKey: Guid(134c480ae86b27740957425801865103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Rooms/GlowDungeonRoom7Roughness.png using Guid(134c480ae86b27740957425801865103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a122a765947a21a97ecac67e3d01152a') in 0.122646 seconds
-  Import took 0.125570 seconds .
+  Time since last request: 57.087565 seconds.
+  path: Assets/Models/Rooms/BeginningPrisionRoom.fbx
+  artifactKey: Guid(335c549085ee2854588d2916d92c3dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Rooms/BeginningPrisionRoom.fbx using Guid(335c549085ee2854588d2916d92c3dac) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'e12826dabfdee8696966d0a574ae6e88') in 0.240413 seconds
+  Import took 0.244182 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000280 seconds.
-  path: Assets/Models/Rooms/GlowDungeonRoom7Emit.png
-  artifactKey: Guid(509263f2834b6c74a8e845a39ad64ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Rooms/GlowDungeonRoom7Emit.png using Guid(509263f2834b6c74a8e845a39ad64ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b742fe11ed3361fca5456177b1bd4482') in 0.134246 seconds
-  Import took 0.137368 seconds .
+  Time since last request: 55.776206 seconds.
+  path: Assets/Models/Rooms/PrisonRoom.mat
+  artifactKey: Guid(605a930240afccf418dfd5f3f74435e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Rooms/PrisonRoom.mat using Guid(605a930240afccf418dfd5f3f74435e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a30a4246f5dbdceac197d47dbdf63b5b') in 0.023995 seconds
+  Import took 0.027643 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000305 seconds.
-  path: Assets/Models/Rooms/GlowDungeonRoom7Normal.png
-  artifactKey: Guid(fa7b604a5ff57144ca4669f18dc1f241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Rooms/GlowDungeonRoom7Normal.png using Guid(fa7b604a5ff57144ca4669f18dc1f241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '6f561921ebf226e774680a8d49b91fe0') in 0.073303 seconds
-  Import took 0.088786 seconds .
+  Time since last request: 7.673406 seconds.
+  path: Assets/Models/Rooms/PrisonRoomEmission.png
+  artifactKey: Guid(200d466d995b0804d8f7690dc48f0bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Rooms/PrisonRoomEmission.png using Guid(200d466d995b0804d8f7690dc48f0bf2) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '0d1c5289c54a410e7f2a8754e67347ca') in 0.057683 seconds
+  Import took 0.062292 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 0.000277 seconds.
-  path: Assets/Models/Rooms/GlowDungeonRoom7Emit.png
-  artifactKey: Guid(509263f2834b6c74a8e845a39ad64ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Rooms/GlowDungeonRoom7Emit.png using Guid(509263f2834b6c74a8e845a39ad64ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'b742fe11ed3361fca5456177b1bd4482') in 0.008353 seconds
-  Import took 0.011374 seconds .
+  Time since last request: 7.157215 seconds.
+  path: Assets/Models/Rooms/PrisonRoomNormal.png
+  artifactKey: Guid(e221bdb6c0e6e5d4db977eca2d9328fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Rooms/PrisonRoomNormal.png using Guid(e221bdb6c0e6e5d4db977eca2d9328fa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5ff25de1dfe00ff5b8f61dfb4d324929') in 0.033919 seconds
+  Import took 0.038744 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 46.142153 seconds.
-  path: Assets/Models/Rooms/GlowDungeonRoom7.mat
-  artifactKey: Guid(5b53ab302a4cd96489c2706057fbc1b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Rooms/GlowDungeonRoom7.mat using Guid(5b53ab302a4cd96489c2706057fbc1b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '37ed98234ec58c129ab82c4e94d7ee75') in 0.011735 seconds
-  Import took 0.015498 seconds .
+  Time since last request: 4.315796 seconds.
+  path: Assets/Models/Rooms/PrisonRoomRoughness.png
+  artifactKey: Guid(643e01563e654fa44aefaebd97e1c8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Rooms/PrisonRoomRoughness.png using Guid(643e01563e654fa44aefaebd97e1c8c3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'dae49c407a40033d5e0f61e4541c1863') in 0.018945 seconds
+  Import took 0.023875 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 9.181265 seconds.
-  path: Assets/Models/Rooms/GlowDungeonRoom7Emit.png
-  artifactKey: Guid(509263f2834b6c74a8e845a39ad64ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Rooms/GlowDungeonRoom7Emit.png using Guid(509263f2834b6c74a8e845a39ad64ead) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3b00ed960371c4b1e6245a530ae9013e') in 0.057511 seconds
-  Import took 0.062102 seconds .
+  Time since last request: 4.493014 seconds.
+  path: Assets/Models/Rooms/PrisonRoomTexture.png
+  artifactKey: Guid(ea9b320a522b0584196ac575dbf5e0d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Rooms/PrisonRoomTexture.png using Guid(ea9b320a522b0584196ac575dbf5e0d9) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '590fd2c89d035a1918e8480094c0e0cc') in 0.019262 seconds
+  Import took 0.024151 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 6.591238 seconds.
-  path: Assets/Models/Rooms/GlowDungeonRoom7Normal.png
-  artifactKey: Guid(fa7b604a5ff57144ca4669f18dc1f241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Rooms/GlowDungeonRoom7Normal.png using Guid(fa7b604a5ff57144ca4669f18dc1f241) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'a9397e41624a065dd39b9b52b935209f') in 0.021533 seconds
-  Import took 0.047951 seconds .
+  Time since last request: 7.895516 seconds.
+  path: Assets/Models/Rooms/PrisonRoom.mat
+  artifactKey: Guid(605a930240afccf418dfd5f3f74435e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Rooms/PrisonRoom.mat using Guid(605a930240afccf418dfd5f3f74435e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '5e2e28f9ea30630f620e21df3d53b1a6') in 0.018809 seconds
+  Import took 0.023834 seconds .
 
 ========================================================================
 Received Import Request.
-  Time since last request: 4.343371 seconds.
-  path: Assets/Models/Rooms/GlowDungeonRoom7Roughness.png
-  artifactKey: Guid(134c480ae86b27740957425801865103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Rooms/GlowDungeonRoom7Roughness.png using Guid(134c480ae86b27740957425801865103) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '3707f0eb7f22ec5df7fd6883926e43b5') in 0.018829 seconds
-  Import took 0.024015 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 4.766792 seconds.
-  path: Assets/Models/Rooms/GlowDungeonRoom7Texture.png
-  artifactKey: Guid(cd75c332644648641aa09b400052d33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Rooms/GlowDungeonRoom7Texture.png using Guid(cd75c332644648641aa09b400052d33d) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: '9c400d896a3cfdc53076d1be1b257700') in 0.019090 seconds
-  Import took 0.024107 seconds .
-
-========================================================================
-Received Import Request.
-  Time since last request: 34.178937 seconds.
-  path: Assets/Models/Rooms/GlowDungeonRoom7.mat
-  artifactKey: Guid(5b53ab302a4cd96489c2706057fbc1b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
-Start importing Assets/Models/Rooms/GlowDungeonRoom7.mat using Guid(5b53ab302a4cd96489c2706057fbc1b3) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'eead184c664d5e3805c8fb3b846a2dd1') in 0.101349 seconds
-  Import took 0.109815 seconds .
+  Time since last request: 56.387470 seconds.
+  path: Assets/Models/Rooms/PrisonRoom.mat
+  artifactKey: Guid(605a930240afccf418dfd5f3f74435e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/Models/Rooms/PrisonRoom.mat using Guid(605a930240afccf418dfd5f3f74435e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)  -> (artifact id: 'f87b08cc38e664dc071b45d437c3f147') in 0.091901 seconds
+  Import took 0.101376 seconds .
 
 AssetImportWorkerClient::OnTransportError - code=2 error=End of file
