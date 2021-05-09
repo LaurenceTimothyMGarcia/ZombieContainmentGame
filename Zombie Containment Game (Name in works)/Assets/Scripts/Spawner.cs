@@ -1,33 +1,48 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class Spawner : MonoBehaviour
 {
-
-    public List<GameObject> items = new List<GameObject>();
-    public bool isRandomized;
+    //Add the game object
+    public GameObject item;
     
-    // Start is called before the first frame update
+    //Locations
+    private int xPos;
+    private int zPos;
+
+    //Spawner range minimums
+    public int xMin;
+    public int zMin;
+
+    //User inputs the item spawner range maximums
+    public int xMax;
+    public int zMax;
+
+    //Reduce the amount of items that spawn, the higher itemCount is
+    public int itemCount;
+
     void Start()
     {
-        
+        StartCoroutine(ItemDrop());
     }
 
-    // Update is called once per frame
-    void Update()
+    IEnumerator ItemDrop()
     {
-        
-    }
-
-    public void SpawnObject()
-    {
-        int index = isRandomized ? Random.Range(0, items.Count) : 0;
-        if(items.Count > 0)
+        while(itemCount < 5)
         {
-            
-            Instantiate(items[index], transform.position, transform.rotation);
+            xPos = Random.Range(xMin, xMax); //Default: xPos = (1, 50)
+            zPos = Random.Range(zMin, zMax); //Default: zPos = (1, 31)
 
+            //Spawn item
+            Instantiate(item, new Vector3(xPos, 43, zPos), Quaternion.identity);
+
+            //Spawn delay
+            yield return new WaitForSeconds(0.5f);
+            
+            //Item spawn incriment
+            itemCount += 1;
         }
     }
+
 }
