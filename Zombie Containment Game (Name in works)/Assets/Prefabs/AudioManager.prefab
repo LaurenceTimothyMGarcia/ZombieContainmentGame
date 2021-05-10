@@ -110,3 +110,9 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: OpenDoor
+    clip: {fileID: 8300000, guid: 8dea9002613166744b5804bbdcb01385, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

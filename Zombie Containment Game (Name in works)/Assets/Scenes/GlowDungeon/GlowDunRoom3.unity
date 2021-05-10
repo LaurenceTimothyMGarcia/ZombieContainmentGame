@@ -292,6 +292,16 @@ PrefabInstance:
       propertyPath: m_Name
       value: FrogMonster (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 6318687878297273417, guid: 3e10eb42874514f499364796f23fa922,
+        type: 3}
+      propertyPath: ThePlayer
+      value: 
+      objectReference: {fileID: 661518700}
+    - target: {fileID: 6318687878297273417, guid: 3e10eb42874514f499364796f23fa922,
+        type: 3}
+      propertyPath: ScreenFlash
+      value: 
+      objectReference: {fileID: 1137197815}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e10eb42874514f499364796f23fa922, type: 3}
 --- !u!1 &373985976

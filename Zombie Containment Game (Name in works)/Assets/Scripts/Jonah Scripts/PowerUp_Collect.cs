@@ -22,6 +22,14 @@ public class PowerUp_Collect : MonoBehaviour
     public bool isJackpot;
     public bool isHealthPickup;
 
+    public static int damageChange = 0;
+    public static float rangeChange = 0;
+    public static float fireRateChange = 0;
+    public static int maxAmmoChange = 0;
+    public static int currentAmmoChange = 0;
+    public static float spreadChange = 0;
+    public static float walkSpeedChange = 0;
+
 
     public bool isNegative;
 
@@ -116,41 +124,33 @@ public class PowerUp_Collect : MonoBehaviour
         if (isCaliber == true)
         {
             weapon.range += 4;
-            //shotgun.range += 1;
         }
 
         if (isPiercing == true)
         {
             weapon.damage += 2;
-            //Debug.Log(shotgun.damage);
-            //shotgun.damage += 1;
         }
 
         if (isBandolier == true)
         {
             weapon.maxAmmo += 2;
             weapon.currentAmmo += 2;
-            //Debug.Log(shotgun.currentAmmo);
-            //shotgun.currentAmmo += 1;
-            //shotgun.maxAmmo += 1;
         }
 
         if (isFireSpeed == true)
         {
             weapon.fireRate += 2;
-            //shotgun.fireRate += 0.5f;
         }
 
         if (isStamina == true)
         {
-            playerController.walkSpeed += 1;
+            movement.walkSpeed += 1;
 
         }
 
         if (isDexterity == true)
         {
             weapon.reloadTime -= 0.5f;
-            //shotgun.reloadTime -= 0.5f;
         }
 
         if (isPrecision == true)
@@ -166,16 +166,10 @@ public class PowerUp_Collect : MonoBehaviour
             weapon.maxAmmo += 2;
             weapon.currentAmmo += 2;
             weapon.fireRate += 2;
-            playerController.walkSpeed += 1;
+            movement.walkSpeed += 1;
             weapon.reloadTime -= 0.5f;
             weapon.range += 4;
             weapon.spread -= 0.001f;
-            /*shotgun.reloadTime -= 0.5f;
-            shotgun.fireRate += 0.5f;
-            shotgun.currentAmmo += 1;
-            shotgun.maxAmmo += 1;
-            shotgun.damage += 1;
-            shotgun.range += 1;*/
         }
 
         if (isHealthPickup == true)

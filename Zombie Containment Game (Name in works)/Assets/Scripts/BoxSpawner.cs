@@ -22,16 +22,28 @@ public class BoxSpawner : MonoBehaviour
     //Reduce the amount of items that spawn, the higher itemCount is
     public int itemCount;
     int i = 0;
+    bool runOnce = true;
 
     void Start()
     {
-        Debug.Log("Drop items right now");
+        /*Debug.Log("Drop items right now");
         FindObjectOfType<AudioManager>().Play("ItemDrop");
-        StartCoroutine(ItemDrop());
+        StartCoroutine(ItemDrop());*/
+    }
+
+    void Update()
+    {
+        if (runOnce)
+        {
+            //FindObjectOfType<AudioManager>().Play("ItemDrop");
+            StartCoroutine(ItemDrop());
+            runOnce = false;
+        }
     }
 
     IEnumerator ItemDrop()
     {
+        FindObjectOfType<AudioManager>().Play("ItemDrop");
         while(i < itemCount)
         {
             xPos = Random.Range(xMin, xMax); //Default: xPos = (1, 50)
