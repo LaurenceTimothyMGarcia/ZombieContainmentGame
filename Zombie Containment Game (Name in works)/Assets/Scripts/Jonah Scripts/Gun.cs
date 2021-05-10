@@ -17,16 +17,16 @@ public class Gun : MonoBehaviour
     public bool isFiring;
 
     //Weapon Statistics
-    public static int damage;
-    public static float range;
-    public static float fireRate;
-    public static int maxAmmo;
-    public static int currentAmmo;
-    public static float spread;
+    public int damage;
+    public float range;
+    public float fireRate;
+    public int maxAmmo;
+    public int currentAmmo;
+    public float spread;
    
     //Reload Statistics
     public bool isReloading = false;
-    public static float reloadTime;
+    public float reloadTime;
 
     public float nextTimeToFire = 0f;
 
