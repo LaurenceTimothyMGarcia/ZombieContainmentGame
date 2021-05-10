@@ -887,7 +887,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ThePlayer: {fileID: 0}
   TargetDistance: 0
-  AllowedRange: 10
+  AllowedRange: 20
   TheEnemy: {fileID: 8367845051187453846}
   EnemySpeed: 5
   AttackTrigger: 0

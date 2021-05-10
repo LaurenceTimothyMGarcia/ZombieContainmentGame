@@ -25,7 +25,6 @@ public class BoxSpawner : MonoBehaviour
 
     void Start()
     {
-        FindObjectOfType<AudioManager>().Play("ItemDrop");
         StartCoroutine(ItemDrop());
     }
 

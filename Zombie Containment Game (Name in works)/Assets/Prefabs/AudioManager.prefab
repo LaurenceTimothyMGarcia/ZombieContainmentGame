@@ -93,14 +93,8 @@ MonoBehaviour:
     loop: 0
     source: {fileID: 0}
   - name: Dash
-    clip: {fileID: 8300000, guid: c65656c661a8aa848ab614a3fd89af9f, type: 3}
+    clip: {fileID: 8300000, guid: 45c89c37c205f6c4eb0e5f144e08e86a, type: 3}
     volume: 0.75
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: ItemDrop
-    clip: {fileID: 8300000, guid: ede4703b3d9e84746ac00b35743e2f0d, type: 3}
-    volume: 1
     pitch: 1
     loop: 0
     source: {fileID: 0}
