@@ -560,6 +560,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8183557725215909392, guid: f6d728f7befb13244ac5d1e98cb653f1,
         type: 3}
+      propertyPath: bossRoom
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183557725215909392, guid: f6d728f7befb13244ac5d1e98cb653f1,
+        type: 3}
       propertyPath: frontRoom
       value: 2
       objectReference: {fileID: 0}
@@ -1148,6 +1153,7 @@ MonoBehaviour:
   fireRate: 1
   maxAmmo: 6
   currentAmmo: 6
+  amountOfAmmo: 0
   spread: 1
   isReloading: 0
   reloadTime: 1
@@ -6439,6 +6445,7 @@ MonoBehaviour:
   fireRate: 12
   maxAmmo: 20
   currentAmmo: 20
+  amountOfAmmo: 0
   spread: 0.25
   isReloading: 0
   reloadTime: 0.5
@@ -7646,6 +7653,7 @@ MonoBehaviour:
   fireRate: 1
   maxAmmo: 12
   currentAmmo: 12
+  amountOfAmmo: 0
   spread: 0.04
   isReloading: 0
   reloadTime: 1
@@ -10282,6 +10290,7 @@ MonoBehaviour:
   fireRate: 10
   maxAmmo: 45
   currentAmmo: 45
+  amountOfAmmo: 0
   spread: 0.015
   isReloading: 0
   reloadTime: 0.5
@@ -10443,6 +10452,7 @@ MonoBehaviour:
   fireRate: 2
   maxAmmo: 5
   currentAmmo: 5
+  amountOfAmmo: 0
   spread: 0
   isReloading: 0
   reloadTime: 0.5
@@ -14899,6 +14909,7 @@ MonoBehaviour:
   fireRate: 5
   maxAmmo: 30
   currentAmmo: 30
+  amountOfAmmo: 0
   spread: 0.05
   isReloading: 0
   reloadTime: 0.75

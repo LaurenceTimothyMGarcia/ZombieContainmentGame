@@ -9,6 +9,7 @@ public class GlobalHealth : MonoBehaviour
     public static int PlayerHealth = 25;
     public static int maxHealth = 25;
     public int InternalHealth;
+    public static int originalHealth = 25;
     public GameObject HealthDisplay;
 
     void Update()

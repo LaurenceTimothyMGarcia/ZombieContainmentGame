@@ -11,6 +11,7 @@ public class SceneRandomizer : MonoBehaviour
     public int listSize;
     public int frontRoom;
     public int backRoom;
+    public int bossRoom;
     int currentScene;
 
     string result;
@@ -27,7 +28,7 @@ public class SceneRandomizer : MonoBehaviour
         listOfScenes = ListOfRooms.GetArray();
         if(listOfScenes.Count == 0)
         {
-            SceneManager.LoadScene(9);
+            SceneManager.LoadScene(bossRoom);
             return;
         }
 

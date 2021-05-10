@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
@@ -12,6 +13,7 @@ public class GameOver : MonoBehaviour
 
     public GlobalHealth health;
     public static bool GameIsPaused = false;
+    public float timeTillReset = 1f;
 
     private Scene scene;
 
@@ -26,30 +28,36 @@ public class GameOver : MonoBehaviour
     {
         if(GlobalHealth.PlayerHealth <= 0)
         {
+            GlobalHealth.PlayerHealth = GlobalHealth.originalHealth;
             appear();
         }
     }
 
     void appear()
     {
-
+        //AudioManager audio = GetComponent<AudioManager>();
+        
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 
         gameOverUI.SetActive(true);
         inGameUI.SetActive(false);
         pauseUI.SetActive(false);
-        Time.timeScale = 0f;
+        //Time.timeScale = 0;
+        //audio.GetComponent<AudioManager>().enabled = false;
         GameIsPaused = true;
+        
     }
 
     public void restart()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        //Time.timeScale = 1;
+        SceneManager.LoadScene(2);
     }
 
     public void quit()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        //Time.timeScale = 1;
+        SceneManager.LoadScene(0);
     }
 }
