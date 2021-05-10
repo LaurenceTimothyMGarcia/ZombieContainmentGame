@@ -553,6 +553,31 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2927732498030941032, guid: d10eb9846dae0024883f1946a2a596f6,
+        type: 3}
+      propertyPath: sounds.Array.size
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 2927732498030941032, guid: d10eb9846dae0024883f1946a2a596f6,
+        type: 3}
+      propertyPath: sounds.Array.data[9].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3f2867ddff038b848a440541c0954516, type: 3}
+    - target: {fileID: 2927732498030941032, guid: d10eb9846dae0024883f1946a2a596f6,
+        type: 3}
+      propertyPath: sounds.Array.data[9].name
+      value: BeginningSpeech
+      objectReference: {fileID: 0}
+    - target: {fileID: 2927732498030941032, guid: d10eb9846dae0024883f1946a2a596f6,
+        type: 3}
+      propertyPath: sounds.Array.data[9].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2927732498030941032, guid: d10eb9846dae0024883f1946a2a596f6,
+        type: 3}
+      propertyPath: sounds.Array.data[9].volume
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d10eb9846dae0024883f1946a2a596f6, type: 3}
 --- !u!4 &1493568884 stripped
@@ -582,12 +607,12 @@ PrefabInstance:
     - target: {fileID: 7257993471516642717, guid: 47f744f09aa03204690c3478f11b87b5,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: 7.3023496
+      value: 6.03
       objectReference: {fileID: 0}
     - target: {fileID: 7257993471516642717, guid: 47f744f09aa03204690c3478f11b87b5,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.808
+      value: 1.81
       objectReference: {fileID: 0}
     - target: {fileID: 7257993471516642717, guid: 47f744f09aa03204690c3478f11b87b5,
         type: 3}
