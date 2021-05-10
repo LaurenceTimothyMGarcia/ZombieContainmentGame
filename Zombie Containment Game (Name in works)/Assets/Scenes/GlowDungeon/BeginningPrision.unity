@@ -212,7 +212,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 1
+  m_Intensity: 25
   m_Range: 50
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -270,7 +270,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 666561861}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.84, y: 7.7959704, z: 0.58338356}
+  m_LocalPosition: {x: 2.84, y: 7.7959704, z: -1.88}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -305,7 +305,7 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_Intensity: 2
+  m_Intensity: 3
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -369,6 +369,75 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &928691237
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 8914634323704663441, guid: 17228d119be467f42ae3b8a586c35e80,
+        type: 3}
+      propertyPath: m_Name
+      value: Global Volume
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914634323704663455, guid: 17228d119be467f42ae3b8a586c35e80,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914634323704663455, guid: 17228d119be467f42ae3b8a586c35e80,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.7034025
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914634323704663455, guid: 17228d119be467f42ae3b8a586c35e80,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 6.2519536
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914634323704663455, guid: 17228d119be467f42ae3b8a586c35e80,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.62220955
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914634323704663455, guid: 17228d119be467f42ae3b8a586c35e80,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914634323704663455, guid: 17228d119be467f42ae3b8a586c35e80,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914634323704663455, guid: 17228d119be467f42ae3b8a586c35e80,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914634323704663455, guid: 17228d119be467f42ae3b8a586c35e80,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914634323704663455, guid: 17228d119be467f42ae3b8a586c35e80,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914634323704663455, guid: 17228d119be467f42ae3b8a586c35e80,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8914634323704663455, guid: 17228d119be467f42ae3b8a586c35e80,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 17228d119be467f42ae3b8a586c35e80, type: 3}
 --- !u!1001 &933891776
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -617,7 +686,7 @@ PrefabInstance:
     - target: {fileID: 7257993471516642717, guid: 47f744f09aa03204690c3478f11b87b5,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: 4.5
+      value: 3.82
       objectReference: {fileID: 0}
     - target: {fileID: 7257993471516642717, guid: 47f744f09aa03204690c3478f11b87b5,
         type: 3}
@@ -4095,7 +4164,6 @@ MonoBehaviour:
   playerCamera: {fileID: 1762836433049542461}
   mouseSensitivity: 2.5
   lockCursor: 1
-  walkSpeed: 10
   gravity: -9.81
   moveSmoothTime: 0.1
   mouseSmoothTime: 0.03
