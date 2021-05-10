@@ -22,6 +22,7 @@ public class Gun : MonoBehaviour
     public float fireRate;
     public int maxAmmo;
     public int currentAmmo;
+    public int amountOfAmmo;
     public float spread;
    
     //Reload Statistics

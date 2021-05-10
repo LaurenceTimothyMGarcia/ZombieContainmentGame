@@ -43,6 +43,7 @@ public class ShotgunR : Gun
 
         if (currentAmmo <= 0)
         {
+            anim.SetBool("Reload", true);
             StartCoroutine(Reload());
             return;
         }
@@ -65,7 +66,7 @@ public class ShotgunR : Gun
             return;
         }
 
-        totalAmmo.text = maxAmmo.ToString();
+        totalAmmo.text = amountOfAmmo.ToString();
         ammoDisplay.text = currentAmmo.ToString();
     }
 
@@ -158,14 +159,32 @@ public class ShotgunR : Gun
 
     IEnumerator Reload()
     {
+        int difference;
+        
         isReloading = true;
-        Debug.Log("Reloading...");
+        //Debug.Log("Reloading...");
         FindObjectOfType<AudioManager>().Play("Reload");
 
         yield return new WaitForSeconds(reloadTime);
         anim.SetBool("Reload", false);
 
-        currentAmmo = maxAmmo;
+        if (amountOfAmmo <= 0)
+        {
+            yield break;
+        }
+
+        if (amountOfAmmo < maxAmmo)
+        {
+            currentAmmo = amountOfAmmo;
+            amountOfAmmo -= amountOfAmmo;
+        }
+        else
+        {
+            difference = maxAmmo - currentAmmo;
+            currentAmmo = maxAmmo;
+            amountOfAmmo -= difference;
+        }
+
         isReloading = false;
     }
 }

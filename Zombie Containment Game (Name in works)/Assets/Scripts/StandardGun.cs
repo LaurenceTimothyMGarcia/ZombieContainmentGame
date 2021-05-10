@@ -49,7 +49,7 @@ public class StandardGun : Gun
         }
         
 
-        totalAmmo.text = maxAmmo.ToString();
+        totalAmmo.text = amountOfAmmo.ToString();
         ammoDisplay.text = currentAmmo.ToString();
 
     }
@@ -59,6 +59,8 @@ public class StandardGun : Gun
     //Reloading
     IEnumerator Reload()
     {
+        int difference;
+        
         isReloading = true;
         //Debug.Log("Reloading...");
         FindObjectOfType<AudioManager>().Play("Reload");
@@ -66,7 +68,23 @@ public class StandardGun : Gun
         yield return new WaitForSeconds(reloadTime);
         anim.SetBool("Reload", false);
 
-        currentAmmo = maxAmmo;
+        if (amountOfAmmo <= 0)
+        {
+            yield break;
+        }
+
+        if (amountOfAmmo < maxAmmo)
+        {
+            currentAmmo = amountOfAmmo;
+            amountOfAmmo -= amountOfAmmo;
+        }
+        else
+        {
+            difference = maxAmmo - currentAmmo;
+            currentAmmo = maxAmmo;
+            amountOfAmmo -= difference;
+        }
+
         isReloading = false;
     }
 

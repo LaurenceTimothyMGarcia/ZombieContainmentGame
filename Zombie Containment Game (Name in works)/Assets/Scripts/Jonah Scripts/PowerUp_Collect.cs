@@ -117,8 +117,8 @@ public class PowerUp_Collect : MonoBehaviour
 
         if (isVitality == true)
         {
-            GlobalHealth.PlayerHealth += 25;
-            GlobalHealth.maxHealth += 25;
+            //GlobalHealth.PlayerHealth += 25;
+            GlobalHealth.maxHealth += 5;
         }
 
         if (isCaliber == true)
@@ -134,7 +134,7 @@ public class PowerUp_Collect : MonoBehaviour
         if (isBandolier == true)
         {
             weapon.maxAmmo += 2;
-            weapon.currentAmmo += 2;
+            weapon.amountOfAmmo += 2;
         }
 
         if (isFireSpeed == true)
@@ -160,11 +160,11 @@ public class PowerUp_Collect : MonoBehaviour
 
         if (isJackpot == true)
         {
-            GlobalHealth.PlayerHealth += 25;
-            GlobalHealth.maxHealth += 25;
+            //GlobalHealth.PlayerHealth += 25;
+            GlobalHealth.maxHealth += 5;
             weapon.damage += 2;
+            weapon.amountOfAmmo += 2;
             weapon.maxAmmo += 2;
-            weapon.currentAmmo += 2;
             weapon.fireRate += 2;
             movement.walkSpeed += 1;
             weapon.reloadTime -= 0.5f;

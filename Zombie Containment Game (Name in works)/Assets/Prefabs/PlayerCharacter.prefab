@@ -131,6 +131,7 @@ MonoBehaviour:
   fireRate: 5
   maxAmmo: 30
   currentAmmo: 30
+  amountOfAmmo: 60
   spread: 0.05
   isReloading: 0
   reloadTime: 0.75
@@ -253,6 +254,7 @@ MonoBehaviour:
   fireRate: 1
   maxAmmo: 6
   currentAmmo: 6
+  amountOfAmmo: 24
   spread: 1
   isReloading: 0
   reloadTime: 1
@@ -398,6 +400,7 @@ MonoBehaviour:
   playerCamera: {fileID: 1762836432959178397}
   mouseSensitivity: 2.5
   lockCursor: 1
+  walkSpeed: 10
   gravity: -9.81
   moveSmoothTime: 0.1
   mouseSmoothTime: 0.03
@@ -950,6 +953,7 @@ MonoBehaviour:
   fireRate: 1
   maxAmmo: 12
   currentAmmo: 12
+  amountOfAmmo: 24
   spread: 0.04
   isReloading: 0
   reloadTime: 1
@@ -1071,6 +1075,7 @@ MonoBehaviour:
   fireRate: 10
   maxAmmo: 45
   currentAmmo: 45
+  amountOfAmmo: 90
   spread: 0.015
   isReloading: 0
   reloadTime: 0.5
@@ -1301,6 +1306,7 @@ MonoBehaviour:
   fireRate: 2
   maxAmmo: 5
   currentAmmo: 5
+  amountOfAmmo: 25
   spread: 0
   isReloading: 0
   reloadTime: 0.5
@@ -1461,6 +1467,7 @@ MonoBehaviour:
   fireRate: 12
   maxAmmo: 20
   currentAmmo: 20
+  amountOfAmmo: 80
   spread: 0.25
   isReloading: 0
   reloadTime: 0.5
