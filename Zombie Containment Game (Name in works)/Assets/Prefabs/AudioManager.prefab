@@ -98,6 +98,12 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: BeginningSpeech
+    clip: {fileID: 8300000, guid: 3f2867ddff038b848a440541c0954516, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
   - name: ItemDrop
     clip: {fileID: 8300000, guid: ede4703b3d9e84746ac00b35743e2f0d, type: 3}
     volume: 1
