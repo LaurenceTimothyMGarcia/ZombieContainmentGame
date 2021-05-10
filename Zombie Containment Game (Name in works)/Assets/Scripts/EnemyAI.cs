@@ -11,7 +11,9 @@ public class EnemyAI : MonoBehaviour
 
     public LayerMask whatIsGround, whatIsPlayer;
 
-    public float health;
+    public Animator anim;
+
+    public int health;
 
     //Patrolling
     public Vector3 walkPoint;
@@ -28,6 +30,7 @@ public class EnemyAI : MonoBehaviour
 
     private void Awake()
     {
+        anim = GetComponent<Animator>();
         player = GameObject.Find("PlayerCharacter").transform;
         agent = GetComponent<NavMeshAgent>();
     }
@@ -40,16 +43,19 @@ public class EnemyAI : MonoBehaviour
 
         if (!playerInSightRange && !playerInAttackRange)
         {
+            AnimationBool(false, false);
             Patroling();
         }
 
         if (playerInSightRange && !playerInAttackRange)
         {
+            AnimationBool(true, false);
             ChasePlayer();
         }
 
         if (playerInSightRange && playerInAttackRange)
         {
+            AnimationBool(false, true);
             AttackPlayer();
         }
     }
@@ -104,6 +110,8 @@ public class EnemyAI : MonoBehaviour
         if (!alreadyAttacked)
         {
             //attack code here
+
+
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
@@ -120,6 +128,7 @@ public class EnemyAI : MonoBehaviour
 
         if (health <= 0)
         {
+            anim.SetTrigger("isDead");
             Invoke(nameof(DestroyEnemy), 2f);
         }
     }
@@ -127,5 +136,11 @@ public class EnemyAI : MonoBehaviour
     private void DestroyEnemy()
     {
         Destroy(gameObject);
+    }
+
+    private void AnimationBool(bool chase, bool attack)
+    {
+        anim.SetBool("isChase", chase);
+        anim.SetBool("isAttack", attack);
     }
 }

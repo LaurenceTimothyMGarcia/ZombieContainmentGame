@@ -119,14 +119,20 @@ public class ShotgunR : Gun
         currentAmmo--;
     }
 
-    void Hit(RaycastHit hit, float damage)
+    void Hit(RaycastHit hit, int damage)
     {
         MonsterFollow target = hit.transform.GetComponent<MonsterFollow>();
+        EnemyAI enemy = hit.transform.GetComponent<EnemyAI>();
         Target box = hit.transform.GetComponent<Target>();
         //Target target = hit.transform.GetComponent<Target>();
         if(target != null)
         {
             target.TakeDamage(damage);
+        }
+
+        if(enemy != null)
+        {
+            enemy.TakeDamage(damage);
         }
 
         if (box != null)

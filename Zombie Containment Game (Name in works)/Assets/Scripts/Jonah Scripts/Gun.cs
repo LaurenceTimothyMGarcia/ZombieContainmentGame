@@ -17,7 +17,7 @@ public class Gun : MonoBehaviour
     public bool isFiring;
 
     //Weapon Statistics
-    public float damage;
+    public int damage;
     public float range;
     public float fireRate;
     public int maxAmmo;

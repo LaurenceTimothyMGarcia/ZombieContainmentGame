@@ -88,11 +88,17 @@ public class StandardGun : Gun
             Debug.Log(hit.transform.name + " hit him");
             
             MonsterFollow target = hit.transform.GetComponent<MonsterFollow>();
+            EnemyAI enemy = hit.transform.GetComponent<EnemyAI>();
             Target box = hit.transform.GetComponent<Target>();
             //Target target = hit.transform.GetComponent<Target>();
             if(target != null)
             {
                 target.TakeDamage(damage);
+            }
+
+            if(enemy != null)
+            {
+                enemy.TakeDamage(damage);
             }
 
             if (box != null)
