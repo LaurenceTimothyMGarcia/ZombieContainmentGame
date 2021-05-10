@@ -9,11 +9,18 @@ public class SceneRandomizer : MonoBehaviour
     public int selectedScene;
     public int arrayNumber;
     public int listSize;
+    public int frontRoom;
+    public int backRoom;
     int currentScene;
 
     string result;
 
     public ListOfRooms roomList;
+
+    void Start()
+    {
+        ListOfRooms.setArray(frontRoom, backRoom);
+    }
     
     void OnTriggerEnter(Collider other)
     {

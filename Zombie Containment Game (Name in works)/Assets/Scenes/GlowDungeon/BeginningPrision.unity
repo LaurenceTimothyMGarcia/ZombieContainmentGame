@@ -447,6 +447,21 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 8183557725215909392, guid: f6d728f7befb13244ac5d1e98cb653f1,
         type: 3}
+      propertyPath: backRoom
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183557725215909392, guid: f6d728f7befb13244ac5d1e98cb653f1,
+        type: 3}
+      propertyPath: listSize
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183557725215909392, guid: f6d728f7befb13244ac5d1e98cb653f1,
+        type: 3}
+      propertyPath: frontRoom
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183557725215909392, guid: f6d728f7befb13244ac5d1e98cb653f1,
+        type: 3}
       propertyPath: selectedScene
       value: 2
       objectReference: {fileID: 0}
