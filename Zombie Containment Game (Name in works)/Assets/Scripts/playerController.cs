@@ -7,7 +7,7 @@ public class playerController : MonoBehaviour
     [SerializeField] Transform playerCamera = null;
     [SerializeField] float mouseSensitivity = 2.5f;
     [SerializeField] bool lockCursor = true;
-    public float walkSpeed = 6.0f;
+    public static float walkSpeed = 6.0f;
     [SerializeField] float gravity = -9.81f;
     [SerializeField] [Range(0.0f, 0.5f)] float moveSmoothTime = 0.1f;
     [SerializeField] [Range(0.0f, 0.5f)] float mouseSmoothTime = 0.03f;

@@ -115,21 +115,21 @@ public class PowerUp_Collect : MonoBehaviour
 
         if (isCaliber == true)
         {
-            weapon.range += 4;
+            Gun.range += 4;
             //shotgun.range += 1;
         }
 
         if (isPiercing == true)
         {
-            weapon.damage += 2;
+            Gun.damage += 2;
             //Debug.Log(shotgun.damage);
             //shotgun.damage += 1;
         }
 
         if (isBandolier == true)
         {
-            weapon.maxAmmo += 2;
-            weapon.currentAmmo += 2;
+            Gun.maxAmmo += 2;
+            Gun.currentAmmo += 2;
             //Debug.Log(shotgun.currentAmmo);
             //shotgun.currentAmmo += 1;
             //shotgun.maxAmmo += 1;
@@ -137,39 +137,39 @@ public class PowerUp_Collect : MonoBehaviour
 
         if (isFireSpeed == true)
         {
-            weapon.fireRate += 2;
+            Gun.fireRate += 2;
             //shotgun.fireRate += 0.5f;
         }
 
         if (isStamina == true)
         {
-            movement.walkSpeed += 1;
+            playerController.walkSpeed += 1;
 
         }
 
         if (isDexterity == true)
         {
-            weapon.reloadTime -= 0.5f;
+            Gun.reloadTime -= 0.5f;
             //shotgun.reloadTime -= 0.5f;
         }
 
         if (isPrecision == true)
         {
-            weapon.spread -= 0.001f;
+            Gun.spread -= 0.001f;
         }
 
         if (isJackpot == true)
         {
             GlobalHealth.PlayerHealth += 25;
             GlobalHealth.maxHealth += 25;
-            weapon.damage += 2;
-            weapon.maxAmmo += 2;
-            weapon.currentAmmo += 2;
-            weapon.fireRate += 2;
-            movement.walkSpeed += 1;
-            weapon.reloadTime -= 0.5f;
-            weapon.range += 4;
-            weapon.spread -= 0.001f;
+            Gun.damage += 2;
+            Gun.maxAmmo += 2;
+            Gun.currentAmmo += 2;
+            Gun.fireRate += 2;
+            playerController.walkSpeed += 1;
+            Gun.reloadTime -= 0.5f;
+            Gun.range += 4;
+            Gun.spread -= 0.001f;
             /*shotgun.reloadTime -= 0.5f;
             shotgun.fireRate += 0.5f;
             shotgun.currentAmmo += 1;
