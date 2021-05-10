@@ -11,6 +11,7 @@ public class MonsterFollow : MonoBehaviour
     public float EnemySpeed;
     public int AttackTrigger;
     public RaycastHit Shot;
+    public int damage = 5;
 
     public float health = 50f;
 
@@ -98,7 +99,7 @@ public class MonsterFollow : MonoBehaviour
         FindObjectOfType<AudioManager>().Play("Headbutt");
         yield return new WaitForSeconds(0.5f);
         ScreenFlash.SetActive(true);
-        GlobalHealth.PlayerHealth -= 1;
+        GlobalHealth.PlayerHealth -= damage;
         yield return new WaitForSeconds(0.05f);
         ScreenFlash.SetActive(false);
         yield return new WaitForSeconds(1);
