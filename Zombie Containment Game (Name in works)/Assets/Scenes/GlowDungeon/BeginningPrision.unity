@@ -445,6 +445,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 212207727010738768, guid: f6d728f7befb13244ac5d1e98cb653f1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4270001015888891367, guid: f6d728f7befb13244ac5d1e98cb653f1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7432787167770882953, guid: f6d728f7befb13244ac5d1e98cb653f1,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8183557725215909392, guid: f6d728f7befb13244ac5d1e98cb653f1,
         type: 3}
       propertyPath: backRoom
@@ -454,6 +469,11 @@ PrefabInstance:
         type: 3}
       propertyPath: frontRoom
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8183557725215909396, guid: f6d728f7befb13244ac5d1e98cb653f1,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8183557725215909399, guid: f6d728f7befb13244ac5d1e98cb653f1,
         type: 3}
@@ -4149,6 +4169,7 @@ MonoBehaviour:
   playerCamera: {fileID: 1762836433049542461}
   mouseSensitivity: 2.5
   lockCursor: 1
+  walkSpeed: 10
   gravity: -9.81
   moveSmoothTime: 0.1
   mouseSmoothTime: 0.03
