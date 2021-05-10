@@ -20,7 +20,7 @@ public class SceneRandomizer : MonoBehaviour
         listOfScenes = ListOfRooms.GetArray();
         if(listOfScenes.Count == 0)
         {
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene(9);
             return;
         }
 

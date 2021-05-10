@@ -12,6 +12,7 @@ public class EnemyAI : MonoBehaviour
     public LayerMask whatIsGround, whatIsPlayer;
 
     public Animator anim;
+    public GameObject ScreenFlash;
 
     public int health;
 
@@ -22,6 +23,8 @@ public class EnemyAI : MonoBehaviour
 
     //Attacking
     public float timeBetweenAttacks;
+    public int damage;
+    public float damDelay;
     bool alreadyAttacked;
 
     //States
@@ -110,11 +113,17 @@ public class EnemyAI : MonoBehaviour
         if (!alreadyAttacked)
         {
             //attack code here
-
+            Invoke(nameof(DamageDelay), damDelay);
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
         }
+    }
+
+    private void DamageDelay()
+    {
+        StartCoroutine(FlashScreen());
+        GlobalHealth.PlayerHealth -= damage;
     }
 
     private void ResetAttack()
@@ -124,7 +133,10 @@ public class EnemyAI : MonoBehaviour
 
     public void TakeDamage(int damage)
     {
+        FindObjectOfType<AudioManager>().Play("MonsterHit");
         health -= damage;
+        agent.SetDestination(transform.position);
+        anim.SetTrigger("isShot");
 
         if (health <= 0)
         {
@@ -142,5 +154,12 @@ public class EnemyAI : MonoBehaviour
     {
         anim.SetBool("isChase", chase);
         anim.SetBool("isAttack", attack);
+    }
+
+    IEnumerator FlashScreen()
+    {
+        ScreenFlash.SetActive(true);
+        yield return new WaitForSeconds(0.05f);
+        ScreenFlash.SetActive(false);
     }
 }

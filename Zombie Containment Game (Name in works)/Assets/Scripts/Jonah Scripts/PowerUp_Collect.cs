@@ -110,7 +110,7 @@ public class PowerUp_Collect : MonoBehaviour
         if (isVitality == true)
         {
             GlobalHealth.PlayerHealth += 25;
-            health.InternalHealth += 25;
+            GlobalHealth.maxHealth += 25;
         }
 
         if (isCaliber == true)
@@ -161,7 +161,7 @@ public class PowerUp_Collect : MonoBehaviour
         if (isJackpot == true)
         {
             GlobalHealth.PlayerHealth += 25;
-            health.InternalHealth += 25;
+            GlobalHealth.maxHealth += 25;
             weapon.damage += 2;
             weapon.maxAmmo += 2;
             weapon.currentAmmo += 2;
@@ -180,12 +180,12 @@ public class PowerUp_Collect : MonoBehaviour
 
         if (isHealthPickup == true)
         {
-            if (health.InternalHealth > GlobalHealth.PlayerHealth)
+            if (GlobalHealth.maxHealth > GlobalHealth.PlayerHealth)
             {
                 GlobalHealth.PlayerHealth += 10;
-                if (health.InternalHealth < GlobalHealth.PlayerHealth)
+                if (GlobalHealth.maxHealth < GlobalHealth.PlayerHealth)
                 {
-                    GlobalHealth.PlayerHealth = health.InternalHealth;
+                    GlobalHealth.PlayerHealth = GlobalHealth.maxHealth;
                 }
             }
         }

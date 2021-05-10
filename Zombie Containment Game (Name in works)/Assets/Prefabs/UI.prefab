@@ -806,7 +806,7 @@ MonoBehaviour:
     m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: New Text
@@ -3972,6 +3972,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 2584651087302084918}
     m_Modifications:
+    - target: {fileID: 3475934347545385728, guid: eef7d7797fcaf6e469f29dfa9c29674d,
+        type: 3}
+      propertyPath: m_Text
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3475934347545385729, guid: eef7d7797fcaf6e469f29dfa9c29674d,
         type: 3}
       propertyPath: m_Pivot.x
