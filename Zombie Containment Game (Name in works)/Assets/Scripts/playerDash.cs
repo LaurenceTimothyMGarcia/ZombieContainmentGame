@@ -51,6 +51,7 @@ public class playerDash : MonoBehaviour
 
     IEnumerator DashTimer()
     {
+        FindObjectOfType<AudioManager>().Play("Dash");
         this.GetComponent<playerDash>().enabled = false;
         yield return new WaitForSeconds(dashBreak);
         this.GetComponent<playerDash>().enabled = true;

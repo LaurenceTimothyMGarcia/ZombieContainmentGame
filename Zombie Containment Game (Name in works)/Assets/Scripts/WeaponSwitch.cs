@@ -6,6 +6,7 @@ public class WeaponSwitch : MonoBehaviour
     public GameObject[] guns;
 
     public static int selectedWeapon;
+    public bool startWithWeapon;
     public int range = 10;
     string weaponName;
 
