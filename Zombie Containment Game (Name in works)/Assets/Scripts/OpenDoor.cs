@@ -9,18 +9,13 @@ public class OpenDoor : MonoBehaviour
     public ParticleSystem doorOpen;
     public ParticleSystem flames;
 
-    void Start()
-    {
-
-    }
-
     void Update()
     {
         enemyCount = GameObject.FindGameObjectsWithTag("Enemy");
-        Debug.Log("enemies in scene: " + enemyCount.Length);
+        //Debug.Log("enemies in scene: " + enemyCount.Length);
         if (enemyCount.Length <= 0)
         {
-            boxCollider.enabled = true;
+            boxCollider.isTrigger = true;
             doorOpen.Play();
             flames.Play();
             FindObjectOfType<AudioManager>().Play("OpenDoor");

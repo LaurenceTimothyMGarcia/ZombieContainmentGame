@@ -46,25 +46,25 @@ MonoBehaviour:
   sounds:
   - name: GunShot
     clip: {fileID: 8300000, guid: 7d8aac540b78385499da192946bcf292, type: 3}
-    volume: 0.5
+    volume: 0.25
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Theme
     clip: {fileID: 8300000, guid: 58a05283eb0a0904d8312f3bab7c758c, type: 3}
-    volume: 0.353
+    volume: 0.25
     pitch: 1
     loop: 1
     source: {fileID: 0}
   - name: Reload
     clip: {fileID: 8300000, guid: d1d99af89774552488d603cbbd873320, type: 3}
-    volume: 1
+    volume: 0.75
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: MonsterHit
     clip: {fileID: 8300000, guid: 7aa865adfc6d85d46a22cde7480a9e59, type: 3}
-    volume: 1
+    volume: 0.75
     pitch: 1
     loop: 0
     source: {fileID: 0}
@@ -88,14 +88,14 @@ MonoBehaviour:
     source: {fileID: 0}
   - name: ShotgunShot
     clip: {fileID: 8300000, guid: 2dd8c32b6dfd3364bbc6b9ce927caa9f, type: 3}
-    volume: 0.5
+    volume: 0.25
     pitch: 1
     loop: 0
     source: {fileID: 0}
   - name: Dash
     clip: {fileID: 8300000, guid: c65656c661a8aa848ab614a3fd89af9f, type: 3}
     volume: 0.75
-    pitch: 1
+    pitch: 0.95
     loop: 0
     source: {fileID: 0}
   - name: BeginningSpeech
