@@ -35,7 +35,7 @@ public class BoxSpawner : MonoBehaviour
     {
         if (runOnce)
         {
-            //FindObjectOfType<AudioManager>().Play("ItemDrop");
+            FindObjectOfType<AudioManager>().Play("ItemDrop");
             StartCoroutine(ItemDrop());
             runOnce = false;
         }
@@ -43,7 +43,7 @@ public class BoxSpawner : MonoBehaviour
 
     IEnumerator ItemDrop()
     {
-        FindObjectOfType<AudioManager>().Play("ItemDrop");
+        //FindObjectOfType<AudioManager>().Play("ItemDrop");
         while(i < itemCount)
         {
             xPos = Random.Range(xMin, xMax); //Default: xPos = (1, 50)

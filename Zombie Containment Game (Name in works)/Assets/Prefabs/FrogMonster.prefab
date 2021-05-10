@@ -889,7 +889,7 @@ MonoBehaviour:
   TargetDistance: 0
   AllowedRange: 10
   TheEnemy: {fileID: 8367845051187453846}
-  EnemySpeed: 5
+  EnemySpeed: 10
   AttackTrigger: 0
   damage: 2
   health: 20

@@ -20,6 +20,7 @@ public class StandardGun : Gun
 
         if(currentAmmo <= 0)
         {
+            anim.SetBool("Reload", true);
             StartCoroutine(Reload());
             return;
         }
@@ -59,7 +60,7 @@ public class StandardGun : Gun
     IEnumerator Reload()
     {
         isReloading = true;
-        Debug.Log("Reloading...");
+        //Debug.Log("Reloading...");
         FindObjectOfType<AudioManager>().Play("Reload");
 
         yield return new WaitForSeconds(reloadTime);
@@ -85,7 +86,7 @@ public class StandardGun : Gun
         //Raycast
         if (Physics.Raycast(fpsCam.transform.position, direction, out hit, range))
         {
-            Debug.Log(hit.transform.name + " hit him");
+            //Debug.Log(hit.transform.name + " hit him");
             
             MonsterFollow target = hit.transform.GetComponent<MonsterFollow>();
             EnemyAI enemy = hit.transform.GetComponent<EnemyAI>();
