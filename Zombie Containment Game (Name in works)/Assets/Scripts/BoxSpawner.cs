@@ -26,16 +26,14 @@ public class BoxSpawner : MonoBehaviour
 
     void Start()
     {
-        /*Debug.Log("Drop items right now");
-        FindObjectOfType<AudioManager>().Play("ItemDrop");
-        StartCoroutine(ItemDrop());*/
+
     }
 
     void Update()
     {
         if (runOnce)
         {
-            FindObjectOfType<AudioManager>().Play("ItemDrop");
+            FindObjectOfType<VoiceManager>().Play("ItemDrop");
             StartCoroutine(ItemDrop());
             runOnce = false;
         }
@@ -43,7 +41,6 @@ public class BoxSpawner : MonoBehaviour
 
     IEnumerator ItemDrop()
     {
-        //FindObjectOfType<AudioManager>().Play("ItemDrop");
         while(i < itemCount)
         {
             xPos = Random.Range(xMin, xMax); //Default: xPos = (1, 50)

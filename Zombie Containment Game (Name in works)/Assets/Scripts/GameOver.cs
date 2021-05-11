@@ -29,6 +29,7 @@ public class GameOver : MonoBehaviour
         if(GlobalHealth.PlayerHealth <= 0)
         {
             GlobalHealth.PlayerHealth = GlobalHealth.originalHealth;
+            GlobalHealth.maxHealth = GlobalHealth.originalHealth;
             appear();
         }
     }
@@ -52,7 +53,7 @@ public class GameOver : MonoBehaviour
     public void restart()
     {
         //Time.timeScale = 1;
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
     }
 
     public void quit()

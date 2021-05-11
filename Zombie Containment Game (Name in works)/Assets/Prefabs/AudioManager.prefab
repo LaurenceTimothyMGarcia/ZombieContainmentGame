@@ -44,17 +44,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sounds:
-  - name: GunShot
-    clip: {fileID: 8300000, guid: 7d8aac540b78385499da192946bcf292, type: 3}
-    volume: 0.25
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
   - name: Theme
     clip: {fileID: 8300000, guid: 58a05283eb0a0904d8312f3bab7c758c, type: 3}
     volume: 0.25
     pitch: 1
     loop: 1
+    source: {fileID: 0}
+  - name: GunShot
+    clip: {fileID: 8300000, guid: 7d8aac540b78385499da192946bcf292, type: 3}
+    volume: 0.25
+    pitch: 1
+    loop: 0
     source: {fileID: 0}
   - name: Reload
     clip: {fileID: 8300000, guid: d1d99af89774552488d603cbbd873320, type: 3}
@@ -98,21 +98,9 @@ MonoBehaviour:
     pitch: 0.95
     loop: 0
     source: {fileID: 0}
-  - name: BeginningSpeech
-    clip: {fileID: 8300000, guid: 3f2867ddff038b848a440541c0954516, type: 3}
+  - name: Explosion
+    clip: {fileID: 8300000, guid: 9b3f4b01b14b5e349a0a602c5c7ddbe3, type: 3}
     volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: ItemDrop
-    clip: {fileID: 8300000, guid: ede4703b3d9e84746ac00b35743e2f0d, type: 3}
-    volume: 1
-    pitch: 1
-    loop: 0
-    source: {fileID: 0}
-  - name: OpenDoor
-    clip: {fileID: 8300000, guid: 8dea9002613166744b5804bbdcb01385, type: 3}
-    volume: 1
-    pitch: 1
+    pitch: 0.95
     loop: 0
     source: {fileID: 0}

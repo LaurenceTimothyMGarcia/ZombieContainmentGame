@@ -10,13 +10,25 @@ public class Barrel : MonoBehaviour
     public int damage = 10;
 
     public GameObject explosionEffect;
+    //public ParticleSystem explosionEffect;
 
     bool hasExploded = false;
+    Rigidbody rbPlayer;
+    Rigidbody rbFrog;
+    Rigidbody rbElong;
+    
+    MonsterFollow target;
+    EnemyAI enemy;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        rbPlayer = GameObject.FindWithTag("Player").GetComponent<Rigidbody>();
+        rbFrog = GameObject.Find("FrogMonster").GetComponent<Rigidbody>();
+        rbElong = GameObject.Find("Elongated").GetComponent<Rigidbody>();
+
+        target = GameObject.Find("FrogMonster").GetComponent<MonsterFollow>();
+        enemy = GameObject.Find("Elongated").GetComponent<EnemyAI>();
     }
 
     // Update is called once per frame
@@ -32,42 +44,41 @@ public class Barrel : MonoBehaviour
     void Explode()
     {
         // show effect
+        FindObjectOfType<AudioManager>().Play("Explosion");
         Instantiate(explosionEffect, transform.position, transform.rotation);
+        //explosionEffect.Play();
 
         Collider[] colliders = Physics.OverlapSphere(transform.position, blastRadius);
 
         foreach (Collider nearbyObject in colliders)
         {
             Rigidbody rb = nearbyObject.GetComponent<Rigidbody>();
-            Rigidbody rbPlayer = GameObject.FindWithTag("Player").GetComponent<Rigidbody>();
-            Rigidbody rbFrog = GameObject.Find("FrogMonster").GetComponent<Rigidbody>();
-            Rigidbody rbElong = GameObject.Find("Elongated").GetComponent<Rigidbody>();
-
-            MonsterFollow target = GameObject.Find("FrogMonster").GetComponent<MonsterFollow>();
-            EnemyAI enemy = GameObject.Find("Elongated").GetComponent<EnemyAI>();
-
-            if(rb == rbPlayer)
-            {
-                GlobalHealth.PlayerHealth -= damage;
-            }
-
-            if(rb == rbFrog)
-            {
-                target.TakeDamage(damage);
-            }
-
-            if(rb == rbElong)
-            {
-                enemy.TakeDamage(damage);
-            }
 
             if(rb != null)
             {
                 rb.AddExplosionForce(force, transform.position, blastRadius);
+                if(rb == rbPlayer)
+                {
+                    GlobalHealth.PlayerHealth -= damage;
+                }
+
+                if(rb == rbFrog)
+                {
+                    target.TakeDamage(damage);
+                }
+
+                if(rb == rbElong)
+                {
+                    enemy.TakeDamage(damage);
+                }
             }
         }
 
-
         Destroy(gameObject);
+    }
+
+    IEnumerator WaitTime()
+    {
+        yield return new WaitForSeconds(2f);
     }
 }

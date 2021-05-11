@@ -18,7 +18,8 @@ public class OpenDoor : MonoBehaviour
             boxCollider.isTrigger = true;
             doorOpen.Play();
             flames.Play();
-            FindObjectOfType<AudioManager>().Play("OpenDoor");
+            FindObjectOfType<VoiceManager>().Play("OpenDoor");
+            FindObjectOfType<AudioManager>().Play("Explosion");
             this.GetComponent<OpenDoor>().enabled = false;
         }
     }
