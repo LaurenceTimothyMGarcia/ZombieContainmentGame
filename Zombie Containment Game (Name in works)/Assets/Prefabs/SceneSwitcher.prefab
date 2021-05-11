@@ -116,6 +116,7 @@ MonoBehaviour:
   listSize: 0
   frontRoom: 0
   backRoom: 0
+  bossRoom: 9
 --- !u!114 &212207727010738768
 MonoBehaviour:
   m_ObjectHideFlags: 0

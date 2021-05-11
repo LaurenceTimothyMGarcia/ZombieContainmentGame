@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 
 public class GonkAI : MonoBehaviour
 {
@@ -16,6 +17,10 @@ public class GonkAI : MonoBehaviour
     public ParticleSystem flames;
 
     public int health;
+    public int maxHealth;
+
+    public GameObject healthBarUI;
+    public Slider slider;
 
     //Patrolling
     public Vector3 walkPoint;
@@ -39,11 +44,19 @@ public class GonkAI : MonoBehaviour
         anim = GetComponent<Animator>();
         player = GameObject.Find("PlayerCharacter").transform;
         agent = GetComponent<NavMeshAgent>();
+        health = maxHealth;
+        slider.value = health;
         //missle = GetComponent<HomingMissle>();
     }
 
     private void Update()
     {
+        slider.value = health;
+        if (health <= maxHealth)
+        {
+            healthBarUI.SetActive(true);
+        }
+
         //Check for sight and attack range
         playerInSightRange = Physics.CheckSphere(transform.position, sightRange, whatIsPlayer);
         playerInAttackRange = Physics.CheckSphere(transform.position, attackRange, whatIsPlayer);

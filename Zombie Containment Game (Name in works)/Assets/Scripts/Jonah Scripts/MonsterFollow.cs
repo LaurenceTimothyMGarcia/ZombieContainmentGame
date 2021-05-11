@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class MonsterFollow : MonoBehaviour
 {
@@ -13,7 +14,11 @@ public class MonsterFollow : MonoBehaviour
     public RaycastHit Shot;
     public int damage = 5;
 
-    public float health = 50f;
+    public float health = 20f;
+    public float maxHealth = 20f;
+
+    public GameObject healthBarUI;
+    public Slider slider;
 
     public Spawner itemSpawn;
 
@@ -24,8 +29,20 @@ public class MonsterFollow : MonoBehaviour
     public AudioSource Hurt03;
     public int HurtSound;
 
+    void Start()
+    {
+        health = maxHealth;
+        slider.value = health;
+    }
+
     void Update()
     {
+        slider.value = health;
+        if (health <= maxHealth)
+        {
+            healthBarUI.SetActive(true);
+        }
+        
         transform.LookAt(ThePlayer.transform);
         if (Physics.Raycast (transform.position, transform.TransformDirection(Vector3.forward), out Shot))
         {

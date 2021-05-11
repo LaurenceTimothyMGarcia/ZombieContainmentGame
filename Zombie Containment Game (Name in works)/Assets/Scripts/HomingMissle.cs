@@ -58,6 +58,11 @@ public class HomingMissle : MonoBehaviour
             GlobalHealth.PlayerHealth -= damage;
             Destroy(gameObject);
         }
+
+        if (other.CompareTag("Ground"))
+        {
+            Destroy(gameObject);
+        }
     }
 
     IEnumerator DestroyGameObject()
