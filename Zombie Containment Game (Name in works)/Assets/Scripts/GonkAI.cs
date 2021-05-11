@@ -65,6 +65,11 @@ public class GonkAI : MonoBehaviour
             anim.SetBool("isAttack", true);
             AttackPlayer();
         }
+
+        if (health <= 25)
+        {
+            FindObjectOfType<VoiceManager>().Play("WarningLowHealth");
+        }
     }
 
     private void Patroling()
@@ -104,12 +109,14 @@ public class GonkAI : MonoBehaviour
 
     private void ChasePlayer()
     {
+        FindObjectOfType<VoiceManager>().Play("WeLiveInSociety");
         flames.Play();
         agent.SetDestination(player.position);
     }
 
     private void AttackPlayer()
     {
+        FindObjectOfType<VoiceManager>().Play("Gonked");
         flames.Stop();
         //make sure enemy doesnt move
         agent.SetDestination(transform.position);
@@ -145,6 +152,7 @@ public class GonkAI : MonoBehaviour
 
         if (health <= 0)
         {
+            FindObjectOfType<VoiceManager>().Play("WarningDead");
             //anim.SetTrigger("isDead");
             Invoke(nameof(DestroyEnemy), 2f);
         }
