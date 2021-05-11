@@ -400,7 +400,7 @@ MonoBehaviour:
   playerCamera: {fileID: 1762836432959178397}
   mouseSensitivity: 2.5
   lockCursor: 1
-  walkSpeed: 10
+  walkSpeed: 12
   gravity: -9.81
   moveSmoothTime: 0.1
   mouseSmoothTime: 0.03

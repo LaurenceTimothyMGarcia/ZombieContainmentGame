@@ -47,6 +47,7 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexShakeA.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark04.cs" />
      <Compile Include="Assets\Scripts\Jonah Scripts\PlayerHealth.cs" />
+     <Compile Include="Assets\Scripts\VoiceManager.cs" />
      <Compile Include="Assets\Scripts\BoxSpawner.cs" />
      <Compile Include="Assets\Scripts\Jonah Scripts\PauseMenu.cs" />
      <Compile Include="Assets\Scripts\Jonah Scripts\PlayerMovement.cs" />
@@ -104,10 +105,10 @@
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\TeleType.cs" />
      <Compile Include="Assets\Scripts\playerDash.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\VertexZoom.cs" />
+     <Compile Include="Assets\Scripts\ChangeToPistol.cs" />
      <Compile Include="Assets\Scripts\StandardGun.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
-     <Compile Include="Assets\Scripts\ChangeToPistol.cs" />
-     <Compile Include="Assets\Scripts\VoiceManager.cs" />
+     <Compile Include="Assets\Scripts\GonkAI.cs" />
      <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_SDF-Mobile Overlay.shader" />
      <None Include="Assets\TextMesh Pro\Shaders\TMP_Bitmap.shader" />
