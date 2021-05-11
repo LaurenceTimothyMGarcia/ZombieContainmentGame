@@ -13,6 +13,7 @@ public class GonkAI : MonoBehaviour
 
     public Animator anim;
     public GameObject ScreenFlash;
+    public GameObject flames;
 
     public int health;
 
@@ -26,6 +27,7 @@ public class GonkAI : MonoBehaviour
     public int damage;
     public float damDelay;
     bool alreadyAttacked;
+    public GameObject projectile;
 
     //States
     public float sightRange, attackRange;
@@ -113,7 +115,9 @@ public class GonkAI : MonoBehaviour
         if (!alreadyAttacked)
         {
             //attack code here
-            
+            Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+            rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
+            rb.AddForce(transform.up, ForceMode.Impulse);
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
@@ -145,6 +149,22 @@ public class GonkAI : MonoBehaviour
     {
         Destroy(gameObject);
     }
+
+    /*private void Fire()
+    {
+        if(!flames.active)
+        {
+            flames.SetActive() = true;
+        }
+    }
+
+    private void StopFire()
+    {
+        if(flames.active)
+        {
+            flames.SetActive() = false;
+        }
+    }*/
 
     IEnumerator FlashScreen()
     {

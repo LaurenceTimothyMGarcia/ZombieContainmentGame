@@ -46,6 +46,7 @@ public class Barrel : MonoBehaviour
         // show effect
         FindObjectOfType<AudioManager>().Play("Explosion");
         Instantiate(explosionEffect, transform.position, transform.rotation);
+        
         //explosionEffect.Play();
 
         Collider[] colliders = Physics.OverlapSphere(transform.position, blastRadius);
@@ -77,8 +78,8 @@ public class Barrel : MonoBehaviour
         Destroy(gameObject);
     }
 
-    IEnumerator WaitTime()
+    private void Delay(GameObject explode)
     {
-        yield return new WaitForSeconds(2f);
+        Destroy(explode);
     }
 }

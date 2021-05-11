@@ -20,6 +20,10 @@ public class StandardGun : Gun
 
         if(currentAmmo <= 0)
         {
+            if(amountOfAmmo <= 0)
+            {
+                return;
+            }
             anim.SetBool("Reload", true);
             StartCoroutine(Reload());
             return;
@@ -70,6 +74,7 @@ public class StandardGun : Gun
 
         if (amountOfAmmo <= 0)
         {
+            isReloading = false;
             yield break;
         }
 
