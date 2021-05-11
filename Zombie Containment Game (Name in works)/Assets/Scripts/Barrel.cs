@@ -23,6 +23,7 @@ public class Barrel : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        //explode = Instantiate(explosionEffect, transform.position, transform.rotation);
         rbPlayer = GameObject.FindWithTag("Player").GetComponent<Rigidbody>();
         rbFrog = GameObject.Find("FrogMonster").GetComponent<Rigidbody>();
         rbElong = GameObject.Find("Elongated").GetComponent<Rigidbody>();
@@ -45,8 +46,8 @@ public class Barrel : MonoBehaviour
     {
         // show effect
         FindObjectOfType<AudioManager>().Play("Explosion");
-        Instantiate(explosionEffect, transform.position, transform.rotation);
-        
+        ExplodeProper();
+        //Instantiate(explosionEffect, transform.position, transform.rotation);
         //explosionEffect.Play();
 
         Collider[] colliders = Physics.OverlapSphere(transform.position, blastRadius);
@@ -76,6 +77,14 @@ public class Barrel : MonoBehaviour
         }
 
         Destroy(gameObject);
+    }
+
+    private void ExplodeProper()
+    {
+        if (explosionEffect != null)
+        {
+            Instantiate(explosionEffect, transform.position, transform.rotation);
+        }
     }
 
     private void Delay(GameObject explode)

@@ -6,6 +6,7 @@ public class BoxSpawner : MonoBehaviour
 {
     //Add the game object
     public GameObject item;
+    public float timePerItem = 0.05f;
     
     //Locations
     private int xPos;
@@ -50,7 +51,7 @@ public class BoxSpawner : MonoBehaviour
             Instantiate(item, new Vector3(xPos, 43, zPos), Quaternion.identity);
 
             //Spawn delay
-            yield return new WaitForSeconds(0.5f);
+            yield return new WaitForSeconds(timePerItem);
             
             //Item spawn incriment
             i++;

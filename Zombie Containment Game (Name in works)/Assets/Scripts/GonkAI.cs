@@ -116,7 +116,7 @@ public class GonkAI : MonoBehaviour
         {
             //attack code here
             Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 32f, ForceMode.Impulse);
+            rb.AddForce(transform.forward * 16f, ForceMode.Impulse);
             rb.AddForce(transform.up, ForceMode.Impulse);
 
             alreadyAttacked = true;
