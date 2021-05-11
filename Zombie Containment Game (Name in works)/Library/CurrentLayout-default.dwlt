@@ -19,7 +19,7 @@ MonoBehaviour:
     width: 1920
     height: 1037
   m_ShowMode: 4
-  m_Title: Hierarchy
+  m_Title: Scene
   m_RootView: {fileID: 3}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -148,7 +148,7 @@ MonoBehaviour:
   m_MinSize: {x: 881, y: 492}
   m_MaxSize: {x: 16006, y: 14042}
   vertical: 0
-  controlID: 121
+  controlID: 118
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -173,7 +173,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 492}
   m_MaxSize: {x: 12005, y: 14042}
   vertical: 1
-  controlID: 8441
+  controlID: 44
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -199,7 +199,7 @@ MonoBehaviour:
   m_MinSize: {x: 605, y: 221}
   m_MaxSize: {x: 12005, y: 4021}
   vertical: 0
-  controlID: 8442
+  controlID: 45
 --- !u!114 &9
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -428,23 +428,23 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 7036fbff
-      m_LastClickedID: -313744
-      m_ExpandedIDs: 7036fbffc639fbffc839fbffe88cfbff4ca2fbff90b6fbff22d1fbffdcfafbffac0dfcffd821fcff262ffcff483bfcfffc46fcff1e4afcff12d1fdff2eecfeffb8eefeff962effffd0b4ffff4cb9ffff3ac9ffff86e2ffff20f8ffff2cf9ffff2afbffff484a0100
+      m_SelectedIDs: 
+      m_LastClickedID: 0
+      m_ExpandedIDs: 2ee1ffff2afbffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
-        m_Name: BigExplosion
-        m_OriginalName: BigExplosion
+        m_Name: 
+        m_OriginalName: 
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
           y: 0
           width: 0
           height: 0
-        m_UserData: 119928
+        m_UserData: 0
         m_IsWaitingForDelay: 0
         m_IsRenaming: 0
-        m_OriginalEventType: 4
+        m_OriginalEventType: 11
         m_IsRenamingFilename: 0
         m_ClientGUIView: {fileID: 9}
       m_SearchString: 
@@ -491,9 +491,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 9.387592, y: 4.713023, z: 1.6478195}
+    m_Target: {x: -3.6125546, y: 1.9079754, z: 4.1543226}
     speed: 2
-    m_Value: {x: 9.387592, y: 4.713023, z: 1.6478195}
+    m_Value: {x: -3.6125546, y: 1.9079754, z: 4.1543226}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -540,13 +540,13 @@ MonoBehaviour:
     m_GridAxis: 1
     m_gridOpacity: 0.5
   m_Rotation:
-    m_Target: {x: -0.029270854, y: -0.9594646, z: 0.10870011, w: -0.25840342}
+    m_Target: {x: -0.103096925, y: -0.76878756, z: 0.12826131, w: -0.6179823}
     speed: 2
-    m_Value: {x: -0.029270602, y: -0.9594564, z: 0.10869918, w: -0.25840122}
+    m_Value: {x: -0.10328835, y: -0.76785344, z: 0.12810546, w: -0.6191298}
   m_Size:
-    m_Target: 8.138766
+    m_Target: 7.7201066
     speed: 2
-    m_Value: 8.138766
+    m_Value: 7.7201066
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -785,23 +785,23 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/EffectExamples/Fire & Explosion Effects/Prefabs
+    - Assets/Scenes/GlowDungeon
     m_Globs: []
     m_OriginalText: 
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/EffectExamples/Fire & Explosion Effects/Prefabs
+  - Assets/Scenes/GlowDungeon
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Program Files\Unity Projects\ZombieContainmentGame\Zombie
     Containment Game (Name in works)
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 19}
-    m_SelectedIDs: 8a5e0000
-    m_LastClickedID: 24202
-    m_ExpandedIDs: 00000000825000008450000086500000885000008a5000008c5000008e50000090500000b6500000c45000004461000000ca9a3b
+    scrollPos: {x: 0, y: 144}
+    m_SelectedIDs: 345a0000
+    m_LastClickedID: 23092
+    m_ExpandedIDs: 00000000e8590000ea590000ec590000ee590000f0590000f2590000f4590000f6590000125a00001e5a0000be5a000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -829,7 +829,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000825000008450000086500000885000008a5000008c5000008e50000090500000
+    m_ExpandedIDs: 00000000e8590000ea590000ec590000ee590000f0590000f2590000f4590000f6590000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
