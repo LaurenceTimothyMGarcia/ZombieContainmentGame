@@ -28,6 +28,7 @@ public class GonkAI : MonoBehaviour
     public float damDelay;
     bool alreadyAttacked;
     public GameObject projectile;
+    HomingMissle missle;
 
     //States
     public float sightRange, attackRange;
@@ -38,6 +39,7 @@ public class GonkAI : MonoBehaviour
         anim = GetComponent<Animator>();
         player = GameObject.Find("PlayerCharacter").transform;
         agent = GetComponent<NavMeshAgent>();
+        missle = GetComponent<HomingMissle>();
     }
 
     private void Update()
@@ -115,9 +117,10 @@ public class GonkAI : MonoBehaviour
         if (!alreadyAttacked)
         {
             //attack code here
-            Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+            missle.LaunchRocket(projectile, this.gameObject, player, 1f, damage);
+            /*Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
             rb.AddForce(transform.forward * 16f, ForceMode.Impulse);
-            rb.AddForce(transform.up, ForceMode.Impulse);
+            rb.AddForce(transform.up, ForceMode.Impulse);*/
 
             alreadyAttacked = true;
             Invoke(nameof(ResetAttack), timeBetweenAttacks);
