@@ -56,3 +56,33 @@ MonoBehaviour:
     pitch: 1
     loop: 0
     source: {fileID: 0}
+  - name: WeLiveInSociety
+    clip: {fileID: 8300000, guid: 2cf50752c15d9fe4ba41f7a7d9fa9a9f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Gonked
+    clip: {fileID: 8300000, guid: ea4e654f0e5b8f14d999680757ce5d2f, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: Gonk
+    clip: {fileID: 8300000, guid: eba046e24be010f499c7df399383ac9d, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: WarningDead
+    clip: {fileID: 8300000, guid: 329f9622147e70c4884e4c30f04c48b6, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}
+  - name: WarningLowHealth
+    clip: {fileID: 8300000, guid: 8e12c8025da9f2945bda53b5b469d388, type: 3}
+    volume: 1
+    pitch: 1
+    loop: 0
+    source: {fileID: 0}

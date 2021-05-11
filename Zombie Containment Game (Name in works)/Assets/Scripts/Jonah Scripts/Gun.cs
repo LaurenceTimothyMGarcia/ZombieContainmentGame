@@ -41,6 +41,7 @@ public class Gun : MonoBehaviour
     {
         MonsterFollow target = hit.transform.GetComponent<MonsterFollow>();
         EnemyAI enemy = hit.transform.GetComponent<EnemyAI>();
+        GonkAI gonk = hit.transform.GetComponent<GonkAI>();
         Target box = hit.transform.GetComponent<Target>();
         Barrel bar = hit.transform.GetComponent<Barrel>();
         //Target target = hit.transform.GetComponent<Target>();
@@ -52,6 +53,11 @@ public class Gun : MonoBehaviour
         if(enemy != null)
         {
             enemy.TakeDamage(damage);
+        }
+
+        if(gonk != null)
+        {
+            gonk.TakeDamage(damage);
         }
 
         if (box != null)

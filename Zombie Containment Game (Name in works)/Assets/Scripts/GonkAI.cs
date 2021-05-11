@@ -13,7 +13,7 @@ public class GonkAI : MonoBehaviour
 
     public Animator anim;
     public GameObject ScreenFlash;
-    public GameObject flames;
+    public ParticleSystem flames;
 
     public int health;
 
@@ -28,7 +28,7 @@ public class GonkAI : MonoBehaviour
     public float damDelay;
     bool alreadyAttacked;
     public GameObject projectile;
-    HomingMissle missle;
+    //HomingMissle missle;
 
     //States
     public float sightRange, attackRange;
@@ -39,7 +39,7 @@ public class GonkAI : MonoBehaviour
         anim = GetComponent<Animator>();
         player = GameObject.Find("PlayerCharacter").transform;
         agent = GetComponent<NavMeshAgent>();
-        missle = GetComponent<HomingMissle>();
+        //missle = GetComponent<HomingMissle>();
     }
 
     private void Update()
@@ -104,11 +104,13 @@ public class GonkAI : MonoBehaviour
 
     private void ChasePlayer()
     {
+        flames.Play();
         agent.SetDestination(player.position);
     }
 
     private void AttackPlayer()
     {
+        flames.Stop();
         //make sure enemy doesnt move
         agent.SetDestination(transform.position);
 
@@ -117,9 +119,9 @@ public class GonkAI : MonoBehaviour
         if (!alreadyAttacked)
         {
             //attack code here
-            missle.LaunchRocket(projectile, this.gameObject, player, 1f, damage);
-            /*Rigidbody rb = Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
-            rb.AddForce(transform.forward * 16f, ForceMode.Impulse);
+            //missle.LaunchRocket(projectile, this.gameObject, player, 1f, damage);
+            Instantiate(projectile, transform.position, Quaternion.identity).GetComponent<Rigidbody>();
+            /*rb.AddForce(transform.forward * 16f, ForceMode.Impulse);
             rb.AddForce(transform.up, ForceMode.Impulse);*/
 
             alreadyAttacked = true;
