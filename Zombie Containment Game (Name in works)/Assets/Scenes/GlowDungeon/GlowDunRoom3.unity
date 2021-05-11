@@ -1541,6 +1541,16 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5810179059422915806, guid: aaa189b9d85e34947a68ca9dfde6ed92,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 661518701}
+    - target: {fileID: 5810179059422915806, guid: aaa189b9d85e34947a68ca9dfde6ed92,
+        type: 3}
+      propertyPath: ScreenFlash
+      value: 
+      objectReference: {fileID: 1137197815}
     - target: {fileID: 7409599451279859423, guid: aaa189b9d85e34947a68ca9dfde6ed92,
         type: 3}
       propertyPath: player

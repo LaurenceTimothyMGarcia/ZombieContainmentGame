@@ -1144,6 +1144,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5810179059422915806, guid: aaa189b9d85e34947a68ca9dfde6ed92,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 265628168733033241}
+    - target: {fileID: 5810179059422915806, guid: aaa189b9d85e34947a68ca9dfde6ed92,
+        type: 3}
+      propertyPath: ScreenFlash
+      value: 
+      objectReference: {fileID: 2025330545}
+    - target: {fileID: 6623167494353892961, guid: aaa189b9d85e34947a68ca9dfde6ed92,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6623167494353892961, guid: aaa189b9d85e34947a68ca9dfde6ed92,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.41
+      objectReference: {fileID: 0}
     - target: {fileID: 7409599451279859423, guid: aaa189b9d85e34947a68ca9dfde6ed92,
         type: 3}
       propertyPath: ScreenFlash
@@ -1501,6 +1521,12 @@ PrefabInstance:
       objectReference: {fileID: 26007141}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c49cc0cd6519c4348a5862309f8c8129, type: 3}
+--- !u!4 &265628168733033241 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1762836432467288818, guid: c49cc0cd6519c4348a5862309f8c8129,
+    type: 3}
+  m_PrefabInstance: {fileID: 265628168733033240}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &543450653517640491
 Transform:
   m_ObjectHideFlags: 0

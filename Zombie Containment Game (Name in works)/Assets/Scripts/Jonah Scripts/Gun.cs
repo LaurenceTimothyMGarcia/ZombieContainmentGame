@@ -37,6 +37,38 @@ public class Gun : MonoBehaviour
 
     public LayerMask canBeShot;
 
+    public void Hit(RaycastHit hit, int damage)
+    {
+        MonsterFollow target = hit.transform.GetComponent<MonsterFollow>();
+        EnemyAI enemy = hit.transform.GetComponent<EnemyAI>();
+        Target box = hit.transform.GetComponent<Target>();
+        Barrel bar = hit.transform.GetComponent<Barrel>();
+        //Target target = hit.transform.GetComponent<Target>();
+        if(target != null)
+        {
+            target.TakeDamage(damage);
+        }
+
+        if(enemy != null)
+        {
+            enemy.TakeDamage(damage);
+        }
+
+        if (box != null)
+        {
+            box.TakeDamage(damage);
+        }
+
+        if (bar != null)
+        {
+            bar.health -= damage;
+        }
+
+        GameObject clone = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));
+
+        Destroy(clone, 1f);
+    }
+
     // Start is called before the first frame update
     /*void Start()
     {
