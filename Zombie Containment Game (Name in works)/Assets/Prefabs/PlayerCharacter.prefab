@@ -953,7 +953,7 @@ MonoBehaviour:
   fireRate: 1
   maxAmmo: 12
   currentAmmo: 12
-  amountOfAmmo: 24
+  amountOfAmmo: 36
   spread: 0.04
   isReloading: 0
   reloadTime: 1
@@ -1070,13 +1070,13 @@ MonoBehaviour:
   ammoDisplay: {fileID: 0}
   totalAmmo: {fileID: 0}
   isFiring: 0
-  damage: 3
+  damage: 2
   range: 50
   fireRate: 10
   maxAmmo: 45
   currentAmmo: 45
   amountOfAmmo: 90
-  spread: 0.015
+  spread: 0.025
   isReloading: 0
   reloadTime: 0.5
   nextTimeToFire: 0

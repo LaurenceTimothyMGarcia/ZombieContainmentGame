@@ -37,7 +37,7 @@ public class GameOver : MonoBehaviour
     void appear()
     {
         //AudioManager audio = GetComponent<AudioManager>();
-        
+
         Cursor.lockState = CursorLockMode.None;
         Cursor.visible = true;
 

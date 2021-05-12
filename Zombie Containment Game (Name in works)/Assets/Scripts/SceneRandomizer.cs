@@ -18,7 +18,6 @@ public class SceneRandomizer : MonoBehaviour
     string result;
 
     public ListOfRooms roomList;
-    StopWatch timer;
 
     void Start()
     {
@@ -28,6 +27,7 @@ public class SceneRandomizer : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         listOfScenes = ListOfRooms.GetArray();
+
         if(listOfScenes.Count == 0)
         {
             SceneManager.LoadScene(bossRoom);
@@ -44,11 +44,6 @@ public class SceneRandomizer : MonoBehaviour
         Debug.Log("Removed Array: " + arrayNumber);
         Debug.Log("Removed Scene: " + selectedScene);
         listOfScenes.Remove(selectedScene);
-        
-        if(!stopwatch)
-        {
-            timer.stopWatchActive = false;
-        }
         
         Debug.Log("How many scenes left in array " + listOfScenes.Count);
 

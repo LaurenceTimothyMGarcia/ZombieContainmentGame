@@ -13,12 +13,17 @@ public class StopWatch : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        stopWatchActive = true;
+        //stopWatchActive = true;
     }
 
     // Update is called once per frame
     void Update()
     {
+        if (GlobalHealth.PlayerHealth <= 0)
+        {
+            stopWatchActive = false;
+        }
+        
         if (stopWatchActive == true)
         {
             currentTime += Time.deltaTime;

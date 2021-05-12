@@ -480,7 +480,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2584651086255223662
 RectTransform:
   m_ObjectHideFlags: 0
@@ -496,6 +496,7 @@ RectTransform:
   - {fileID: 2584651087395618849}
   - {fileID: 2584651086624797272}
   - {fileID: 2584651086624892167}
+  - {fileID: 7645395727960105264}
   m_Father: {fileID: 2584651087961683962}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1268,7 +1269,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 542668efc66e27b40a3e1bd6884a1fa2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  stopWatchActive: 0
+  stopWatchActive: 1
   currentTimeText: {fileID: 3306609912236250405}
 --- !u!1 &2584651086706549700
 GameObject:
@@ -3379,13 +3380,14 @@ GameObject:
   - component: {fileID: 2584651087961683957}
   - component: {fileID: 2584651087961683956}
   - component: {fileID: 2584651087961683963}
+  - component: {fileID: 6042938414709202}
   m_Layer: 5
   m_Name: Canvas (Game Over UI)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2584651087961683962
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3484,6 +3486,20 @@ MonoBehaviour:
   pauseUI: {fileID: 2584651086254154372}
   health: {fileID: 0}
   timeTillReset: 1
+--- !u!114 &6042938414709202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2584651087961683961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 542668efc66e27b40a3e1bd6884a1fa2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  stopWatchActive: 1
+  currentTimeText: {fileID: 7662340899147167336}
 --- !u!1 &2584651087994882991
 GameObject:
   m_ObjectHideFlags: 0
@@ -3936,6 +3952,85 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Fire Speed:'
+--- !u!1 &8965324412131336872
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7645395727960105264}
+  - component: {fileID: 8164757728961338310}
+  - component: {fileID: 7662340899147167336}
+  m_Layer: 5
+  m_Name: Stopwatch
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &7645395727960105264
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8965324412131336872}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2584651086255223662}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 5.2054, y: 16.4446}
+  m_SizeDelta: {x: 332.6079, y: 67.1107}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &8164757728961338310
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8965324412131336872}
+  m_CullTransparentMesh: 1
+--- !u!114 &7662340899147167336
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8965324412131336872}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: c9f6d0e7bc8541498c9a4799ba184ede, type: 3}
+    m_FontSize: 40
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 4
+    m_MaxSize: 40
+    m_Alignment: 1
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Stopwatch
 --- !u!1001 &182415036479890054
 PrefabInstance:
   m_ObjectHideFlags: 0
