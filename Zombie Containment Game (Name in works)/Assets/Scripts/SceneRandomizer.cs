@@ -12,11 +12,13 @@ public class SceneRandomizer : MonoBehaviour
     public int frontRoom;
     public int backRoom;
     public int bossRoom;
+    public bool stopwatch;
     int currentScene;
 
     string result;
 
     public ListOfRooms roomList;
+    StopWatch timer;
 
     void Start()
     {
@@ -43,6 +45,10 @@ public class SceneRandomizer : MonoBehaviour
         Debug.Log("Removed Scene: " + selectedScene);
         listOfScenes.Remove(selectedScene);
         
+        if(!stopwatch)
+        {
+            timer.stopWatchActive = false;
+        }
         
         Debug.Log("How many scenes left in array " + listOfScenes.Count);
 

@@ -70,5 +70,6 @@ public class GameOver : MonoBehaviour
         GlobalHealth.PlayerHealth = GlobalHealth.originalHealth;
         GlobalHealth.maxHealth = GlobalHealth.originalHealth;
         WeaponSwitch.selectedWeapon = 0;
+        StopWatch.currentTime = 0;
     }
 }
