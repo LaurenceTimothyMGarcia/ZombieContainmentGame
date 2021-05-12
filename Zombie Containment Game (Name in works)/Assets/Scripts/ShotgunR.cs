@@ -36,6 +36,11 @@ public class ShotgunR : Gun
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey("e"))
+        {
+            OpenBox();
+        }
+        
         if (isReloading)
         {
             return;
@@ -64,6 +69,11 @@ public class ShotgunR : Gun
             anim.SetBool("Reload", true);
             StartCoroutine(Reload());
             return;
+        }
+
+        if (Input.GetKey("e"))
+        {
+            OpenBox();
         }
 
         totalAmmo.text = amountOfAmmo.ToString();
@@ -130,36 +140,5 @@ public class ShotgunR : Gun
         bulletShot.SetPosition(1, hit.point);
 
         Destroy(bulletTrailEffect, 1f);
-    }
-
-    IEnumerator Reload()
-    {
-        int difference;
-        
-        isReloading = true;
-        //Debug.Log("Reloading...");
-        FindObjectOfType<AudioManager>().Play("Reload");
-
-        yield return new WaitForSeconds(reloadTime);
-        anim.SetBool("Reload", false);
-
-        if (amountOfAmmo <= 0)
-        {
-            yield break;
-        }
-
-        if (amountOfAmmo < maxAmmo)
-        {
-            currentAmmo = amountOfAmmo;
-            amountOfAmmo -= amountOfAmmo;
-        }
-        else
-        {
-            difference = maxAmmo - currentAmmo;
-            currentAmmo = maxAmmo;
-            amountOfAmmo -= difference;
-        }
-
-        isReloading = false;
     }
 }

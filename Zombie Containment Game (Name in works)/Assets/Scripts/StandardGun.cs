@@ -15,6 +15,11 @@ public class StandardGun : Gun
     // Update is called once per frame
     void Update()
     {
+        if (Input.GetKey("e"))
+        {
+            OpenBox();
+        }
+        
         if (isReloading)
             return;
 
@@ -51,46 +56,9 @@ public class StandardGun : Gun
             StartCoroutine(Reload());
             return;
         }
-        
 
         totalAmmo.text = amountOfAmmo.ToString();
         ammoDisplay.text = currentAmmo.ToString();
-
-    }
-
-
-
-    //Reloading
-    IEnumerator Reload()
-    {
-        int difference;
-        
-        isReloading = true;
-        //Debug.Log("Reloading...");
-        FindObjectOfType<AudioManager>().Play("Reload");
-
-        yield return new WaitForSeconds(reloadTime);
-        anim.SetBool("Reload", false);
-
-        if (amountOfAmmo <= 0)
-        {
-            isReloading = false;
-            yield break;
-        }
-
-        if (amountOfAmmo < maxAmmo)
-        {
-            currentAmmo = amountOfAmmo;
-            amountOfAmmo -= amountOfAmmo;
-        }
-        else
-        {
-            difference = maxAmmo - currentAmmo;
-            currentAmmo = maxAmmo;
-            amountOfAmmo -= difference;
-        }
-
-        isReloading = false;
     }
 
     //Shooting

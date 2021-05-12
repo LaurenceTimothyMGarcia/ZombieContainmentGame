@@ -129,7 +129,7 @@ MonoBehaviour:
   health: 1
   blastRadius: 5
   force: 500
-  damage: 1
+  damage: 5
   explosionEffect: {fileID: 4717419932623618918}
 --- !u!1001 &4716223477943201592
 PrefabInstance:
