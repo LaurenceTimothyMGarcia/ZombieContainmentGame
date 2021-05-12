@@ -1973,13 +1973,13 @@ MonoBehaviour:
   anim: {fileID: 919132148625426035}
   ScreenFlash: {fileID: 153019086}
   flames: {fileID: 1515516189}
-  health: 100
-  maxHealth: 100
+  health: 300
+  maxHealth: 300
   healthBarUI: {fileID: 2081797066}
   slider: {fileID: 1184346230}
   walkPoint: {x: 0, y: 0, z: 0}
   walkPointRange: 20
-  timeBetweenAttacks: 2
+  timeBetweenAttacks: 1
   damage: 5
   damDelay: 1
   projectile: {fileID: 8651234626351988480, guid: d538a391b9ba9c14fa9ba4af7ac3a043,
@@ -2008,12 +2008,12 @@ PrefabInstance:
     - target: {fileID: 1488821018351392797, guid: edbf066f8bea33e4391e4726fd30c2a4,
         type: 3}
       propertyPath: m_Value
-      value: 100
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1488821018351392797, guid: edbf066f8bea33e4391e4726fd30c2a4,
         type: 3}
       propertyPath: m_MaxValue
-      value: 100
+      value: 300
       objectReference: {fileID: 0}
     - target: {fileID: 1488821018351392798, guid: edbf066f8bea33e4391e4726fd30c2a4,
         type: 3}
