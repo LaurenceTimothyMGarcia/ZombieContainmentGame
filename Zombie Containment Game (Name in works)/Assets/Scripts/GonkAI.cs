@@ -79,7 +79,7 @@ public class GonkAI : MonoBehaviour
             AttackPlayer();
         }
 
-        if (health <= 25)
+        if (health <= 70)
         {
             FindObjectOfType<VoiceManager>().Play("WarningLowHealth");
         }

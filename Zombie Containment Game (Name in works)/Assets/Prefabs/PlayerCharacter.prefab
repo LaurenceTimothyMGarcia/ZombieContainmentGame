@@ -250,8 +250,8 @@ MonoBehaviour:
   totalAmmo: {fileID: 0}
   isFiring: 0
   damage: 4
-  range: 30
-  fireRate: 1
+  range: 20
+  fireRate: 0.75
   maxAmmo: 6
   currentAmmo: 6
   amountOfAmmo: 24
@@ -1302,7 +1302,7 @@ MonoBehaviour:
   totalAmmo: {fileID: 0}
   isFiring: 0
   damage: 2
-  range: 30
+  range: 20
   fireRate: 2
   maxAmmo: 5
   currentAmmo: 5

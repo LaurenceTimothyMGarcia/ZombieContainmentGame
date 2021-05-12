@@ -10,6 +10,7 @@ public class HomingMissle : MonoBehaviour
     public GameObject explosion;
 
     public int damage = 1;
+    public int health = 1;
     public float turnSpeed = 1f;
     public float rocketFlySpeed = 1f;
     public float lifeTime = 2f;
@@ -32,6 +33,11 @@ public class HomingMissle : MonoBehaviour
 
     private void Update()
     {
+        if (health <= 0)
+        {
+            Destroy(gameObject);
+        }
+        
         if (!Rocket)
         {
             return;

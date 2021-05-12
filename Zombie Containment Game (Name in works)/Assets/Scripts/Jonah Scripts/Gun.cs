@@ -44,6 +44,7 @@ public class Gun : MonoBehaviour
         GonkAI gonk = hit.transform.GetComponent<GonkAI>();
         Target box = hit.transform.GetComponent<Target>();
         Barrel bar = hit.transform.GetComponent<Barrel>();
+        HomingMissle amongUs = hit.transform.GetComponent<HomingMissle>();
         //Target target = hit.transform.GetComponent<Target>();
         if(target != null)
         {
@@ -68,6 +69,11 @@ public class Gun : MonoBehaviour
         if (bar != null)
         {
             bar.health -= damage;
+        }
+
+        if (amongUs != null)
+        {
+            amongUs.health -= damage;
         }
 
         GameObject clone = Instantiate(impactEffect, hit.point, Quaternion.LookRotation(hit.normal));

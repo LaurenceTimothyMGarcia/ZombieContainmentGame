@@ -159,10 +159,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Rocket: {fileID: 8959267884322593344}
   explosion: {fileID: 8650179181964226853}
-  damage: 3
-  turnSpeed: 0.75
+  damage: 2
+  health: 1
+  turnSpeed: 1
   rocketFlySpeed: 17
-  lifeTime: 3
+  lifeTime: 2
 --- !u!1001 &8651234624807984507
 PrefabInstance:
   m_ObjectHideFlags: 0
