@@ -53,12 +53,22 @@ public class GameOver : MonoBehaviour
     public void restart()
     {
         //Time.timeScale = 1;
+        ResetVariable();
         SceneManager.LoadScene(1);
     }
 
     public void quit()
     {
         //Time.timeScale = 1;
+        ResetVariable();
         SceneManager.LoadScene(0);
+    }
+
+    public void ResetVariable()
+    {
+        ListOfRooms.listOfScenes.Clear();
+        GlobalHealth.PlayerHealth = GlobalHealth.originalHealth;
+        GlobalHealth.maxHealth = GlobalHealth.originalHealth;
+        WeaponSwitch.selectedWeapon = 0;
     }
 }
