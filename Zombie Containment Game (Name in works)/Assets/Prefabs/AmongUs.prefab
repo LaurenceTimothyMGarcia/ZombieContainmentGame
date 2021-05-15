@@ -162,7 +162,7 @@ MonoBehaviour:
   damage: 2
   health: 1
   turnSpeed: 1
-  rocketFlySpeed: 17
+  rocketFlySpeed: 20
   lifeTime: 2
 --- !u!1001 &8651234624807984507
 PrefabInstance:

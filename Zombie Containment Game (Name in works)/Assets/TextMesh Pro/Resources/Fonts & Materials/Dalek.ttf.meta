@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: bb4c352a84695164a91bc740edcaccc7
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Dalek
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: f92da4f2a08bcc44492f5eef5c587191, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -3386,4 +3386,5 @@ ScriptsOnlyBuild:
   - Assets/Scenes/GlowDungeon/GlowDunRoom7.unity
   - Assets/Scenes/GlowDungeon/GlowDunRoomBoss.unity
   - Assets/Scenes/GameOver.unity
-  playerPath: E:/Game Design/Labyrinth Run Build/Ver 0.05/Labyrinth Run.exe
+  playerPath: E:/Game Design/Labyrinth Run Build/Ver 0.06/Windows Version/Labyrinth
+    Run.exe
