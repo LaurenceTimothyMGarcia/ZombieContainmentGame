@@ -30,6 +30,7 @@ public class playerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1;
         controller = GetComponent<CharacterController>();
         if (lockCursor)
         {

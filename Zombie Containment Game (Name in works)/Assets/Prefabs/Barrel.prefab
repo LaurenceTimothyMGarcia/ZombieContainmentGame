@@ -55,6 +55,7 @@ MeshRenderer:
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
   m_MotionVectors: 1
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
@@ -129,7 +130,7 @@ MonoBehaviour:
   health: 1
   blastRadius: 5
   force: 500
-  damage: 5
+  damage: 20
   explosionEffect: {fileID: 4717419932623618918}
 --- !u!1001 &4716223477943201592
 PrefabInstance:

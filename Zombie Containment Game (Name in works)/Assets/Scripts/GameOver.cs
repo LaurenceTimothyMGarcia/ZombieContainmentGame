@@ -44,7 +44,7 @@ public class GameOver : MonoBehaviour
         gameOverUI.SetActive(true);
         inGameUI.SetActive(false);
         pauseUI.SetActive(false);
-        //Time.timeScale = 0;
+        Time.timeScale = 0;
         //audio.GetComponent<AudioManager>().enabled = false;
         GameIsPaused = true;
         
